@@ -15,7 +15,7 @@ public class CharacterAnimation : MonoBehaviour
     void Update()
     {
         //left animation
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) //maybe use GetButton instead? bc shorter
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) //maybe use GetButton instead? bc shorter. need to set up input manager?
         {
             charanim.SetBool("isLeft", true);
         }

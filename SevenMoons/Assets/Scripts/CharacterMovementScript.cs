@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CharacterMovementScript : MonoBehaviour
 {
-    public float speed = 10; 
-
+    public float speed = 10;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +16,10 @@ public class CharacterMovementScript : MonoBehaviour
     void Update()
     {
         float moveH = Input.GetAxis("Horizontal"); //left + right arrows
-
         float moveV = Input.GetAxis("Vertical"); //up + down arrows
 
-        Vector2 movement = new Vector2(moveH, moveV) * speed * Time.deltaTime; 
-        transform.Translate(movement);
+        Vector2 moveDirection = new Vector2(moveH, moveV); 
+        moveDirection = Vector2.ClampMagnitude(moveDirection, 1); //clamps all directions (diagonals) to same speed
+        transform.Translate(moveDirection * speed * Time.deltaTime);
     }
 }
