@@ -20,12 +20,6 @@ public class CharacterMovementXYOnly : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
-    }
-
-    void FixedUpdate()
-    {
         float h = Input.GetAxis("Horizontal");
         bool isMovingH = Mathf.Abs(h) > 0f;
 
@@ -37,14 +31,13 @@ public class CharacterMovementXYOnly : MonoBehaviour
             if (wasMovingV)
             {
                 moveDirection = new Vector2(h, 0);
-                transform.Translate(moveDirection * speed * Time.deltaTime);
+                
                 lastMove = new Vector2(h, 0f);
             }
 
             else
             {
                 moveDirection = new Vector2(0, v);
-                transform.Translate(moveDirection * speed * Time.deltaTime);
                 lastMove = new Vector2(0f, v);
             }
         }
@@ -52,7 +45,6 @@ public class CharacterMovementXYOnly : MonoBehaviour
         else if (isMovingH)
         {
             moveDirection = new Vector2(h, 0);
-            transform.Translate(moveDirection * speed * Time.deltaTime);
             wasMovingV = false;
             lastMove = new Vector2(h, 0f);
         }
@@ -60,9 +52,14 @@ public class CharacterMovementXYOnly : MonoBehaviour
         else if (isMovingV)
         {
             moveDirection = new Vector2(0, v);
-            transform.Translate(moveDirection * speed * Time.deltaTime);
             wasMovingV = true;
             lastMove = new Vector2(h, 0f);
         }
+
+    }
+
+    void FixedUpdate()
+    {
+        transform.Translate(moveDirection * speed * Time.deltaTime);
     }
 }
