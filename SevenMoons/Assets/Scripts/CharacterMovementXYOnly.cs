@@ -5,8 +5,10 @@ using UnityEngine;
 public class CharacterMovementXYOnly : MonoBehaviour
 {
     public float speed = 10;
+
     Vector2 lastMove;
     Vector2 moveDirection;
+
     bool wasMovingV;
 
     // Start is called before the first frame update
@@ -17,6 +19,12 @@ public class CharacterMovementXYOnly : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        
+
+    }
+
+    void FixedUpdate()
     {
         float h = Input.GetAxis("Horizontal");
         bool isMovingH = Mathf.Abs(h) > 0f;
@@ -33,7 +41,7 @@ public class CharacterMovementXYOnly : MonoBehaviour
                 lastMove = new Vector2(h, 0f);
             }
 
-            else 
+            else
             {
                 moveDirection = new Vector2(0, v);
                 transform.Translate(moveDirection * speed * Time.deltaTime);
@@ -56,6 +64,5 @@ public class CharacterMovementXYOnly : MonoBehaviour
             wasMovingV = true;
             lastMove = new Vector2(h, 0f);
         }
-
     }
 }
