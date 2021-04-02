@@ -1,25 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Interaction : MonoBehaviour
 {
+    public GameObject landmark;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        landmark.gameObject.SetActive(false);
     }
 
-    void FixedUpdate() //or update??
+    void Update() 
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position,  Vector2.up); //change .up??
+      
+    }
 
-        if (hit.collider != null && hit.distance <= 1.0f)
+    private void OnTriggerEnter2D (Collider2D other)
+    {
+        if (other.tag == "Landmark")
         {
-            //If the object hit is less than or equal to ? units away from this object.
-            
-                Debug.Log("Campfire");
-            
+            Debug.Log ("landmark in");
+            landmark.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Landmark")
+        {
+            Debug.Log("landmark out");
+            landmark.gameObject.SetActive(false);
         }
     }
 }

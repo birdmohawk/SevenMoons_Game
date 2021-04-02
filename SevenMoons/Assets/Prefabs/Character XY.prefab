@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1805619016690269126}
   - component: {fileID: 1805619016690269125}
-  - component: {fileID: 1805619016690269124}
   - component: {fileID: 1805619016690269123}
   - component: {fileID: 1805619016690269122}
   - component: {fileID: 1805619016690269121}
   - component: {fileID: 1805619016690269120}
+  - component: {fileID: 837330841}
+  - component: {fileID: 837330842}
   m_Layer: 0
   m_Name: Character XY
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1805619016690269135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.02, y: 0, z: 0}
-  m_LocalScale: {x: 4.6815343, y: 4.6815343, z: 4.6815343}
+  m_LocalScale: {x: 2.789326, y: 2.789326, z: 2.789326}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -87,19 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1805619016690269124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805619016690269135}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58a749490b902c348988f2f0788065c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!114 &1805619016690269123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac7e669ec5109e4185205f8ebb48878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 7
 --- !u!95 &1805619016690269122
 Animator:
   serializedVersion: 3
@@ -170,3 +158,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33, y: 0.6}
   m_EdgeRadius: 0
+--- !u!50 &837330841
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805619016690269135}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &837330842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805619016690269135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db690e84866842c45812b848c42ab706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  landmark: {fileID: 0}

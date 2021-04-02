@@ -31,7 +31,6 @@ public class CharacterMovementXYOnly : MonoBehaviour
             if (wasMovingV)
             {
                 moveDirection = new Vector2(h, 0);
-                
                 lastMove = new Vector2(h, 0f);
             }
 
@@ -54,6 +53,11 @@ public class CharacterMovementXYOnly : MonoBehaviour
             moveDirection = new Vector2(0, v);
             wasMovingV = true;
             lastMove = new Vector2(h, 0f);
+        }
+
+        else 
+        {
+            transform.Translate(moveDirection * 0);
         }
 
     }
