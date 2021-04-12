@@ -15,10 +15,9 @@ GameObject:
   - component: {fileID: 1805619016690269121}
   - component: {fileID: 1805619016690269120}
   - component: {fileID: 837330841}
-  - component: {fileID: 837330842}
   m_Layer: 0
   m_Name: Character XY
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +126,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805619016690269135}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67e1f47d6f02dba48b9c7e5f25db58e4, type: 3}
   m_Name: 
@@ -179,16 +178,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &837330842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805619016690269135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db690e84866842c45812b848c42ab706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  landmark: {fileID: 0}

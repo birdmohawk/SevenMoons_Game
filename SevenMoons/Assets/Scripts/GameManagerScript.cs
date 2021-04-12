@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 
 public class GameManagerScript : MonoBehaviour
 {
-    public GameObject landmark;
-    public GameObject character;
+    //public GameObject landmark;
+    //public GameObject Campfire;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        landmark.gameObject.SetActive(false);
+        //landmark.gameObject.SetActive(false);
+        
     }
 
     void Update()
@@ -19,23 +21,27 @@ public class GameManagerScript : MonoBehaviour
 
     }
 
-    //landmark
-
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Landmark")
+        //public GameObject Campfire;
+
+        if (other.tag == "Player")
         {
+            //landmark.gameObject.SetActive(true);
             Debug.Log("landmark in");
-            landmark.gameObject.SetActive(true);
+            //bring up press key for more info dialogue
+            //Campfire.GetComponent<LandmarkInteraction>().MoreInfo
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    public void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Landmark")
+        if (other.tag == "Player")
         {
             Debug.Log("landmark out");
-            landmark.gameObject.SetActive(false);
+            //landmark.gameObject.SetActive(false);
+            //bring up press key for more info dialogue
         }
     }
+
 }
