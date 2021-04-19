@@ -80,10 +80,7 @@ public class CharacterMovementXYOnly : MonoBehaviour
                     charanim.SetBool("isRight", false);
                 }
             }
-
             movement = true;
-
-
         }
 
         else if (isMovingH)

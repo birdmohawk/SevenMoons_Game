@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LandmarkInteraction : MonoBehaviour
+public class TaskboardInteraction : MonoBehaviour
 {
     public GameObject pressButton;
     public GameObject dialogue;
