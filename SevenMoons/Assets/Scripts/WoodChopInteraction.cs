@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TaskboardInteraction : MonoBehaviour
+public class WoodChopInteraction : MonoBehaviour
 {
     public GameObject taskboardButton;
 
@@ -59,6 +59,6 @@ public class TaskboardInteraction : MonoBehaviour
     public void Taskboard()
     {
         taskboardButton.gameObject.SetActive(false);
-        SceneManager.LoadScene("Taskboard");
+        SceneManager.LoadScene("WoodChopMinigame");
     }
 }

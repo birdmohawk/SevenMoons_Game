@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Landmark
-  - Win
+  - Green
+  - Orange
+  - Red
   layers:
   - Default
   - TransparentFX
