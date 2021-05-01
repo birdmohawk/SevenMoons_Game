@@ -4,52 +4,52 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -5491606405737464750
-    second: SpeedSprite_DownIdle
+    second: Speed_Sprite_0
   - first:
       213: 2105708152472715745
-    second: SpeedSprite_Down1
+    second: Speed_Sprite_1
   - first:
       213: -4987486482165922005
-    second: SpeedSprite_Down2
+    second: Speed_Sprite_2
   - first:
       213: -686951449228270617
-    second: SpeedSprite_Down3
+    second: Speed_Sprite_3
   - first:
       213: 5145947844044635500
-    second: SpeedSprite_RightIdle
+    second: Speed_Sprite_4
   - first:
       213: 1678824148841418134
-    second: SpeedSprite_Right1
+    second: Speed_Sprite_5
   - first:
       213: 1150474642772441690
-    second: SpeedSprite_Right2
+    second: Speed_Sprite_6
   - first:
       213: -6057483155217027959
-    second: SpeedSprite_Right3
+    second: Speed_Sprite_7
   - first:
       213: -6772222591899090755
-    second: SpeedSprite_LeftIdle
+    second: Speed_Sprite_8
   - first:
       213: -2231618690432655102
-    second: SpeedSprite_Left1
+    second: Speed_Sprite_9
   - first:
       213: -645890746876351579
-    second: SpeedSprite_Left2
+    second: Speed_Sprite_10
   - first:
       213: 390273195195029438
-    second: SpeedSprite_Left3
+    second: Speed_Sprite_11
   - first:
       213: -2709930964425887958
-    second: SpeedSprite_UpIdle
+    second: Speed_Sprite_12
   - first:
       213: 7854902378823724682
-    second: SpeedSprite_Up1
+    second: Speed_Sprite_13
   - first:
       213: 6835980770177598810
-    second: SpeedSprite_Up2
+    second: Speed_Sprite_14
   - first:
       213: 719679527523840391
-    second: SpeedSprite_Up3
+    second: Speed_Sprite_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,7 +151,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpeedSprite_DownIdle
+      name: Speed_Sprite_0
       rect:
         serializedVersion: 2
         x: 16
@@ -159,7 +159,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,7 +172,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Down1
+      name: Speed_Sprite_1
       rect:
         serializedVersion: 2
         x: 81
@@ -180,7 +180,7 @@ TextureImporter:
         width: 30
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,7 +193,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Down2
+      name: Speed_Sprite_2
       rect:
         serializedVersion: 2
         x: 143
@@ -201,7 +201,7 @@ TextureImporter:
         width: 33
         height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,7 +214,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Down3
+      name: Speed_Sprite_3
       rect:
         serializedVersion: 2
         x: 207
@@ -222,7 +222,7 @@ TextureImporter:
         width: 33
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,7 +235,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_RightIdle
+      name: Speed_Sprite_4
       rect:
         serializedVersion: 2
         x: 16
@@ -243,7 +243,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,7 +256,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Right1
+      name: Speed_Sprite_5
       rect:
         serializedVersion: 2
         x: 78
@@ -264,7 +264,7 @@ TextureImporter:
         width: 32
         height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,7 +277,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Right2
+      name: Speed_Sprite_6
       rect:
         serializedVersion: 2
         x: 144
@@ -285,7 +285,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,7 +298,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Right3
+      name: Speed_Sprite_7
       rect:
         serializedVersion: 2
         x: 205
@@ -306,7 +306,7 @@ TextureImporter:
         width: 35
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,7 +319,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_LeftIdle
+      name: Speed_Sprite_8
       rect:
         serializedVersion: 2
         x: 16
@@ -327,7 +327,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,7 +340,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Left1
+      name: Speed_Sprite_9
       rect:
         serializedVersion: 2
         x: 82
@@ -348,7 +348,7 @@ TextureImporter:
         width: 32
         height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,7 +361,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Left2
+      name: Speed_Sprite_10
       rect:
         serializedVersion: 2
         x: 144
@@ -369,7 +369,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,7 +382,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Left3
+      name: Speed_Sprite_11
       rect:
         serializedVersion: 2
         x: 208
@@ -390,7 +390,7 @@ TextureImporter:
         width: 35
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -403,7 +403,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_UpIdle
+      name: Speed_Sprite_12
       rect:
         serializedVersion: 2
         x: 16
@@ -411,7 +411,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -424,7 +424,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Up1
+      name: Speed_Sprite_13
       rect:
         serializedVersion: 2
         x: 80
@@ -432,7 +432,7 @@ TextureImporter:
         width: 31
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,7 +445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Up2
+      name: Speed_Sprite_14
       rect:
         serializedVersion: 2
         x: 144
@@ -453,7 +453,7 @@ TextureImporter:
         width: 33
         height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,7 +466,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeedSprite_Up3
+      name: Speed_Sprite_15
       rect:
         serializedVersion: 2
         x: 209
@@ -474,7 +474,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

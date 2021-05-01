@@ -39,17 +39,27 @@ public class WoodChoppingScript : MonoBehaviour
                 squareAnim.Stop();
                 isPlaying = false;
 
-                if (isGreen)
-                {
-                    GreenScore();
-                }
-
-                if (isOrange)
+                if (isGreen && isOrange) //test this 
                 {
                     OrangeScore();
                 }
 
-                if (isRed)
+                else if (isGreen)
+                {
+                    GreenScore();
+                } 
+
+                else if (isOrange && isRed) //test this
+                {
+                    RedScore();
+                }
+
+                else if (isOrange)
+                {
+                    OrangeScore();
+                }
+
+                else if (isRed)
                 {
                     RedScore();
                 }
@@ -63,7 +73,7 @@ public class WoodChoppingScript : MonoBehaviour
     }
 
     //registers collisions
-    void OnTriggerEnter2D(Collider2D other) //green zone
+    void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.tag == "Green")
         {
@@ -124,7 +134,7 @@ public class WoodChoppingScript : MonoBehaviour
 
     void RedScore()
     {
-        //Debug.Log("red scored"); //do something
+        //Debug.Log("red scored"); 
         addWood = 5;
         TotalWood();
         prevWood = totalWood;

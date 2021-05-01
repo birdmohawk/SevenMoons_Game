@@ -32,8 +32,7 @@ public class CharacterMovementXYOnly : MonoBehaviour
 
         charanim.SetFloat("Horizontal", h);
         charanim.SetFloat("Vertical", v);
-        charanim.SetFloat("Speed", h + v);
-        
+        //charanim.SetFloat("Speed", h + v);
 
         if (isMovingH && isMovingV) 
         {
