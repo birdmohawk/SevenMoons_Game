@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WoodChoppingScript : MonoBehaviour
 
 {
-    private Animation squareAnim;
+    public Animation squareAnim;
+    //public Animation slashAnim;
+    //public Animator slashAnim;
+
+    public Text totalDisplayed;
 
     private bool isPlaying;
 
@@ -25,7 +30,9 @@ public class WoodChoppingScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        squareAnim = GetComponent<Animation>();
+       squareAnim = GetComponent<Animation>();
+       //slashAnim = GetComponent<Animation>();
+
         isPlaying = true;
     }
 
@@ -38,6 +45,10 @@ public class WoodChoppingScript : MonoBehaviour
             {
                 squareAnim.Stop();
                 isPlaying = false;
+
+                //slashAnim.Play();
+
+                //slashAnim.SetBool("Play", true);
 
                 if (isGreen && isOrange) //test this 
                 {
@@ -68,6 +79,8 @@ public class WoodChoppingScript : MonoBehaviour
             else if (!isPlaying)
             { 
                 RestartRound();
+
+                //slashAnim.SetBool("Play", false);
             }
         }
     }
@@ -163,5 +176,12 @@ public class WoodChoppingScript : MonoBehaviour
     {
         totalWood = prevWood + addWood;
         Debug.Log(totalWood);
+        DisplayTotal();
     }
+
+    void DisplayTotal()
+    {
+        totalDisplayed.text = totalWood.ToString() + " Total";
+    }
+
 }

@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class LandmarkInteraction : MonoBehaviour
 {
-    public GameObject pressButton;
-    public GameObject dialogue;
+    public GameObject itemName;
+    public GameObject itemInfo;
 
-    private bool trig; //needed to call MoreInfo() function in fixedupdate so that it checks every frame
+    private bool inRange; //needed to call MoreInfo() function in fixedupdate so that it checks every frame
 
     // Start is called before the first frame update
     void Start()
     {
-        pressButton.gameObject.SetActive(false);
-        dialogue.gameObject.SetActive(false);
+        itemInfo.gameObject.SetActive(false);
+        itemName.gameObject.SetActive(false);
     }
 
     void FixedUpdate()
     {
-        if (trig && Input.GetKey(KeyCode.Space))
+        if (inRange && Input.GetKey(KeyCode.Space))
         {
-            ButtonPress();
+            ItemInfo();
         }
     }
 
@@ -28,10 +28,9 @@ public class LandmarkInteraction : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("landmark in");
-            MoreInfo();
+            ItemName();
 
-            trig = true;
+            inRange = true;
         }
     }
 
@@ -39,31 +38,32 @@ public class LandmarkInteraction : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("landmark out");
-            NoInfo();
-            NoButtonPress();
+            NoItemName();
+            NoItemInfo();
+
+            inRange = false;
         }
     }
 
-    public void MoreInfo()
+    public void ItemName()
     {
-        pressButton.gameObject.SetActive(true);
+        itemName.gameObject.SetActive(true);
     }
 
-    public void NoInfo()
+    public void NoItemName()
     {
-        pressButton.gameObject.SetActive(false);
+        itemName.gameObject.SetActive(false);
     }
 
-    public void ButtonPress()
+    public void ItemInfo()
     {
         //bring up more info for - UI or yarnspinner??both?? what happens on buttonpress goes here and gets called above
-        dialogue.gameObject.SetActive(true);
-        pressButton.gameObject.SetActive(false);
+        itemInfo.gameObject.SetActive(true);
+        itemName.gameObject.SetActive(false);
     }
 
-    public void NoButtonPress()
+    public void NoItemInfo()
     {
-        dialogue.gameObject.SetActive(false);
+        itemInfo.gameObject.SetActive(false);
     }
 }

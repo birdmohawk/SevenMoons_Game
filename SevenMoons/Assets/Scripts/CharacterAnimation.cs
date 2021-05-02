@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterAnimation : MonoBehaviour
 {
     private Animator charanim;
+
     // Start is called before the first frame update
     void Start()
     {
