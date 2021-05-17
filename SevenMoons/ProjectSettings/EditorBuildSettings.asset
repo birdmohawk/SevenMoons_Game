@@ -6,15 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu/StartGame.unity
+    guid: 04bf61c7bcd29054fb045689d9bb3d9e
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Opening Narrative.unity
+    guid: 9ee26183b7251a442a8e9916a1bbdb0a
+  - enabled: 1
     path: Assets/Scenes/Areas/Campsite.unity
-    guid: 1089b716aceb5d348ab747b00cef538b
+    guid: e6589e36ccaa43e4da367ad718b4cfc4
   - enabled: 1
     path: Assets/Scenes/Menu/Taskboard.unity
     guid: 4659769d92fc60343a0554f9cf1f25f5
   - enabled: 1
-    path: Assets/Scenes/Minigames/WoodChopMinigame.unity
-    guid: 508e6e4effe4d054a911ff8693385654
-  - enabled: 1
     path: Assets/Scenes/Areas/Forest.unity
     guid: 759b851812845e54499c61bbf88213bf
+  - enabled: 1
+    path: Assets/Scenes/Minigames/WoodChopMinigame.unity
+    guid: 508e6e4effe4d054a911ff8693385654
   m_configObjects: {}

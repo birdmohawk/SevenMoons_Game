@@ -19,14 +19,46 @@ public class OnButtonPressScript : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             OnButtonPress();
+            OnButtonPress2();
+            OnButtonPress3();
+            OnButtonPress4();
+            OnButtonPress5();
+            //OnButtonPress6(); //future scenes/minigames go here - order in build settings and list below
         }
     }
 
-    public void OnButtonPress()
+    public void OnButtonPress() //OpeningNarrative scene
     {
-        
-            SceneManager.LoadScene("Forest");
-        
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
-        
+
+    public void OnButtonPress2() //Campsite scene
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+
+    }
+
+    public void OnButtonPress3() //Taskboard scene
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+
+    }
+
+    public void OnButtonPress4() //Forest scene
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+
+    }
+
+    public void OnButtonPress5() //WoodChopMinigame scene
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+
+    }
 }
