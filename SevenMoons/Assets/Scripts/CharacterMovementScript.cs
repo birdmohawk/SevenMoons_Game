@@ -26,5 +26,7 @@ public class CharacterMovementScript : MonoBehaviour
         Vector2 moveDirection = new Vector2(moveH, moveV);
         moveDirection = Vector2.ClampMagnitude(moveDirection, 1); //clamps all directions (diagonals) to same speed
         transform.Translate(moveDirection * speed * Time.deltaTime);
+
+
     }
 }
