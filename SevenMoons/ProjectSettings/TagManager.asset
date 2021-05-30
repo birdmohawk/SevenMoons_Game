@@ -45,3 +45,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Trees_Behind
+    uniqueID: 2723169679
+    locked: 0
+  - name: Characters
+    uniqueID: 3195002043
+    locked: 0
+  - name: Trees_InFront
+    uniqueID: 2385735633
+    locked: 0
+  - name: UI
+    uniqueID: 2227420169
+    locked: 0
