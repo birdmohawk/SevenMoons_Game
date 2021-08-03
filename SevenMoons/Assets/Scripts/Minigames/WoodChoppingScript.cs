@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class WoodChoppingScript : MonoBehaviour
 
 {
+    public float nextSceneTime = 5;
+
     public Animation squareAnim;
     //public Animation slashAnim;
     //public Animator slashAnim;
@@ -168,7 +170,8 @@ public class WoodChoppingScript : MonoBehaviour
         
         else
         {
-            SceneManager.LoadScene("Campsite");
+            //SceneManager.LoadScene("Campsite");
+            GameOver();
         }
     }
 
@@ -182,6 +185,18 @@ public class WoodChoppingScript : MonoBehaviour
     void DisplayTotal()
     {
         totalDisplayed.text = totalWood.ToString() + " Total";
+    }
+
+     private void GameOver() //need to fix space bar issue
+    {
+        nextSceneTime -= Time.deltaTime;
+        Debug.Log("GameOver");
+
+        if (nextSceneTime < 0) //could use a button to load next scene instead
+        {
+            //Debug.Log("Load Next Scene");*
+            SceneManager.LoadScene("Campsite");
+        }
     }
 
 }
