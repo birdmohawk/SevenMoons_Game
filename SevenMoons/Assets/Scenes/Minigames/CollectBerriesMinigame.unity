@@ -199,8 +199,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneTime: 5
-  spawnPositionOne: {fileID: 1254555683}
-  spawnPositionTwo: {fileID: 205235655}
+  spawnPos:
+  - {fileID: 1254555683}
+  - {fileID: 205235655}
 --- !u!1 &1254555682
 GameObject:
   m_ObjectHideFlags: 0
