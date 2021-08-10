@@ -184,7 +184,6 @@ public class WoodChoppingScript : MonoBehaviour
         }
     }
         
-
     void TotalWood()
     {
         totalWood = prevWood + addWood;
@@ -197,14 +196,14 @@ public class WoodChoppingScript : MonoBehaviour
         totalDisplayed.text = totalWood.ToString() + " Total";
     }
 
-     private void GameOver() 
+     void GameOver() 
     {
         nextSceneTime -= Time.deltaTime;
         Debug.Log("GameOver");
 
         if (nextSceneTime < 0) //could use a button to load next scene instead
         {
-            //Debug.Log("Load Next Scene");*
+            //Debug.Log("Load Next Scene");
             SceneManager.LoadScene("Campsite");
         }
     }
