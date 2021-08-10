@@ -8,6 +8,8 @@ public class WoodChoppingScript : MonoBehaviour
 
 {
     public float nextSceneTime = 5;
+    public float nextRoundTime = 2;
+    public float resetNextRound = 2;
 
     public Animation squareAnim;
     //public Animation slashAnim;
@@ -41,9 +43,9 @@ public class WoodChoppingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (isPlaying)
         {
-            if (isPlaying)
+            if (Input.GetKeyDown("space"))
             {
                 squareAnim.Stop();
                 isPlaying = false;
@@ -77,13 +79,13 @@ public class WoodChoppingScript : MonoBehaviour
                     RedScore();
                 }
             }
+        }
 
-            else if (!isPlaying)
-            { 
-                RestartRound();
+        else if (!isPlaying)
+        {
+            RestartRound();
 
-                //slashAnim.SetBool("Play", false);
-            }
+            //slashAnim.SetBool("Play", false);
         }
     }
 
@@ -156,24 +158,32 @@ public class WoodChoppingScript : MonoBehaviour
     }
 
     //what happens after stopped. score add + restart round or end minigame
-    void RestartRound()
+    private void RestartRound()
     {
-        addRound++;
-        totalRounds = prevRound + addRound;
-        prevRound = totalRounds;
+        nextRoundTime -= Time.deltaTime;
 
-        if (totalRounds <= 3)
+        if (nextRoundTime < 0)
         {
-            squareAnim.Play();
-            isPlaying = true;
-        }
-        
-        else
-        {
-            //SceneManager.LoadScene("Campsite");
-            GameOver();
+            nextRoundTime = resetNextRound;
+
+            addRound++;
+            totalRounds = prevRound + addRound;
+            prevRound = totalRounds;
+
+            if (totalRounds <= 3)
+            {
+                isPlaying = true;
+                squareAnim.Play();
+            }
+
+            else
+            {
+                //SceneManager.LoadScene("Campsite");
+                GameOver();
+            }
         }
     }
+        
 
     void TotalWood()
     {
@@ -187,7 +197,7 @@ public class WoodChoppingScript : MonoBehaviour
         totalDisplayed.text = totalWood.ToString() + " Total";
     }
 
-     private void GameOver() //need to fix space bar issue
+     private void GameOver() 
     {
         nextSceneTime -= Time.deltaTime;
         Debug.Log("GameOver");
@@ -198,5 +208,4 @@ public class WoodChoppingScript : MonoBehaviour
             SceneManager.LoadScene("Campsite");
         }
     }
-
 }

@@ -388,7 +388,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 896d9a397aaedd8418cd27028afe9adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareAnim: {fileID: 0}
+  nextSceneTime: 5
+  nextRoundTime: 2
+  resetNextRound: 2
+  squareAnim: {fileID: 1001687226}
   totalDisplayed: {fileID: 0}
 --- !u!1 &572317324
 GameObject:
@@ -2139,6 +2142,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 896d9a397aaedd8418cd27028afe9adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextSceneTime: 5
+  nextRoundTime: 3
+  resetNextRound: 2
   squareAnim: {fileID: 1001687226}
   totalDisplayed: {fileID: 610750720}
 --- !u!61 &1001687228

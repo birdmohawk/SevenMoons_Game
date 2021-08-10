@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class ScavengeScript : MonoBehaviour
 {
     public float nextSceneTime = 5;
+    int clicks = 0;
+    //public GameObject item;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +19,18 @@ public class ScavengeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
+    }
+
+    void OnMouseUpAsButton()
+    {
+        if (clicks >= 1)
+        {
+            GameOver();
+            Debug.Log("clicked");
+        }
+
+        else clicks++;
     }
 
     private void GameOver()
