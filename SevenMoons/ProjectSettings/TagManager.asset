@@ -9,6 +9,8 @@ TagManager:
   - Orange
   - Red
   - item
+  - Berry_1
+  - Berry_2
   layers:
   - Default
   - TransparentFX
