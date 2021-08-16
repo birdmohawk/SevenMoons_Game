@@ -1,28 +1,16 @@
 fileFormatVersion: 2
-guid: f7fcb83f41c9c8a479ddc98dd63f7404
+guid: 2fe389b484731e04c83bf3125d4542fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4869777140875045137
-    second: Albert_WalkTest_0
+      213: 5483758421164610246
+    second: Minigame_UI_0
   - first:
-      213: 2405216085183937481
-    second: Albert_WalkTest_1
+      213: 9077435557879286527
+    second: Minigame_UI_1
   - first:
-      213: -8695858080250448495
-    second: Albert_WalkTest_2
-  - first:
-      213: -2054252650546987849
-    second: Albert_WalkTest_3
-  - first:
-      213: 7061990730002007623
-    second: Albert_WalkTest_4
-  - first:
-      213: 7150324575810925501
-    second: Albert_WalkTest_5
-  - first:
-      213: -8699040483083763285
-    second: Albert_WalkTest_6
+      213: -2091777985353355279
+    second: Minigame_UI_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Albert_WalkTest_0
+      name: Minigame_UI_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 2
-        width: 26
-        height: 62
+        x: 1
+        y: 107
+        width: 190
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +126,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe653d6dd731b6cb0800000000000000
-      internalID: -4869777140875045137
+      spriteID: 6c2d297da393a1c40800000000000000
+      internalID: 5483758421164610246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Albert_WalkTest_1
+      name: Minigame_UI_1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 2
-        width: 26
-        height: 60
+        x: 1
+        y: 83
+        width: 190
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cbb17d394b016120800000000000000
-      internalID: 2405216085183937481
+      spriteID: ffa05eaab8789fd70800000000000000
+      internalID: 9077435557879286527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Albert_WalkTest_2
+      name: Minigame_UI_2
       rect:
         serializedVersion: 2
-        x: 146
-        y: 2
-        width: 29
-        height: 61
+        x: 94
+        y: 40
+        width: 4
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,92 +168,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 195367d062b125780800000000000000
-      internalID: -8695858080250448495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Albert_WalkTest_3
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 3
-        width: 26
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bcfd352914dd73e0800000000000000
-      internalID: -2054252650546987849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Albert_WalkTest_4
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 3
-        width: 26
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7460fd4272b310260800000000000000
-      internalID: 7061990730002007623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Albert_WalkTest_5
-      rect:
-        serializedVersion: 2
-        x: 337
-        y: 2
-        width: 28
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db3b4f1515e0b3360800000000000000
-      internalID: 7150324575810925501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Albert_WalkTest_6
-      rect:
-        serializedVersion: 2
-        x: 402
-        y: 2
-        width: 26
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba1cc0725ccc64780800000000000000
-      internalID: -8699040483083763285
+      spriteID: 1ffe70a410388f2e0800000000000000
+      internalID: -2091777985353355279
       vertices: []
       indices: 
       edges: []

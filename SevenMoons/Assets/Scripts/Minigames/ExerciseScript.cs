@@ -19,7 +19,7 @@ public class ExerciseScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -42,7 +42,7 @@ public class ExerciseScript : MonoBehaviour
         {
             if (Input.GetKeyDown("a") || Input.GetKeyDown("left") || (Input.GetKeyDown("d") || Input.GetKeyDown("right")))
             {
-                Vector2 move = new Vector2(0, distance);
+                Vector2 move = new Vector2(distance, 0);
                 transform.Translate(move * speed * Time.deltaTime);
                 score++;
             }
