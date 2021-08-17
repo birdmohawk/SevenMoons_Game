@@ -2780,8 +2780,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: I really need a nap. All of this fantasy nonsense is too stressful.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b131474922ee81644925606c44047c6e, type: 2}
-  m_sharedMaterial: {fileID: 7994642810579315238, guid: b131474922ee81644925606c44047c6e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3696,7 +3696,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1805619016690269122, guid: 4562856575bdbb44faddb57155cc646f, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1805619016690269126, guid: 4562856575bdbb44faddb57155cc646f, type: 3}
       propertyPath: m_RootOrder
@@ -3748,14 +3748,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4464628117853070826, guid: 4562856575bdbb44faddb57155cc646f, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9106295888190087408, guid: 4562856575bdbb44faddb57155cc646f, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 193752983, guid: 4562856575bdbb44faddb57155cc646f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4562856575bdbb44faddb57155cc646f, type: 3}
+--- !u!1 &315702668 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 193752982, guid: 4562856575bdbb44faddb57155cc646f, type: 3}
+  m_PrefabInstance: {fileID: 315702667}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &315702669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315702668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e3bec38c47c630499f98bdd75115a0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
+--- !u!114 &315702670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315702668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5509ae6aedd5ca44988e09366ce8c3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &330914402
 GameObject:
   m_ObjectHideFlags: 0
@@ -4528,8 +4570,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Chest
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b131474922ee81644925606c44047c6e, type: 2}
-  m_sharedMaterial: {fileID: 7994642810579315238, guid: b131474922ee81644925606c44047c6e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5859,8 +5901,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Oh yeah! Time to show some of those farm smarts my da taught me.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b131474922ee81644925606c44047c6e, type: 2}
-  m_sharedMaterial: {fileID: 7994642810579315238, guid: b131474922ee81644925606c44047c6e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -31651,8 +31693,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ouch. That's hot.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b131474922ee81644925606c44047c6e, type: 2}
-  m_sharedMaterial: {fileID: 7994642810579315238, guid: b131474922ee81644925606c44047c6e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -36292,8 +36334,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Let's explore! I wonder if there are any more interesting people to meet!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b131474922ee81644925606c44047c6e, type: 2}
-  m_sharedMaterial: {fileID: 7994642810579315238, guid: b131474922ee81644925606c44047c6e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -37304,7 +37346,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882277218}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67e1f47d6f02dba48b9c7e5f25db58e4, type: 3}
   m_Name: 
@@ -37316,7 +37358,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882277218}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84114101259452841a9fedcd1f08bcf7, type: 3}
   m_Name: 
@@ -38450,8 +38492,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Open Taskboard?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b131474922ee81644925606c44047c6e, type: 2}
-  m_sharedMaterial: {fileID: 7994642810579315238, guid: b131474922ee81644925606c44047c6e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -40991,8 +41033,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: It's Locked.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b131474922ee81644925606c44047c6e, type: 2}
-  m_sharedMaterial: {fileID: 7994642810579315238, guid: b131474922ee81644925606c44047c6e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -42888,8 +42930,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Campfire
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b131474922ee81644925606c44047c6e, type: 2}
-  m_sharedMaterial: {fileID: 7994642810579315238, guid: b131474922ee81644925606c44047c6e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -43232,6 +43274,62 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1558403601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1558403603}
+  - component: {fileID: 1558403602}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1558403602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558403601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e700b76fbed60ff48adce782262cc5d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: d638549605c969f4c81c08cfbba79c98, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1558403603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558403601}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1603175633
 GameObject:
   m_ObjectHideFlags: 0
@@ -46968,7 +47066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8098623675208414267, guid: 34e13fe2ab75a5649b5469c23ac29ead, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8098623675208414267, guid: 34e13fe2ab75a5649b5469c23ac29ead, type: 3}
       propertyPath: m_Controller
