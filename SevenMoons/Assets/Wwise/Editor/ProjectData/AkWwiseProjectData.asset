@@ -413,8 +413,106 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f42b59196625dc49ad1f432037c13bc9
     GuidInternal: 
-    m_lastTime: -8585724278040658960
-    List: []
+    m_lastTime: -8585718834740465847
+    List:
+    - name: Campsite
+      guid: a62074fab6088948a887b635dda1c031
+      id: 4143657307
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: Campsite
+        ObjectType: 7
+        guid: a62074fab6088948a887b635dda1c031
+      Path: SoundBanks\Default Work Unit\Campsite
+    - name: Exercise_Minigame
+      guid: b14f49599e7e1849b59cabe8121008c2
+      id: 1508477845
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: Exercise_Minigame
+        ObjectType: 7
+        guid: b14f49599e7e1849b59cabe8121008c2
+      Path: SoundBanks\Default Work Unit\Exercise_Minigame
+    - name: Fishing_Minigame
+      guid: 4d23e9c7020cda458dfa7dc20f17c87c
+      id: 889754691
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: Fishing_Minigame
+        ObjectType: 7
+        guid: 4d23e9c7020cda458dfa7dc20f17c87c
+      Path: SoundBanks\Default Work Unit\Fishing_Minigame
+    - name: Forest
+      guid: 604977e75aa5bf4a83b2fb0f47c81d71
+      id: 491961918
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: Forest
+        ObjectType: 7
+        guid: 604977e75aa5bf4a83b2fb0f47c81d71
+      Path: SoundBanks\Default Work Unit\Forest
+    - name: Scavenge_Minigame
+      guid: 75884921fb8a2d4a8b56d2cb583647d6
+      id: 329140285
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: Scavenge_Minigame
+        ObjectType: 7
+        guid: 75884921fb8a2d4a8b56d2cb583647d6
+      Path: SoundBanks\Default Work Unit\Scavenge_Minigame
+    - name: UI_Menu
+      guid: bfe3ecd05eec6c47939cdb2feacbd5a8
+      id: 2511555531
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: UI_Menu
+        ObjectType: 7
+        guid: bfe3ecd05eec6c47939cdb2feacbd5a8
+      Path: SoundBanks\Default Work Unit\UI_Menu
+    - name: Woodchop_Minigame
+      guid: d33a7a801539364cb686970553846848
+      id: 2963061822
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: Woodchop_Minigame
+        ObjectType: 7
+        guid: d33a7a801539364cb686970553846848
+      Path: SoundBanks\Default Work Unit\Woodchop_Minigame
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -427,7 +525,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8d2f21bdaf2f4f4cb22a46651589bcce
     GuidInternal: 
-    m_lastTime: -8585724279803948583
+    m_lastTime: -8585718851260693566
     List:
     - name: Ambience
       guid: ee453e39896e21498d69680944f9210e
@@ -443,6 +541,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: ee453e39896e21498d69680944f9210e
       Path: Events\Default Work Unit\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Campfire
+      guid: 5f8e213f5867c74f8727c961b1332d77
+      id: 1931646578
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d2f21bdaf2f4f4cb22a46651589bcce
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: ee453e39896e21498d69680944f9210e
+      - ElementName: Campfire
+        ObjectType: 3
+        guid: 5f8e213f5867c74f8727c961b1332d77
+      Path: Events\Default Work Unit\Ambience\Campfire
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -504,8 +622,8 @@ MonoBehaviour:
         guid: 1c4591e5bb5d4e42b840d8f02e9350a2
       Path: Events\Default Work Unit\Sync_Sounds\Footsteps
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.449824
+      minDuration: 0.146825
     - name: Forest_Ambience
       guid: c72dd6506b28f749a590630eedb2ed04
       id: 2084169529
@@ -540,6 +658,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: f71f44602498214eb4912a9670be36c7
       Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: River
+      guid: 0a86169535e22a4983f2379937068205
+      id: 3605787649
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d2f21bdaf2f4f4cb22a46651589bcce
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: ee453e39896e21498d69680944f9210e
+      - ElementName: River
+        ObjectType: 3
+        guid: 0a86169535e22a4983f2379937068205
+      Path: Events\Default Work Unit\Ambience\River
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -673,7 +811,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b86c569e457af94d8e3c5e3eeaf59246
     GuidInternal: 
-    m_lastTime: -8585724279802624251
+    m_lastTime: -8585718883908125122
     List:
     - name: CampfireDistance
       guid: aafb40166c74924b93c6ca991c702dfd
@@ -923,7 +1061,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d920bcc9152b5b45b9afa9652d635190
     GuidInternal: 
-    m_lastTime: -8585724279802837541
+    m_lastTime: -8585718883908556423
     List:
     - name: Chest_Interact
       guid: 97f075f1bdf8db4284f4304b32838574
@@ -1073,236 +1211,6 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Merchant_Dialogue
-      guid: 73e1bca9bee5e8478d11f0aa0a79c062
-      id: 4226570078
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d920bcc9152b5b45b9afa9652d635190
-      - ElementName: Merchant_Dialogue
-        ObjectType: 9
-        guid: 73e1bca9bee5e8478d11f0aa0a79c062
-      Path: States\Default Work Unit\Merchant_Dialogue
-      values:
-      - name: None
-        guid: 6a88a8b26de1ef438a5100da3bbda4f0
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Merchant_Dialogue
-          ObjectType: 9
-          guid: 73e1bca9bee5e8478d11f0aa0a79c062
-        - ElementName: None
-          ObjectType: 8
-          guid: 6a88a8b26de1ef438a5100da3bbda4f0
-      - name: NoTrade
-        guid: 4387d1f41d6bd646bd7b8bd20f908b55
-        id: 1973654614
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Merchant_Dialogue
-          ObjectType: 9
-          guid: 73e1bca9bee5e8478d11f0aa0a79c062
-        - ElementName: NoTrade
-          ObjectType: 8
-          guid: 4387d1f41d6bd646bd7b8bd20f908b55
-      - name: TradeComplete
-        guid: 9bedf34a8b5f0b4d9e15c1bbd3bdf5a6
-        id: 2608922768
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Merchant_Dialogue
-          ObjectType: 9
-          guid: 73e1bca9bee5e8478d11f0aa0a79c062
-        - ElementName: TradeComplete
-          ObjectType: 8
-          guid: 9bedf34a8b5f0b4d9e15c1bbd3bdf5a6
-      - name: TradeQuestion
-        guid: 7db131fb75ee7e4daf347801a00db867
-        id: 3046312349
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Merchant_Dialogue
-          ObjectType: 9
-          guid: 73e1bca9bee5e8478d11f0aa0a79c062
-        - ElementName: TradeQuestion
-          ObjectType: 8
-          guid: 7db131fb75ee7e4daf347801a00db867
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: Music_CampsiteAreas
-      guid: b5467cbc69272f4898015ca714406695
-      id: 1056582355
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d920bcc9152b5b45b9afa9652d635190
-      - ElementName: Music_CampsiteAreas
-        ObjectType: 9
-        guid: b5467cbc69272f4898015ca714406695
-      Path: States\Default Work Unit\Music_CampsiteAreas
-      values:
-      - name: Area_1
-        guid: 2299240344af7247a770c88d18a13703
-        id: 2284997542
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Music_CampsiteAreas
-          ObjectType: 9
-          guid: b5467cbc69272f4898015ca714406695
-        - ElementName: Area_1
-          ObjectType: 8
-          guid: 2299240344af7247a770c88d18a13703
-      - name: Area_2_Taskboard
-        guid: ceed23b31152d34baa7fc2a3f842603c
-        id: 2773492441
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Music_CampsiteAreas
-          ObjectType: 9
-          guid: b5467cbc69272f4898015ca714406695
-        - ElementName: Area_2_Taskboard
-          ObjectType: 8
-          guid: ceed23b31152d34baa7fc2a3f842603c
-      - name: None
-        guid: 57f8736c3a282244a20dc96b8b121ea3
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Music_CampsiteAreas
-          ObjectType: 9
-          guid: b5467cbc69272f4898015ca714406695
-        - ElementName: None
-          ObjectType: 8
-          guid: 57f8736c3a282244a20dc96b8b121ea3
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: Villager_Dialogue
-      guid: 21a65caa40604b42a54191880b4db0bd
-      id: 3841665672
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d920bcc9152b5b45b9afa9652d635190
-      - ElementName: Villager_Dialogue
-        ObjectType: 9
-        guid: 21a65caa40604b42a54191880b4db0bd
-      Path: States\Default Work Unit\Villager_Dialogue
-      values:
-      - name: None
-        guid: d66098933f7c0745ad09f1cdb0e6aea7
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Villager_Dialogue
-          ObjectType: 9
-          guid: 21a65caa40604b42a54191880b4db0bd
-        - ElementName: None
-          ObjectType: 8
-          guid: d66098933f7c0745ad09f1cdb0e6aea7
-      - name: NoTrade
-        guid: a66b2e536ec59d4da57bbeff4900066c
-        id: 1973654614
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Villager_Dialogue
-          ObjectType: 9
-          guid: 21a65caa40604b42a54191880b4db0bd
-        - ElementName: NoTrade
-          ObjectType: 8
-          guid: a66b2e536ec59d4da57bbeff4900066c
-      - name: Trade
-        guid: 7a9656afe364d3439f3abc74fc82c14f
-        id: 3596611425
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Villager_Dialogue
-          ObjectType: 9
-          guid: 21a65caa40604b42a54191880b4db0bd
-        - ElementName: Trade
-          ObjectType: 8
-          guid: 7a9656afe364d3439f3abc74fc82c14f
-      - name: TradeQuestion
-        guid: 5134dafa13fdd24686ae937153f659a0
-        id: 3046312349
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Villager_Dialogue
-          ObjectType: 9
-          guid: 21a65caa40604b42a54191880b4db0bd
-        - ElementName: TradeQuestion
-          ObjectType: 8
-          guid: 5134dafa13fdd24686ae937153f659a0
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -1315,7 +1223,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 03b9fe9caa3ccb4193ed088473b5f322
     GuidInternal: 
-    m_lastTime: -8585724279803070663
+    m_lastTime: -8585718883908219369
     List:
     - name: Ambience_DayNumber
       guid: 7227c83d8761454fb157a75fb3ccdaa4
@@ -1544,7 +1452,7 @@ MonoBehaviour:
     m_lastTime: -8585724279802356411
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 010000000700000008000000090000001500000016000000170000001800000019000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

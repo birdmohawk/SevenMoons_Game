@@ -6,37 +6,34 @@ using UnityEngine.UI;
 
 public class FishingScript : MonoBehaviour
 {
-    public float nextSceneTime = 5;
+    //public float nextSceneTime = 5;
     public float nextRoundTime = 2;
     public float resetNextRound = 2;
 
     public Animation squareAnim;
-    //public Animation slashAnim;
-    //public Animator slashAnim;
 
     public Text totalDisplayed;
 
     private bool isPlaying;
+    private bool isFish;
 
-    private bool isGreen;
-    private bool isOrange;
-    private bool isRed;
-
-    private int totalWood;
-    private int addWood;
-    private int prevWood;
+    private int totalFish;
+    private int addFish;
+    private int prevFish;
 
     private int totalRounds;
     private int addRound;
     private int prevRound;
 
+    public GameObject fish = null;
+    public Transform[] spawnPos;
+
     // Start is called before the first frame update
     void Start()
     {
         squareAnim = GetComponent<Animation>();
-        //slashAnim = GetComponent<Animation>();
-
         isPlaying = true;
+        GenerateFish();
     }
 
     // Update is called once per frame
@@ -47,35 +44,17 @@ public class FishingScript : MonoBehaviour
             if (Input.GetKeyDown("space"))
             {
                 squareAnim.Stop();
+                //sliderAnim.SetBool("isPlaying", false);
                 isPlaying = false;
 
-                //slashAnim.Play();
-
-                //slashAnim.SetBool("Play", true);
-
-                if (isGreen && isOrange) //test this 
+                if (isFish) 
                 {
-                    OrangeScore();
+                    FishScore();
                 }
 
-                else if (isGreen)
+                else 
                 {
-                    GreenScore();
-                }
-
-                else if (isOrange && isRed) //test this
-                {
-                    RedScore();
-                }
-
-                else if (isOrange)
-                {
-                    OrangeScore();
-                }
-
-                else if (isRed)
-                {
-                    RedScore();
+                    RestartRound();
                 }
             }
         }
@@ -83,80 +62,68 @@ public class FishingScript : MonoBehaviour
         else if (!isPlaying)
         {
             RestartRound();
-
-            //slashAnim.SetBool("Play", false);
         }
     }
 
-    //registers collisions
+    /*public void SpawnFish()
+    {
+        int randomPos = UnityEngine.Random.Range(0, spawnPos.Length);
+    }*/
+
+    public void DestroyFish()
+    {
+        if (fish != null)
+        {
+            Destroy(fish);
+        }
+        fish = null;
+    }
+
+    public void GenerateFish()
+    {
+        DestroyFish();
+        
+        Debug.Log("Fish Generated");
+        int randomPos = UnityEngine.Random.Range(0, spawnPos.Length);
+        Instantiate(fish);
+    }
+
+    public void PositionFish(GameObject berry, Vector2 pos)
+    {
+        berry.transform.position = pos;
+        berry.SetActive(true);
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Green")
+        if (other.tag == "Fish")
         {
-            //Debug.Log("green");
-            isGreen = true;
+            Debug.Log("fish");
+            isFish = true;
         }
 
-        if (other.tag == "Orange")
+        else
         {
-            //Debug.Log("orange");
-            isOrange = true;
-        }
-
-        if (other.tag == "Red")
-        {
-            //Debug.Log("red");
-            isRed = true;
+            isFish = false;
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Green")
+        if (other.tag == "Fish")
         {
-            //Debug.Log("no green");
-            isGreen = false;
-        }
-
-        if (other.tag == "Orange")
-        {
-            //Debug.Log("no orange");
-            isOrange = false;
-        }
-
-        if (other.tag == "Red")
-        {
-            //Debug.Log("no red");
-            isRed = false;
+            Debug.Log("no fish");
+            isFish = false;
         }
     }
 
-    //what happens when you are in green, orange, or red zone
-    void GreenScore()
+    void FishScore()
     {
-        //Debug.Log("green scored"); 
-        addWood = 25;
-        TotalWood();
-        prevWood = totalWood;
+        addFish = 1;
+        TotalFish();
+        prevFish = totalFish;
     }
 
-    void OrangeScore()
-    {
-        //Debug.Log("orange scored"); 
-        addWood = 10;
-        TotalWood();
-        prevWood = totalWood;
-    }
-
-    void RedScore()
-    {
-        //Debug.Log("red scored"); 
-        addWood = 5;
-        TotalWood();
-        prevWood = totalWood;
-    }
-
-    //what happens after stopped. score add + restart round or end minigame
     private void RestartRound()
     {
         nextRoundTime -= Time.deltaTime;
@@ -173,38 +140,38 @@ public class FishingScript : MonoBehaviour
             {
                 isPlaying = true;
                 squareAnim.Play();
+
+                //sliderAnim.SetBool("isPlaying", true);
             }
 
             else
             {
-                //SceneManager.LoadScene("Campsite");
                 GameOver();
             }
         }
     }
 
-
-    void TotalWood()
+    void TotalFish()
     {
-        totalWood = prevWood + addWood;
-        Debug.Log(totalWood);
+        totalFish = prevFish + addFish;
+        Debug.Log(totalFish);
         DisplayTotal();
     }
 
     void DisplayTotal()
     {
-        totalDisplayed.text = totalWood.ToString() + " Total";
+        totalDisplayed.text = totalFish.ToString() + " Total";
     }
 
     private void GameOver()
     {
-        nextSceneTime -= Time.deltaTime;
+        //nextSceneTime -= Time.deltaTime;
         Debug.Log("GameOver");
 
-        if (nextSceneTime < 0) //could use a button to load next scene instead
+        /*if (nextSceneTime < 0) //could use a button to load next scene instead
         {
             //Debug.Log("Load Next Scene");*
             SceneManager.LoadScene("Campsite");
-        }
+        }*/
     }
 }
