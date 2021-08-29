@@ -45,7 +45,7 @@ public class WoodChoppingScript : MonoBehaviour
     {
         if (isPlaying)
         {
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown("e"))
             {
                 squareAnim.Stop();
                 isPlaying = false;
@@ -204,7 +204,7 @@ public class WoodChoppingScript : MonoBehaviour
         if (nextSceneTime < 0) //could use a button to load next scene instead
         {
             //Debug.Log("Load Next Scene");
-            SceneManager.LoadScene("Campsite");
+            //SceneManager.LoadScene("Campsite");
         }
     }
 }

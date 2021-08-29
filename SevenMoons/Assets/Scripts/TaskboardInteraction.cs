@@ -1,24 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class TaskboardInteraction : MonoBehaviour
 {
     public GameObject taskboardButton;
+    public GameObject taskboard;
 
-    private bool inRange; //needed to call MoreInfo() function in fixedupdate so that it checks every frame vs OnTriggerStay not working bc stupid 
+    private bool inRange; 
 
     // Start is called before the first frame update
     void Start()
     {
-        taskboardButton.gameObject.SetActive(true); //doing this bc it seems to stop the jumping??maybe bc preloaded idk?
+        //taskboardButton.gameObject.SetActive(true); //doing this bc it seems to stop the jumping??maybe bc preloaded idk?
         taskboardButton.gameObject.SetActive(false);
+
+        taskboard.gameObject.SetActive(false);
     }
 
     void FixedUpdate()
     {
-        if (inRange && Input.GetKey(KeyCode.Space))
+        if (inRange && Input.GetKey(KeyCode.E))
         {
             Taskboard();
         }
@@ -28,7 +30,6 @@ public class TaskboardInteraction : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("landmark in");
             TaskboardButton();
 
             inRange = true;
@@ -39,7 +40,6 @@ public class TaskboardInteraction : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("landmark out");
             NoTaskboardButton();
 
             inRange = false;
@@ -59,6 +59,7 @@ public class TaskboardInteraction : MonoBehaviour
     public void Taskboard()
     {
         taskboardButton.gameObject.SetActive(false);
-        SceneManager.LoadScene("Taskboard");
+        taskboard.gameObject.SetActive(true);
+        //SceneManager.LoadScene("Taskboard");
     }
 }

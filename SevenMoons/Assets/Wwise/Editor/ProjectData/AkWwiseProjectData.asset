@@ -413,7 +413,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f42b59196625dc49ad1f432037c13bc9
     GuidInternal: 
-    m_lastTime: -8585718834740465847
+    m_lastTime: -8585713576434699265
     List:
     - name: Campsite
       guid: a62074fab6088948a887b635dda1c031
@@ -525,7 +525,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8d2f21bdaf2f4f4cb22a46651589bcce
     GuidInternal: 
-    m_lastTime: -8585718851260693566
+    m_lastTime: -8585713576435026616
     List:
     - name: Ambience
       guid: ee453e39896e21498d69680944f9210e
@@ -644,6 +644,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Menu
+      guid: bf3570d64b0650459d6059dac866e597
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d2f21bdaf2f4f4cb22a46651589bcce
+      - ElementName: Menu
+        ObjectType: 4
+        guid: bf3570d64b0650459d6059dac866e597
+      Path: Events\Default Work Unit\Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music
       guid: f71f44602498214eb4912a9670be36c7
       id: 3991942870
@@ -681,6 +698,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Select
+      guid: 26f7e4849e25d14cbe6e50df218b1832
+      id: 1432588725
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d2f21bdaf2f4f4cb22a46651589bcce
+      - ElementName: Menu
+        ObjectType: 4
+        guid: bf3570d64b0650459d6059dac866e597
+      - ElementName: Select
+        ObjectType: 3
+        guid: 26f7e4849e25d14cbe6e50df218b1832
+      Path: Events\Default Work Unit\Menu\Select
+      maxAttenuation: 0
+      maxDuration: 0.45
+      minDuration: 0.45
     - name: Sync_Sounds
       guid: bc336e915cf7b2459d7d6a73a9e641e8
       id: 2112188807
@@ -716,8 +753,8 @@ MonoBehaviour:
         guid: 2245bc6fc8d5f143b3da860c33f54d2e
       Path: Events\Default Work Unit\Sync_Sounds\Wood_Chop
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.31379
+      minDuration: 0.31379
   - PhysicalPath: Events\Factory Tencent GME.wwu
     PathAndIcons:
     - ElementName: Events
@@ -1061,7 +1098,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d920bcc9152b5b45b9afa9652d635190
     GuidInternal: 
-    m_lastTime: -8585718883908556423
+    m_lastTime: -8585713872371852823
     List:
     - name: Chest_Interact
       guid: 97f075f1bdf8db4284f4304b32838574
@@ -1129,88 +1166,6 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Footsteps
-      guid: 80b9f97acf47f948b56fddfada08cdeb
-      id: 2385628198
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d920bcc9152b5b45b9afa9652d635190
-      - ElementName: Footsteps
-        ObjectType: 9
-        guid: 80b9f97acf47f948b56fddfada08cdeb
-      Path: States\Default Work Unit\Footsteps
-      values:
-      - name: Dirt
-        guid: 95cd5f40082f90418af8b2fd9b138586
-        id: 2195636714
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Footsteps
-          ObjectType: 9
-          guid: 80b9f97acf47f948b56fddfada08cdeb
-        - ElementName: Dirt
-          ObjectType: 8
-          guid: 95cd5f40082f90418af8b2fd9b138586
-      - name: Grass
-        guid: 3f642b079e89574fa1c36af4a1446c69
-        id: 4248645337
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Footsteps
-          ObjectType: 9
-          guid: 80b9f97acf47f948b56fddfada08cdeb
-        - ElementName: Grass
-          ObjectType: 8
-          guid: 3f642b079e89574fa1c36af4a1446c69
-      - name: None
-        guid: e79afb332bcfed439d53c838641330a2
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Footsteps
-          ObjectType: 9
-          guid: 80b9f97acf47f948b56fddfada08cdeb
-        - ElementName: None
-          ObjectType: 8
-          guid: e79afb332bcfed439d53c838641330a2
-      - name: Stone
-        guid: 7bd6a504cf443e408de68b89dd21db3e
-        id: 1216965916
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d920bcc9152b5b45b9afa9652d635190
-        - ElementName: Footsteps
-          ObjectType: 9
-          guid: 80b9f97acf47f948b56fddfada08cdeb
-        - ElementName: Stone
-          ObjectType: 8
-          guid: 7bd6a504cf443e408de68b89dd21db3e
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -1223,7 +1178,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 03b9fe9caa3ccb4193ed088473b5f322
     GuidInternal: 
-    m_lastTime: -8585718883908219369
+    m_lastTime: -8585713872372412363
     List:
     - name: Ambience_DayNumber
       guid: 7227c83d8761454fb157a75fb3ccdaa4
@@ -1437,6 +1392,72 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Footsteps
+      guid: 3e2577746bca094bb99b655b9549ee75
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 03b9fe9caa3ccb4193ed088473b5f322
+      - ElementName: Footsteps
+        ObjectType: 11
+        guid: 3e2577746bca094bb99b655b9549ee75
+      Path: Switches\Default Work Unit\Footsteps
+      values:
+      - name: Dirt
+        guid: 0aa8cb710992cc43874a1c3b4b893351
+        id: 2195636714
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 03b9fe9caa3ccb4193ed088473b5f322
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: 3e2577746bca094bb99b655b9549ee75
+        - ElementName: Dirt
+          ObjectType: 10
+          guid: 0aa8cb710992cc43874a1c3b4b893351
+      - name: Grass
+        guid: f7438e5f8afea04dba19d4a11236dfe6
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 03b9fe9caa3ccb4193ed088473b5f322
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: 3e2577746bca094bb99b655b9549ee75
+        - ElementName: Grass
+          ObjectType: 10
+          guid: f7438e5f8afea04dba19d4a11236dfe6
+      - name: Stone
+        guid: 219621c0fd16a94fb977188b09bc4eae
+        id: 1216965916
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 03b9fe9caa3ccb4193ed088473b5f322
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: 3e2577746bca094bb99b655b9549ee75
+        - ElementName: Stone
+          ObjectType: 10
+          guid: 219621c0fd16a94fb977188b09bc4eae
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -1452,7 +1473,7 @@ MonoBehaviour:
     m_lastTime: -8585724279802356411
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000700000008000000090000001500000016000000170000001800000019000000
+  ExpandedWaapiItemIds: 01000000060000000700000008000000090000000a000000110000001300000015000000160000001700000018000000190000001c0000001d0000002000000021000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

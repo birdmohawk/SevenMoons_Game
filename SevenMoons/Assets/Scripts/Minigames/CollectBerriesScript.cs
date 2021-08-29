@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CollectBerriesScript : MonoBehaviour
@@ -37,21 +36,11 @@ public class CollectBerriesScript : MonoBehaviour
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
 
-            if (hit == goodBerry)
+            if (hit)
             {
-                Debug.Log(hit.collider.name);
-
-                GoodBerryUI();
-                //badUI.gameObject.SetActive(false);
+                GameOver();
             }
-
-            if (hit == badBerry)
-            {
-                Debug.Log(hit.collider.name);
-
-                BadBerryUI();
-                //badUI.gameObject.SetActive(false);
-            }
+            
         }
     }
 
@@ -61,7 +50,7 @@ public class CollectBerriesScript : MonoBehaviour
         goodUI.gameObject.SetActive(true);
         goodBerry.gameObject.SetActive(false);
         badBerry.gameObject.SetActive(false);
-        GameOver();
+        //GameOver();
     }
 
     void BadBerryUI()
@@ -70,7 +59,7 @@ public class CollectBerriesScript : MonoBehaviour
         badUI.gameObject.SetActive(true);
         goodBerry.gameObject.SetActive(false);
         badBerry.gameObject.SetActive(false);
-        GameOver();
+        //GameOver();
     }
 
     private void SpawnBerryPositions()
@@ -93,7 +82,6 @@ public class CollectBerriesScript : MonoBehaviour
 
         Debug.Log("Good berry is at position: " + randomPos1Index);
         Debug.Log("Bad berry is at position: " + randomPos2Index);
-        
     }
 
     public void DestroyBerries()
@@ -124,7 +112,6 @@ public class CollectBerriesScript : MonoBehaviour
 
         //So, at the end, we should have a good berry and a bad berry that are different berries from the berries array.
         //These are both instantiated, and hidden.
-
     }
 
     public void PositionAndEnableBerry(GameObject berry, Vector2 pos)
@@ -135,14 +122,22 @@ public class CollectBerriesScript : MonoBehaviour
 
     private void GameOver()
     {
-        nextSceneTime -= Time.deltaTime;
         Debug.Log("GameOver");
         //berry.gameObject.SetActive(false);
-
-        if (nextSceneTime < 0) //could use a button to load next scene instead
+        if (goodBerry)
         {
-            //Debug.Log("Load Next Scene");*
-            SceneManager.LoadScene("Campsite");
+            //Debug.Log(hit.collider.name);
+
+            GoodBerryUI();
+            //badUI.gameObject.SetActive(false);
+        }
+
+        else if (badBerry)
+        {
+            //Debug.Log(hit.collider.name);
+
+            BadBerryUI();
+            //badUI.gameObject.SetActive(false);
         }
     }
 }

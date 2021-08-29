@@ -21,6 +21,11 @@ public class CharacterMovementScript : MonoBehaviour
 
     void FixedUpdate()
     {
+        Movement();
+    }
+
+    private void Movement()
+    {
         float moveH = Input.GetAxis("Horizontal");
         float moveV = Input.GetAxis("Vertical");
 
@@ -28,7 +33,7 @@ public class CharacterMovementScript : MonoBehaviour
         moveDirection = Vector2.ClampMagnitude(moveDirection, 1); //clamps all directions (diagonals) to same speed
         transform.Translate(moveDirection * speed * Time.deltaTime);
 
-
+        //AKSoundEngine.PostEvent("Footsteps", gameObject);
     }
 
     private void CheckForEncounters()

@@ -17,6 +17,8 @@ namespace AK
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID FOREST_AMBIENCE = 2084169529U;
         static const AkUniqueID RIVER = 3605787649U;
+        static const AkUniqueID SELECT = 1432588725U;
+        static const AkUniqueID WOOD_CHOP = 1483562389U;
     } // namespace EVENTS
 
     namespace STATES
@@ -32,19 +34,6 @@ namespace AK
                 static const AkUniqueID UNLOCKED = 2798721810U;
             } // namespace STATE
         } // namespace CHEST_INTERACT
-
-        namespace FOOTSTEPS
-        {
-            static const AkUniqueID GROUP = 2385628198U;
-
-            namespace STATE
-            {
-                static const AkUniqueID DIRT = 2195636714U;
-                static const AkUniqueID GRASS = 4248645337U;
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID STONE = 1216965916U;
-            } // namespace STATE
-        } // namespace FOOTSTEPS
 
     } // namespace STATES
 
@@ -78,6 +67,18 @@ namespace AK
                 static const AkUniqueID TASK4 = 1962413410U;
             } // namespace SWITCH
         } // namespace AMBIENCE_TIMEOFDAY
+
+        namespace FOOTSTEPS
+        {
+            static const AkUniqueID GROUP = 2385628198U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPS
 
     } // namespace SWITCHES
 

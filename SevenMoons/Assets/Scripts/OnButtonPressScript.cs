@@ -23,42 +23,56 @@ public class OnButtonPressScript : MonoBehaviour
             OnButtonPress3();
             OnButtonPress4();
             OnButtonPress5();
-            //OnButtonPress6(); //future scenes/minigames go here - order in build settings and list below
+            OnButtonPress6();
+            OnButtonPress7();
+            OnButtonPress8();
+            OnButtonPress9();
+            //future scenes/minigames go here - order in build settings and list below
         }
     }
 
     public void OnButtonPress() //OpeningNarrative scene
     {
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void OnButtonPress2() //Campsite scene
     {
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-
+        SceneManager.LoadScene("Campsite");
     }
 
-    public void OnButtonPress3() //Taskboard scene
+    public void OnButtonPress3() //River scene
     {
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
-
+        SceneManager.LoadScene("River");
     }
 
     public void OnButtonPress4() //Forest scene
     {
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
-
+        SceneManager.LoadScene("Forest");
     }
 
     public void OnButtonPress5() //WoodChopMinigame scene
     {
+        SceneManager.LoadScene("WoodChopMinigame");
+    }
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+    public void OnButtonPress6() //FishingMinigame scene
+    {
+        SceneManager.LoadScene("FishingMinigame");
+    }
 
+    public void OnButtonPress7() //ExerciseMinigame scene
+    {
+        SceneManager.LoadScene("ExerciseMinigame");
+    }
+
+    public void OnButtonPress8() //CollectBerriesMinigame scene
+    {
+        SceneManager.LoadScene("CollectBerriesMinigame");
+    }
+
+    public void OnButtonPress9() //ChopReedsMinigame scene
+    {
+        SceneManager.LoadScene("ChopReedsMinigame");
     }
 }

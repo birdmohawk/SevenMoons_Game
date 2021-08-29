@@ -18,7 +18,7 @@ public class WoodChopInteraction : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (inRange && Input.GetKey(KeyCode.Space))
+        if (inRange && Input.GetKey(KeyCode.E))
         {
             Taskboard();
         }
