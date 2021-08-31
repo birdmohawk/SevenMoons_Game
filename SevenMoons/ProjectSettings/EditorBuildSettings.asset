@@ -24,9 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Minigames/WoodChopMinigame.unity
     guid: 508e6e4effe4d054a911ff8693385654
   - enabled: 1
-    path: Assets/Scenes/Areas/River.unity
-    guid: 63cb1279cf964984a9c372a5b0a32ffe
-  - enabled: 1
     path: Assets/Scenes/Minigames/CollectBerriesMinigame.unity
     guid: 97d97fe587292af4eb1dc40b67b0ebdf
   - enabled: 1
@@ -41,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/ChopReedsMinigame.unity
     guid: 03ae88235555fda419a6982d58b9f8ed
+  - enabled: 1
+    path: Assets/Scenes/Areas/River.unity
+    guid: 473159b0d592aa5428b8ebbbe01b8571
   m_configObjects: {}

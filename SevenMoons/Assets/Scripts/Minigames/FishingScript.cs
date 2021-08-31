@@ -16,6 +16,7 @@ public class FishingScript : MonoBehaviour
 
     private bool isPlaying;
     private bool isFish;
+    private bool fishSpawned;
 
     private int totalFish;
     private int addFish;
@@ -31,6 +32,8 @@ public class FishingScript : MonoBehaviour
     public GameObject manager;
     public GameObject endGameUI;
 
+    private GameObject cloneFish;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +41,6 @@ public class FishingScript : MonoBehaviour
 
         squareAnim = GetComponent<Animation>();
         isPlaying = true;
-        //GenerateFish();
         SpawnFish();
     }
 
@@ -71,27 +73,28 @@ public class FishingScript : MonoBehaviour
         }
     }
 
-    /*public void DestroyFish()
-    {
-        if (cloneFish != null)
-        {
-            Destroy(cloneFish);
-        }
-    }*/
-
     private void SpawnFish()
     {
         DestroyFish();
-        var cloneFish = Instantiate(fish);
-        int randomPosIndex = UnityEngine.Random.Range(0, spawnPos.Length);
-        PositionFish(fish, spawnPos[randomPosIndex].position);
 
-        //var cloneBomb = Instantiate(BombPrefab, bombPos, Quaternion.identity);
+        cloneFish = Instantiate(fish);
+        int randomPosIndex = UnityEngine.Random.Range(0, spawnPos.Length);
+        PositionFish(cloneFish, spawnPos[randomPosIndex].position);
     }
 
     public void PositionFish(GameObject fish1, Vector2 pos)
     {
         fish1.transform.position = pos;
+    }
+
+    public void DestroyFish()
+    {
+        if (cloneFish != null)
+        {
+            Destroy(cloneFish);
+        }
+
+        cloneFish = null;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -127,6 +130,8 @@ public class FishingScript : MonoBehaviour
     private void RestartRound()
     {
         SpawnFish();
+        fishSpawned = true;
+
         nextRoundTime -= Time.deltaTime;
 
         if (nextRoundTime < 0)

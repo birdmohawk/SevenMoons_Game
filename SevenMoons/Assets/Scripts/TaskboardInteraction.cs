@@ -7,15 +7,17 @@ public class TaskboardInteraction : MonoBehaviour
     public GameObject taskboardButton;
     public GameObject taskboard;
 
+    public GameObject character;
+    public Camera camera;
+
     private bool inRange; 
 
     // Start is called before the first frame update
     void Start()
     {
-        //taskboardButton.gameObject.SetActive(true); //doing this bc it seems to stop the jumping??maybe bc preloaded idk?
         taskboardButton.gameObject.SetActive(false);
-
         taskboard.gameObject.SetActive(false);
+        camera.gameObject.SetActive(false);
     }
 
     void FixedUpdate()
@@ -58,6 +60,8 @@ public class TaskboardInteraction : MonoBehaviour
 
     public void Taskboard()
     {
+        character.gameObject.SetActive(false);
+        camera.gameObject.SetActive(true);
         taskboardButton.gameObject.SetActive(false);
         taskboard.gameObject.SetActive(true);
         //SceneManager.LoadScene("Taskboard");
