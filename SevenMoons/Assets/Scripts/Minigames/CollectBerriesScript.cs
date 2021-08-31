@@ -40,7 +40,6 @@ public class CollectBerriesScript : MonoBehaviour
             {
                 GameOver();
             }
-            
         }
     }
 

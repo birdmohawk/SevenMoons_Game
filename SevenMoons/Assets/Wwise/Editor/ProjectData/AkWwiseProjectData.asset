@@ -413,7 +413,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f42b59196625dc49ad1f432037c13bc9
     GuidInternal: 
-    m_lastTime: -8585713576434699265
+    m_lastTime: -8585712218838742110
     List:
     - name: Campsite
       guid: a62074fab6088948a887b635dda1c031
@@ -525,7 +525,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8d2f21bdaf2f4f4cb22a46651589bcce
     GuidInternal: 
-    m_lastTime: -8585713576435026616
+    m_lastTime: -8585712219080156091
     List:
     - name: Ambience
       guid: ee453e39896e21498d69680944f9210e
@@ -544,6 +544,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Bobber_Splash
+      guid: 879c098257acc34695a3421424edf7ce
+      id: 1764505177
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d2f21bdaf2f4f4cb22a46651589bcce
+      - ElementName: Sync_Sounds
+        ObjectType: 4
+        guid: bc336e915cf7b2459d7d6a73a9e641e8
+      - ElementName: Bobber_Splash
+        ObjectType: 3
+        guid: 879c098257acc34695a3421424edf7ce
+      Path: Events\Default Work Unit\Sync_Sounds\Bobber_Splash
+      maxAttenuation: 0
+      maxDuration: 1.439546
+      minDuration: 1.439546
     - name: Campfire
       guid: 5f8e213f5867c74f8727c961b1332d77
       id: 1931646578
@@ -1473,7 +1493,7 @@ MonoBehaviour:
     m_lastTime: -8585724279802356411
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000060000000700000008000000090000000a000000110000001300000015000000160000001700000018000000190000001c0000001d0000002000000021000000
+  ExpandedWaapiItemIds: 010000000600000007000000080000000a0000000b0000000c000000110000001300000015000000160000001700000018000000190000001a0000001b0000001c0000001d00000020000000210000002d0000002e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

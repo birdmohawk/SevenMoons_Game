@@ -25,15 +25,21 @@ public class FishingScript : MonoBehaviour
     private int addRound;
     private int prevRound;
 
-    public GameObject fish = null;
+    public GameObject fish;
     public Transform[] spawnPos;
+
+    public GameObject manager;
+    public GameObject endGameUI;
 
     // Start is called before the first frame update
     void Start()
     {
+        endGameUI.gameObject.SetActive(false);
+
         squareAnim = GetComponent<Animation>();
         isPlaying = true;
-        GenerateFish();
+        //GenerateFish();
+        SpawnFish();
     }
 
     // Update is called once per frame
@@ -41,11 +47,11 @@ public class FishingScript : MonoBehaviour
     {
         if (isPlaying)
         {
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown("e"))
             {
                 squareAnim.Stop();
-                //sliderAnim.SetBool("isPlaying", false);
                 isPlaying = false;
+                manager.GetComponent<PostWwiseEvent>().PlayBobberSound();
 
                 if (isFish) 
                 {
@@ -65,33 +71,27 @@ public class FishingScript : MonoBehaviour
         }
     }
 
-    /*public void SpawnFish()
+    /*public void DestroyFish()
     {
-        int randomPos = UnityEngine.Random.Range(0, spawnPos.Length);
+        if (cloneFish != null)
+        {
+            Destroy(cloneFish);
+        }
     }*/
 
-    public void DestroyFish()
-    {
-        if (fish != null)
-        {
-            Destroy(fish);
-        }
-        fish = null;
-    }
-
-    public void GenerateFish()
+    private void SpawnFish()
     {
         DestroyFish();
-        
-        Debug.Log("Fish Generated");
-        int randomPos = UnityEngine.Random.Range(0, spawnPos.Length);
-        Instantiate(fish);
+        var cloneFish = Instantiate(fish);
+        int randomPosIndex = UnityEngine.Random.Range(0, spawnPos.Length);
+        PositionFish(fish, spawnPos[randomPosIndex].position);
+
+        //var cloneBomb = Instantiate(BombPrefab, bombPos, Quaternion.identity);
     }
 
-    public void PositionFish(GameObject berry, Vector2 pos)
+    public void PositionFish(GameObject fish1, Vector2 pos)
     {
-        berry.transform.position = pos;
-        berry.SetActive(true);
+        fish1.transform.position = pos;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -126,6 +126,7 @@ public class FishingScript : MonoBehaviour
 
     private void RestartRound()
     {
+        SpawnFish();
         nextRoundTime -= Time.deltaTime;
 
         if (nextRoundTime < 0)
@@ -140,8 +141,6 @@ public class FishingScript : MonoBehaviour
             {
                 isPlaying = true;
                 squareAnim.Play();
-
-                //sliderAnim.SetBool("isPlaying", true);
             }
 
             else
@@ -165,13 +164,6 @@ public class FishingScript : MonoBehaviour
 
     private void GameOver()
     {
-        //nextSceneTime -= Time.deltaTime;
-        Debug.Log("GameOver");
-
-        /*if (nextSceneTime < 0) //could use a button to load next scene instead
-        {
-            //Debug.Log("Load Next Scene");*
-            SceneManager.LoadScene("Campsite");
-        }*/
+        endGameUI.gameObject.SetActive(true);
     }
 }

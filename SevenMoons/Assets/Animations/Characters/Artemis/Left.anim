@@ -20,15 +20,19 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 6803836498446989615, guid: ac06d1776c763f54aa5570c117c95e2a, type: 3}
-    - time: 0.23333333
-      value: {fileID: -6252549580214446989, guid: ac06d1776c763f54aa5570c117c95e2a, type: 3}
-    - time: 0.4
-      value: {fileID: -847867782701527420, guid: ac06d1776c763f54aa5570c117c95e2a, type: 3}
-    - time: 0.6333333
-      value: {fileID: -6252549580214446989, guid: ac06d1776c763f54aa5570c117c95e2a, type: 3}
-    - time: 0.76666665
-      value: {fileID: -6252549580214446989, guid: ac06d1776c763f54aa5570c117c95e2a, type: 3}
+      value: {fileID: -1450647755959936625, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - time: 0.15
+      value: {fileID: 7555131983963512215, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - time: 0.3
+      value: {fileID: 9053187222957689736, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - time: 0.45
+      value: {fileID: -3241608127354448550, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - time: 0.6
+      value: {fileID: 1641027407990972083, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - time: 0.75
+      value: {fileID: -3904575722060090170, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - time: 0.8333333
+      value: {fileID: -3904575722060090170, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,17 +52,19 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 6803836498446989615, guid: ac06d1776c763f54aa5570c117c95e2a, type: 3}
-    - {fileID: -6252549580214446989, guid: ac06d1776c763f54aa5570c117c95e2a, type: 3}
-    - {fileID: -847867782701527420, guid: ac06d1776c763f54aa5570c117c95e2a, type: 3}
-    - {fileID: -6252549580214446989, guid: ac06d1776c763f54aa5570c117c95e2a, type: 3}
-    - {fileID: -6252549580214446989, guid: ac06d1776c763f54aa5570c117c95e2a, type: 3}
+    - {fileID: -1450647755959936625, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - {fileID: 7555131983963512215, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - {fileID: 9053187222957689736, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - {fileID: -3241608127354448550, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - {fileID: 1641027407990972083, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - {fileID: -3904575722060090170, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
+    - {fileID: -3904575722060090170, guid: 24f20e93fd9d44048b210385e17bf21a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.7833333
+    m_StopTime: 0.84999996
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -78,14 +84,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0
+  - time: 0.15
     functionName: PlayFootstepSound
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.4
+  - time: 0.6
     functionName: PlayFootstepSound
     data: 
     objectReferenceParameter: {fileID: 0}

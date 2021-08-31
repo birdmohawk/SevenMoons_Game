@@ -31,12 +31,15 @@ public class WoodChoppingScript : MonoBehaviour
     private int addRound;
     private int prevRound;
 
+    public GameObject endGameUI;
+    public GameObject manager;
+
     // Start is called before the first frame update
     void Start()
     {
        squareAnim = GetComponent<Animation>();
-       //slashAnim = GetComponent<Animation>();
-
+        //slashAnim = GetComponent<Animation>();
+        endGameUI.gameObject.SetActive(false);
         isPlaying = true;
     }
 
@@ -50,9 +53,7 @@ public class WoodChoppingScript : MonoBehaviour
                 squareAnim.Stop();
                 isPlaying = false;
 
-                //slashAnim.Play();
-
-                //slashAnim.SetBool("Play", true);
+                manager.GetComponent<PostWwiseEvent>().PlayWoodChopSound();
 
                 if (isGreen && isOrange) //test this 
                 {
@@ -198,13 +199,6 @@ public class WoodChoppingScript : MonoBehaviour
 
      void GameOver() 
     {
-        nextSceneTime -= Time.deltaTime;
-        Debug.Log("GameOver");
-
-        if (nextSceneTime < 0) //could use a button to load next scene instead
-        {
-            //Debug.Log("Load Next Scene");
-            //SceneManager.LoadScene("Campsite");
-        }
+        endGameUI.gameObject.SetActive(true);
     }
 }

@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BOBBER_SPLASH = 1764505177U;
         static const AkUniqueID CAMPSITE_AMBIENCE = 2263156506U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID FOREST_AMBIENCE = 2084169529U;
