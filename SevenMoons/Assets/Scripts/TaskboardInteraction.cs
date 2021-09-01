@@ -66,4 +66,13 @@ public class TaskboardInteraction : MonoBehaviour
         taskboard.gameObject.SetActive(true);
         //SceneManager.LoadScene("Taskboard");
     }
+
+    public void TaskboardExit()
+    {
+        character.gameObject.SetActive(true);
+        camera.gameObject.SetActive(false);
+        //taskboardButton.gameObject.SetActive(false);
+        taskboard.gameObject.SetActive(false);
+        //SceneManager.LoadScene("Taskboard");
+    }
 }

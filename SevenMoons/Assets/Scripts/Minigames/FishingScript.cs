@@ -16,7 +16,6 @@ public class FishingScript : MonoBehaviour
 
     private bool isPlaying;
     private bool isFish;
-    private bool fishSpawned;
 
     private int totalFish;
     private int addFish;
@@ -129,29 +128,27 @@ public class FishingScript : MonoBehaviour
 
     private void RestartRound()
     {
-        SpawnFish();
-        fishSpawned = true;
-
-        nextRoundTime -= Time.deltaTime;
-
-        if (nextRoundTime < 0)
+        if (totalRounds <= 2)
         {
-            nextRoundTime = resetNextRound;
+            nextRoundTime -= Time.deltaTime;
 
-            addRound++;
-            totalRounds = prevRound + addRound;
-            prevRound = totalRounds;
-
-            if (totalRounds <= 3)
+            if (nextRoundTime < 0)
             {
+                nextRoundTime = resetNextRound;
+
+                addRound++;
+                totalRounds = prevRound + addRound;
+                prevRound = totalRounds;
+
                 isPlaying = true;
                 squareAnim.Play();
+                SpawnFish();
             }
+        }
 
-            else
-            {
-                GameOver();
-            }
+        else
+        {
+            GameOver();
         }
     }
 

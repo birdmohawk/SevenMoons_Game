@@ -161,27 +161,26 @@ public class WoodChoppingScript : MonoBehaviour
     //what happens after stopped. score add + restart round or end minigame
     private void RestartRound()
     {
-        nextRoundTime -= Time.deltaTime;
-
-        if (nextRoundTime < 0)
+        if (totalRounds <= 2)
         {
-            nextRoundTime = resetNextRound;
+            nextRoundTime -= Time.deltaTime;
 
-            addRound++;
-            totalRounds = prevRound + addRound;
-            prevRound = totalRounds;
-
-            if (totalRounds <= 3)
+            if (nextRoundTime < 0)
             {
+                nextRoundTime = resetNextRound;
+
+                addRound++;
+                totalRounds = prevRound + addRound;
+                prevRound = totalRounds;
+
                 isPlaying = true;
                 squareAnim.Play();
             }
+        }
 
-            else
-            {
-                //SceneManager.LoadScene("Campsite");
-                GameOver();
-            }
+        else
+        {
+            GameOver();
         }
     }
         
