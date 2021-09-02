@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterMovementScript : MonoBehaviour
 {
     public float speed = 10;
-    public LayerMask Base; 
+    public LayerMask Base;
     
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class CharacterMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckForEncounters();
+
     }
 
     void FixedUpdate()
@@ -34,16 +34,5 @@ public class CharacterMovementScript : MonoBehaviour
         transform.Translate(moveDirection * speed * Time.deltaTime);
 
         //AKSoundEngine.PostEvent("Footsteps", gameObject);
-    }
-
-    private void CheckForEncounters()
-    {
-        if (transform.position != null)
-        {
-            if (Random.Range(1,10000) <= 2)
-            {
-                Debug.Log("Approached by Forest Dweller");
-            }
-        }
     }
 }
