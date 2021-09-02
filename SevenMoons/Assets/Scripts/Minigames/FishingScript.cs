@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class FishingScript : MonoBehaviour
 {
@@ -30,8 +31,9 @@ public class FishingScript : MonoBehaviour
 
     public GameObject manager;
     public GameObject endGameUI;
-
     private GameObject cloneFish;
+    public GameObject instructions;
+    public TMP_Text displayTotal;
 
     // Start is called before the first frame update
     void Start()
@@ -100,7 +102,7 @@ public class FishingScript : MonoBehaviour
     {
         if (other.tag == "Fish")
         {
-            Debug.Log("fish");
+            //Debug.Log("fish");
             isFish = true;
         }
 
@@ -114,15 +116,14 @@ public class FishingScript : MonoBehaviour
     {
         if (other.tag == "Fish")
         {
-            Debug.Log("no fish");
+            //Debug.Log("no fish");
             isFish = false;
         }
     }
 
     void FishScore()
     {
-        addFish = 1;
-        TotalFish();
+        addFish++;
         prevFish = totalFish;
     }
 
@@ -161,11 +162,13 @@ public class FishingScript : MonoBehaviour
 
     void DisplayTotal()
     {
-        totalDisplayed.text = totalFish.ToString() + " Total";
+        displayTotal.text = totalFish.ToString() + " Fish Caught";
     }
 
     private void GameOver()
     {
+        TotalFish();
         endGameUI.gameObject.SetActive(true);
+        instructions.gameObject.SetActive(false);
     }
 }

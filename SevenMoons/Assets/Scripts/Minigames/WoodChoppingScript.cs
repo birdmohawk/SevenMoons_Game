@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class WoodChoppingScript : MonoBehaviour
 
@@ -14,8 +15,6 @@ public class WoodChoppingScript : MonoBehaviour
     public Animation squareAnim;
     //public Animation slashAnim;
     //public Animator slashAnim;
-
-    public Text totalDisplayed;
 
     private bool isPlaying;
 
@@ -33,6 +32,7 @@ public class WoodChoppingScript : MonoBehaviour
 
     public GameObject endGameUI;
     public GameObject manager;
+    public TMP_Text displayTotal;
 
     // Start is called before the first frame update
     void Start()
@@ -188,16 +188,16 @@ public class WoodChoppingScript : MonoBehaviour
     {
         totalWood = prevWood + addWood;
         Debug.Log(totalWood);
-        DisplayTotal();
     }
 
     void DisplayTotal()
     {
-        totalDisplayed.text = totalWood.ToString() + " Total";
+        displayTotal.text = totalWood.ToString() + " Logs Chopped";
     }
 
      void GameOver() 
     {
+        DisplayTotal();
         endGameUI.gameObject.SetActive(true);
     }
 }

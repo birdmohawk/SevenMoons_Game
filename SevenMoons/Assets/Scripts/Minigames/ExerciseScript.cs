@@ -3,29 +3,53 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class ExerciseScript : MonoBehaviour
 {
     public float speed = 10;
     public float distance = 1;
     public float timeLeft = 5;
+    public float startTimeLeft = 3;
 
     bool play = true;
 
-    public float nextSceneTime = 3;
-
     private float score = 0;
+
+    public GameObject endGameUI;
+    public GameObject timerBox;
+    public GameObject instructions;
+    public TMP_Text timer;
+    private int secondsUI;
+    public TMP_Text displayTotal;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        endGameUI.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        StartTime();
+    }
+
+    private void StartTime()
+    {
+        startTimeLeft -= Time.deltaTime;
+        
+        if (startTimeLeft < 0)
+        {
+            PlayGame();
+        }
+    }
+
+    private void PlayGame()
+    {
         timeLeft -= Time.deltaTime;
+        secondsUI = (int)timeLeft;
+        timer.text = secondsUI.ToString();
 
         if (timeLeft > 0)
         {
@@ -40,7 +64,7 @@ public class ExerciseScript : MonoBehaviour
 
         if (play)
         {
-            if (Input.GetKeyDown("a") || Input.GetKeyDown("left") || (Input.GetKeyDown("d") || Input.GetKeyDown("right")))
+            if (Input.GetKeyDown("a") || (Input.GetKeyDown("d")))
             {
                 Vector2 move = new Vector2(distance, 0);
                 transform.Translate(move * speed * Time.deltaTime);
@@ -49,15 +73,17 @@ public class ExerciseScript : MonoBehaviour
         }
     }
 
+    void TotalScore()
+    {
+        Debug.Log(score);
+        displayTotal.text = score.ToString() + " steps";
+    }
+
     private void GameOver()
     {
-        nextSceneTime -= Time.deltaTime;
-        Debug.Log(score); //display score in UI!
-
-        if (nextSceneTime < 0) //could use a button to load next scene instead
-        {
-            //Debug.Log("Load Next Scene");
-            SceneManager.LoadScene("Campsite");
-        }
+        TotalScore();
+        endGameUI.gameObject.SetActive(true);
+        timerBox.gameObject.SetActive(false);
+        instructions.gameObject.SetActive(false);
     }
 }
