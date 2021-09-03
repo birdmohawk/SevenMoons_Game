@@ -8,9 +8,11 @@ TagManager:
   - Green
   - Orange
   - Red
-  - item
   - Berry_1
   - Berry_2
+  - Fish
+  - NoItem
+  - Item
   layers:
   - Default
   - TransparentFX

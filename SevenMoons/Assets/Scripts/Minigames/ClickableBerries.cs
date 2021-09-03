@@ -34,8 +34,6 @@ public class ClickableBerries : MonoBehaviour
         
     }
 
-    
-
     private void GameOver()
     {
         nextSceneTime -= Time.deltaTime;

@@ -3,46 +3,71 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScavengeScript : MonoBehaviour
 {
-    public float nextSceneTime = 5;
-    int clicks = 0;
+    public GameObject endGameUI;
+    //private GameObject cloneFish;
+    //public GameObject instructions;
+    //public TMP_Text displayTotal;
 
-    public GameObject winUI;
-    //public GameObject loseUI;
+    private bool item;
 
-    // Start is called before the first frame update
     void Start()
     {
-        winUI.gameObject.SetActive(false);
+        endGameUI.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (clicks >= 1)
+        if (Input.GetMouseButtonDown(0))
         {
-            GameOver();
-            Debug.Log("clicked");
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                //Debug.Log("Target name: " + hit.collider.name);
+
+                /*if (hit.collider.CompareTag("NoItem"))
+                {
+                    Debug.Log("No Item");
+                    item = false;
+                }*/
+
+                if (hit.collider.CompareTag("NoItem") && hit.collider.CompareTag("Item"))
+                {
+                    Debug.Log("Both Item");
+                    item = false;
+                    GameOver();
+                }
+
+                /*else if (hit.collider.CompareTag("Item"))
+                {
+                    Debug.Log("Hit Item");
+                    item = true;
+                    GameOver();
+                    //OnMouseDown();
+                }*/
+            }
+
+            if (hit.collider != null)
+            {
+                item = false;
+            }
         }
     }
 
     void OnMouseDown()
     {
-        clicks++;
+        if (item)
+        {
+            GameOver();
+        }
     }
 
-    private void GameOver()
+    void GameOver()
     {
-        winUI.gameObject.SetActive(true);
-        nextSceneTime -= Time.deltaTime;
-        //Debug.Log(score); //display score in UI!
-
-        if (nextSceneTime < 0) //could use a button to load next scene instead
-        {
-            //Debug.Log("Load Next Scene");
-            SceneManager.LoadScene("Campsite");
-        }
+        endGameUI.gameObject.SetActive(true);
     }
 }
