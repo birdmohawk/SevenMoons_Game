@@ -413,7 +413,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f42b59196625dc49ad1f432037c13bc9
     GuidInternal: 
-    m_lastTime: -8585712218838742110
+    m_lastTime: -8585708441696888475
     List:
     - name: Campsite
       guid: a62074fab6088948a887b635dda1c031
@@ -471,6 +471,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 604977e75aa5bf4a83b2fb0f47c81d71
       Path: SoundBanks\Default Work Unit\Forest
+    - name: Narrative_Theme
+      guid: e1bb8195813eac42a2d4d829712a361e
+      id: 1986498899
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: Narrative_Theme
+        ObjectType: 7
+        guid: e1bb8195813eac42a2d4d829712a361e
+      Path: SoundBanks\Default Work Unit\Narrative_Theme
     - name: Scavenge_Minigame
       guid: 75884921fb8a2d4a8b56d2cb583647d6
       id: 329140285
@@ -525,7 +539,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8d2f21bdaf2f4f4cb22a46651589bcce
     GuidInternal: 
-    m_lastTime: -8585712219080156091
+    m_lastTime: -8585708446049612355
     List:
     - name: Ambience
       guid: ee453e39896e21498d69680944f9210e
@@ -698,6 +712,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Narrative_Music
+      guid: 7aeef17fb5821c49aa27f39c8e6927e0
+      id: 216783309
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d2f21bdaf2f4f4cb22a46651589bcce
+      - ElementName: Narrative_Music
+        ObjectType: 3
+        guid: 7aeef17fb5821c49aa27f39c8e6927e0
+      Path: Events\Default Work Unit\Narrative_Music
+      maxAttenuation: 0
+      maxDuration: 90.502335
+      minDuration: 90.502335
     - name: River
       guid: 0a86169535e22a4983f2379937068205
       id: 3605787649
@@ -715,6 +746,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0a86169535e22a4983f2379937068205
       Path: Events\Default Work Unit\Ambience\River
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Rustling
+      guid: 429974cfdcc91b48992545c192359ea1
+      id: 700816955
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d2f21bdaf2f4f4cb22a46651589bcce
+      - ElementName: Sync_Sounds
+        ObjectType: 4
+        guid: bc336e915cf7b2459d7d6a73a9e641e8
+      - ElementName: Rustling
+        ObjectType: 3
+        guid: 429974cfdcc91b48992545c192359ea1
+      Path: Events\Default Work Unit\Sync_Sounds\Rustling
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -738,6 +789,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.45
       minDuration: 0.45
+    - name: Select1
+      guid: b211cea0fb98494893ac171665cdb8a6
+      id: 549347294
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d2f21bdaf2f4f4cb22a46651589bcce
+      - ElementName: Menu
+        ObjectType: 4
+        guid: bf3570d64b0650459d6059dac866e597
+      - ElementName: Select1
+        ObjectType: 3
+        guid: b211cea0fb98494893ac171665cdb8a6
+      Path: Events\Default Work Unit\Menu\Select1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Sync_Sounds
       guid: bc336e915cf7b2459d7d6a73a9e641e8
       id: 2112188807
@@ -1493,7 +1564,7 @@ MonoBehaviour:
     m_lastTime: -8585724279802356411
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000080000000a0000000b0000000c0000001300000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000002000000021000000230000002400000026000000280000002d000000
+  ExpandedWaapiItemIds: 01000000060000000700000008000000090000000a0000000b0000000c0000000d000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000002000000021000000230000002400000026000000280000002d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

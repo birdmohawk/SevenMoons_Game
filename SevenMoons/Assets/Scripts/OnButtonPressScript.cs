@@ -16,7 +16,7 @@ public class OnButtonPressScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        /*if (Input.GetKeyDown("space"))
         {
             OnButtonPress();
             OnButtonPress2();
@@ -27,8 +27,12 @@ public class OnButtonPressScript : MonoBehaviour
             OnButtonPress7();
             OnButtonPress8();
             OnButtonPress9();
+            OnButtonPress10();
+            OnButtonPress11();
+            OnButtonPress12();
+            OnButtonPress13();
             //future scenes/minigames go here - order in build settings and list below
-        }
+        }*/
     }
 
     public void OnButtonPress() //OpeningNarrative scene
@@ -81,8 +85,23 @@ public class OnButtonPressScript : MonoBehaviour
         SceneManager.LoadScene("Day 1 Night");
     }
 
-    public void OnButtonPress11() //Day 1 Night for PGF
+    public void OnButtonPress11() //Ruined Town
     {
         SceneManager.LoadScene("Ruined_Town");
+    }
+
+    public void OnButtonPress12() //quits game
+    {
+        Application.Quit();
+    }
+
+    public void OnButtonPress13() //Day 1 Day for PGF
+    {
+        SceneManager.LoadScene("Day 1 Intro");
+    }
+
+    public void OnButtonPress14() //Day 1 Day for PGF
+    {
+        SceneManager.LoadScene("StartGame");
     }
 }

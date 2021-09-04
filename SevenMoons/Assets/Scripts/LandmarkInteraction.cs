@@ -6,6 +6,7 @@ public class LandmarkInteraction : MonoBehaviour
 {
     public GameObject itemName;
     public GameObject itemInfo;
+    //public GameObject manager;
 
     private bool inRange; //needed to call MoreInfo() function in fixedupdate so that it checks every frame
 

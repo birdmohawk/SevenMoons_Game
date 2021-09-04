@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class PostWwiseEvent : MonoBehaviour
 {
-    public AK.Wwise.Event MyEvent1;
-    public AK.Wwise.Event MyEvent2;
+    public AK.Wwise.Event Footsteps;
+    public AK.Wwise.Event Select;
     public AK.Wwise.Event MyEvent3;
     public AK.Wwise.Event MyEvent4;
 
     public void PlayFootstepSound()
     {
-        MyEvent1.Post(gameObject);
+        Footsteps.Post(gameObject);
     }
 
     public void PlaySelectSound()
     {
-        MyEvent2.Post(gameObject);
+        Select.Post(gameObject);
     }
 
     public void PlayWoodChopSound()

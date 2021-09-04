@@ -14,9 +14,11 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BOBBER_SPLASH = 1764505177U;
+        static const AkUniqueID CAMPFIRE = 1931646578U;
         static const AkUniqueID CAMPSITE_AMBIENCE = 2263156506U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID FOREST_AMBIENCE = 2084169529U;
+        static const AkUniqueID NARRATIVE_MUSIC = 216783309U;
         static const AkUniqueID RIVER = 3605787649U;
         static const AkUniqueID SELECT = 1432588725U;
         static const AkUniqueID WOOD_CHOP = 1483562389U;
@@ -109,6 +111,7 @@ namespace AK
         static const AkUniqueID EXERCISE_MINIGAME = 1508477845U;
         static const AkUniqueID FISHING_MINIGAME = 889754691U;
         static const AkUniqueID FOREST = 491961918U;
+        static const AkUniqueID NARRATIVE_THEME = 1986498899U;
         static const AkUniqueID SCAVENGE_MINIGAME = 329140285U;
         static const AkUniqueID UI_MENU = 2511555531U;
         static const AkUniqueID WOODCHOP_MINIGAME = 2963061822U;
