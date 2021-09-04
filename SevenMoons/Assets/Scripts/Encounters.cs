@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Encounters : MonoBehaviour
 {
-    private bool active = false;
+    public float encounterTimer = 60.0f;
+
     public GameObject player;
     public GameObject encounterInfo;
     public GameObject encounterOptions1;
@@ -13,34 +14,20 @@ public class Encounters : MonoBehaviour
 
     void Start()
     {
-        encounterInfo.gameObject.SetActive(false);
-        encounterOptions1.gameObject.SetActive(false);
-        encounterOptions2.gameObject.SetActive(false);
-        encounterOptions3.gameObject.SetActive(false);
+        
     }
 
     public void Update()
     {
-        CheckForEncounters();
-
-        if (active = true)
+        encounterTimer -= Time.deltaTime;
+        
+        if (encounterTimer <= 0)
         {
             Debug.Log("Encounter detected");
             //EncounterCheck();
-            active = false;
         }
     }
     
-    private void CheckForEncounters()
-    {
-        if (player.gameObject.transform.position != null)
-        {
-            if (Random.Range(1, 10000) <= 1)
-            {
-                active = true;
-            }
-        }
-    }
 
     public void EncounterCheck()
     {
@@ -56,63 +43,77 @@ public class Encounters : MonoBehaviour
         {
             ShiningPool();
         }
+        
     }
     
     void GoodWitch()
     {
         encounterInfo.gameObject.SetActive(true);
         encounterOptions1.gameObject.SetActive(true);
-
+        
         if (Input.GetKeyDown("up"))
         {
             Debug.Log("Stat upgraded");
             encounterInfo.gameObject.SetActive(false);
             encounterOptions1.gameObject.SetActive(false);
+            encounterTimer = 60.0f;
         }
         else if (Input.GetKeyDown("space"))
         {
             Debug.Log("Stat Downgraded");
             encounterInfo.gameObject.SetActive(false);
             encounterOptions1.gameObject.SetActive(false);
+            encounterTimer = 60.0f;
         }
-
     }
 
     void BadWitch()
     {
         encounterInfo.gameObject.SetActive(true);
         encounterOptions2.gameObject.SetActive(true);
+        
 
         if (Input.GetKeyDown("up"))
         {
             Debug.Log("Stat upgraded");
             encounterInfo.gameObject.SetActive(false);
             encounterOptions2.gameObject.SetActive(false);
+            encounterTimer = 60.0f;
+           
         }
         else if (Input.GetKeyDown("space"))
         {
             Debug.Log("Stat Downgraded");
             encounterInfo.gameObject.SetActive(false);
             encounterOptions2.gameObject.SetActive(false);
+            encounterTimer = 60.0f; 
+           
         }
+
+        encounterTimer = 60.0f;
     }
 
     void ShiningPool()
     {
        encounterInfo.gameObject.SetActive(true);
        encounterOptions3.gameObject.SetActive(true);
-        
+       
+
         if (Input.GetKeyDown("up"))
         {
           Debug.Log("Stat upgraded");
           encounterInfo.gameObject.SetActive(false);
           encounterOptions3.gameObject.SetActive(false);
+          encounterTimer = 60.0f;
+          
         }
         else if (Input.GetKeyDown("space"))
         {
           Debug.Log("Stat Downgraded");
           encounterInfo.gameObject.SetActive(false);
           encounterOptions3.gameObject.SetActive(false);
+          encounterTimer = 60.0f;
+          
         }
     }
     

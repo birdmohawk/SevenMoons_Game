@@ -33,7 +33,7 @@ public class OnButtonPressScript : MonoBehaviour
 
     public void OnButtonPress() //OpeningNarrative scene
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void OnButtonPress2() //Campsite scene
@@ -74,5 +74,15 @@ public class OnButtonPressScript : MonoBehaviour
     public void OnButtonPress9() //ChopReedsMinigame scene
     {
         SceneManager.LoadScene("ChopReedsMinigame");
+    }
+
+    public void OnButtonPress10() //Day 1 Night for PGF
+    {
+        SceneManager.LoadScene("Day 1 Night");
+    }
+
+    public void OnButtonPress11() //Day 1 Night for PGF
+    {
+        SceneManager.LoadScene("Ruined_Town");
     }
 }

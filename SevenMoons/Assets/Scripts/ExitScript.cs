@@ -10,5 +10,14 @@ public class ExitScript : MonoBehaviour
         {
             Application.Quit();
         }
+        else if (Input.GetKeyDown("space"))
+        {
+            OnButtonPress();
+        }
+    }
+
+    public void OnButtonPress()
+    {
+        Application.Quit(); ;
     }
 }
