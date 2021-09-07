@@ -5,6 +5,7 @@ using UnityEngine;
 public class Encounters : MonoBehaviour
 {
     public float encounterTimer = 60.0f;
+    public bool selected = false;
 
     public GameObject player;
     public GameObject encounterInfo;
@@ -14,7 +15,10 @@ public class Encounters : MonoBehaviour
 
     void Start()
     {
-        
+        encounterInfo.gameObject.SetActive(false);
+        encounterOptions1.gameObject.SetActive(false);
+        encounterOptions2.gameObject.SetActive(false);
+        encounterOptions3.gameObject.SetActive(false);
     }
 
     public void Update()
@@ -24,50 +28,34 @@ public class Encounters : MonoBehaviour
         if (encounterTimer <= 0)
         {
             Debug.Log("Encounter detected");
-            //EncounterCheck();
+            EncounterCheck();
         }
     }
     
 
     public void EncounterCheck()
     {
-        if (Random.Range(1,10) <= 3)
-        {
-            GoodWitch();
-        }
-        else if (Random.Range (1,10) <= 6)
-        {
-            BadWitch();
-        }
-        else if (Random.Range (1,10) <= 10)
-        {
-            ShiningPool();
-        }
-        
+        GoodWitch();
     }
     
     void GoodWitch()
     {
         encounterInfo.gameObject.SetActive(true);
         encounterOptions1.gameObject.SetActive(true);
-        
-        if (Input.GetKeyDown("up"))
+        encounterOptions2.gameObject.SetActive(true);
+        encounterOptions3.gameObject.SetActive(true);
+
+        if (selected == true);
         {
-            Debug.Log("Stat upgraded");
             encounterInfo.gameObject.SetActive(false);
             encounterOptions1.gameObject.SetActive(false);
-            encounterTimer = 60.0f;
-        }
-        else if (Input.GetKeyDown("space"))
-        {
-            Debug.Log("Stat Downgraded");
-            encounterInfo.gameObject.SetActive(false);
-            encounterOptions1.gameObject.SetActive(false);
-            encounterTimer = 60.0f;
+            encounterOptions2.gameObject.SetActive(false);
+            encounterOptions3.gameObject.SetActive(false);
+            encounterTimer = 120.0f;
         }
     }
 
-    void BadWitch()
+    /*void BadWitch()
     {
         encounterInfo.gameObject.SetActive(true);
         encounterOptions2.gameObject.SetActive(true);
@@ -115,7 +103,7 @@ public class Encounters : MonoBehaviour
           encounterTimer = 60.0f;
           
         }
-    }
+    }*/
     
 }
     
