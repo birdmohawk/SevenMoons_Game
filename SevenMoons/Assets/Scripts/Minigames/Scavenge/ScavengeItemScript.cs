@@ -30,6 +30,11 @@ public class ScavengeItemScript : MonoBehaviour
             GameOver();
         }
 
+        else 
+        {
+            endGameUI.gameObject.SetActive(false); //trying this to avoid scavenge bug
+        }
+
         timePassed += Time.deltaTime;
     }
 

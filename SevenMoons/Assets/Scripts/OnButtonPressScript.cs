@@ -37,7 +37,7 @@ public class OnButtonPressScript : MonoBehaviour
 
     public void OnButtonPress() //OpeningNarrative scene
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Opening Narrative");
     }
 
     public void OnButtonPress2() //Campsite scene

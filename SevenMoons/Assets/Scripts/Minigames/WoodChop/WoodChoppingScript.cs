@@ -34,13 +34,19 @@ public class WoodChoppingScript : MonoBehaviour
     public GameObject manager;
     public TMP_Text displayTotal;
     public GameObject instructions;
+    public GameObject redScoreUI;
+    public GameObject orangeScoreUI;
+    public GameObject greenScoreUI;
 
     // Start is called before the first frame update
     void Start()
     {
-       squareAnim = GetComponent<Animation>();
+        squareAnim = GetComponent<Animation>();
         //slashAnim = GetComponent<Animation>();
         endGameUI.gameObject.SetActive(false);
+        redScoreUI.gameObject.SetActive(false);
+        orangeScoreUI.gameObject.SetActive(false);
+        greenScoreUI.gameObject.SetActive(false);
         isPlaying = true;
     }
 
@@ -141,6 +147,7 @@ public class WoodChoppingScript : MonoBehaviour
         addWood = 5;
         TotalWood();
         prevWood = totalWood;
+        greenScoreUI.gameObject.SetActive(true);
     }
 
     void OrangeScore()
@@ -149,6 +156,7 @@ public class WoodChoppingScript : MonoBehaviour
         addWood = 1;
         TotalWood();
         prevWood = totalWood;
+        orangeScoreUI.gameObject.SetActive(true);
     }
 
     void RedScore()
@@ -157,6 +165,7 @@ public class WoodChoppingScript : MonoBehaviour
         addWood = 0;
         TotalWood();
         prevWood = totalWood;
+        redScoreUI.gameObject.SetActive(true);
     }
 
     //what happens after stopped. score add + restart round or end minigame
@@ -176,6 +185,10 @@ public class WoodChoppingScript : MonoBehaviour
 
                 isPlaying = true;
                 squareAnim.Play();
+
+                redScoreUI.gameObject.SetActive(false);
+                orangeScoreUI.gameObject.SetActive(false);
+                greenScoreUI.gameObject.SetActive(false);
             }
         }
 
@@ -201,5 +214,9 @@ public class WoodChoppingScript : MonoBehaviour
         DisplayTotal();
         endGameUI.gameObject.SetActive(true);
         instructions.gameObject.SetActive(false);
+
+        redScoreUI.gameObject.SetActive(false);
+        orangeScoreUI.gameObject.SetActive(false);
+        greenScoreUI.gameObject.SetActive(false);
     }
 }
