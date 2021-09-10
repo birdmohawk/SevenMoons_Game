@@ -642,8 +642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6be0987e4b073a43b5d313916a65e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.2
-  distance: 2
+  speed: 0.8
+  distance: 1
   timeLeft: 10
   startTimeLeft: 3
   endGameUI: {fileID: 633011429}
