@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID NARRATIVE_MUSIC = 216783309U;
         static const AkUniqueID RIVER = 3605787649U;
         static const AkUniqueID SELECT = 1432588725U;
+        static const AkUniqueID SELECT1 = 549347294U;
         static const AkUniqueID WOOD_CHOP = 1483562389U;
     } // namespace EVENTS
 

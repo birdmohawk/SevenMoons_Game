@@ -413,7 +413,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f42b59196625dc49ad1f432037c13bc9
     GuidInternal: 
-    m_lastTime: -8585708441696888475
+    m_lastTime: -8585703274178220106
     List:
     - name: Campsite
       guid: a62074fab6088948a887b635dda1c031
@@ -807,8 +807,8 @@ MonoBehaviour:
         guid: b211cea0fb98494893ac171665cdb8a6
       Path: Events\Default Work Unit\Menu\Select1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.051156
+      minDuration: 0.051156
     - name: Sync_Sounds
       guid: bc336e915cf7b2459d7d6a73a9e641e8
       id: 2112188807

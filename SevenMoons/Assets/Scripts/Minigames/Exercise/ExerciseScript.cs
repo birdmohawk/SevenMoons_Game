@@ -11,6 +11,7 @@ public class ExerciseScript : MonoBehaviour
     public float distance = 1;
     public float timeLeft = 5;
     public float startTimeLeft = 3;
+    private float goTimeLeft = 1;
 
     bool play = true;
 
@@ -18,10 +19,14 @@ public class ExerciseScript : MonoBehaviour
 
     public GameObject endGameUI;
     public GameObject timerBox;
+    public GameObject startTimerBox;
     public GameObject instructions;
     public TMP_Text timer;
+    public TMP_Text startTimer;
     private int secondsUI;
+    private int secondsUIStart;
     public TMP_Text displayTotal;
+    public TMP_Text go;
     public GameObject manager;
 
     // Start is called before the first frame update
@@ -39,8 +44,21 @@ public class ExerciseScript : MonoBehaviour
     private void StartTime()
     {
         startTimeLeft -= Time.deltaTime;
-        
-        if (startTimeLeft < 0)
+        secondsUIStart = (int)startTimeLeft;
+        startTimer.text = secondsUIStart.ToString();
+
+        if (startTimeLeft <= 0)
+        {
+            GoTime();
+        }
+    }
+
+    private void GoTime()
+    {
+        goTimeLeft -= Time.deltaTime;
+        startTimerBox.gameObject.SetActive(false);
+        go.text = "Go!";
+        if (goTimeLeft <= 0)
         {
             PlayGame();
         }
@@ -51,6 +69,7 @@ public class ExerciseScript : MonoBehaviour
         timeLeft -= Time.deltaTime;
         secondsUI = (int)timeLeft;
         timer.text = secondsUI.ToString();
+        go.text = "";
 
         if (timeLeft > 0)
         {

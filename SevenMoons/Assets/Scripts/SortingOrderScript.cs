@@ -5,43 +5,41 @@ using UnityEngine.Tilemaps;
 
 public class SortingOrderScript : MonoBehaviour
 {
-    public const string Trees_InFront = "Trees_InFront";
-    public const string Trees_Behind = "Trees_Behind";
+    public string inFront = "Trees_InFront";
+    public string behind = "Trees_Behind";
     public int sortingOrder = 0;
-    private TilemapRenderer treesLayer;
-    private bool treesBehind;
+    private TilemapRenderer tm;
+    private bool objectBehind;
 
     // Start is called before the first frame update
     void Start()
     {
-        //frontTrees = true;
-        treesLayer = GetComponent<TilemapRenderer>();
+        tm = GetComponent<TilemapRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (treesBehind)
+        if (objectBehind)
         {
-            //treesLayer.sortOrder = sortingOrder;
-            treesLayer.sortingLayerName = Trees_Behind;
+            tm.sortingLayerName = behind;
         }
 
         else
         {
-            treesLayer.sortingLayerName = Trees_InFront;
+            tm.sortingLayerName = inFront;
         }
     }
 
     void OnTriggerEnter2D (Collider2D col)
     {
-        treesBehind = true;
+        objectBehind = true;
         Debug.Log("player in front of trees");
     }
 
     void OnTriggerExit2D(Collider2D col)
     {
-        treesBehind = false;
+        objectBehind = false;
         Debug.Log("player behind trees");
     }
 }

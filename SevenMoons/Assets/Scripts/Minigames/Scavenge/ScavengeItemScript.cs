@@ -32,7 +32,9 @@ public class ScavengeItemScript : MonoBehaviour
 
         else 
         {
-            endGameUI.gameObject.SetActive(false); //trying this to avoid scavenge bug
+            endGameUI.gameObject.SetActive(false); //trying this to avoid scavenge bug for now >:(
+            instructions.gameObject.SetActive(true);
+            displayTotal.text = "";
         }
 
         timePassed += Time.deltaTime;
