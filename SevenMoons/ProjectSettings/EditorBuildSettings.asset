@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/ChopReedsMinigame.unity
     guid: 03ae88235555fda419a6982d58b9f8ed
+  - enabled: 1
+    path: Assets/Scenes/Areas/River.unity
+    guid: c90bcb6c610515f40a8284621ae06e63
   m_configObjects: {}
