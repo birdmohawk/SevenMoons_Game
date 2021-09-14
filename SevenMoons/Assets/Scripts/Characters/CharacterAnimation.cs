@@ -16,7 +16,7 @@ public class CharacterAnimation : MonoBehaviour
     void Update()
     {
         //left animation
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) //maybe use GetButton instead? bc shorter + controller support? need to set up input manager?
+        if (Input.GetKey(KeyCode.A)) //maybe use GetButton instead? bc shorter + controller support? need to set up input manager?
         {
             charanim.SetBool("isLeft", true);
         }
@@ -27,7 +27,7 @@ public class CharacterAnimation : MonoBehaviour
         }
 
         //right animation
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             charanim.SetBool("isRight", true);
         }
@@ -38,7 +38,7 @@ public class CharacterAnimation : MonoBehaviour
         }
 
         //up animation
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             charanim.SetBool("isUp", true);
         }
@@ -49,7 +49,7 @@ public class CharacterAnimation : MonoBehaviour
         }
 
         //down animation
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             charanim.SetBool("isDown", true);
         }

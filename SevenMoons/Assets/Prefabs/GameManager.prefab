@@ -43,10 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674c3b97db8bc454ba79190262dd43d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  berries:
-  - {fileID: 8651078365008434855, guid: 13ca05e4df7c2d74a96b1ba84cff364d, type: 3}
-  - {fileID: 3225349665164079963, guid: bf141c3d48a4b1746809d833b0b67e29, type: 3}
-  - {fileID: 5989984812465274575, guid: 799761c374f52d94782dfe7ba5db7b94, type: 3}
-  - {fileID: 6862600921482349055, guid: 417f1a90fde112a43aa4e5c5240c49f2, type: 3}
-  badBerry: {fileID: 0}
-  goodBerry: {fileID: 0}
+  player1: {fileID: 1805619016690269135, guid: 4562856575bdbb44faddb57155cc646f, type: 3}
+  player2: {fileID: 2670281399414173590, guid: d5a35d2c104ff1c4a9f6cbde79947d59, type: 3}
+  player3: {fileID: 5596473733227290532, guid: 054498cb0cbecb6459a6818c2cfb1e74, type: 3}
+  player4: {fileID: 8098623675208414260, guid: 34e13fe2ab75a5649b5469c23ac29ead, type: 3}
+  tasks: 0

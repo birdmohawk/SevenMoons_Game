@@ -43,6 +43,8 @@ public class FishingScript : MonoBehaviour
         squareAnim = GetComponent<Animation>();
         isPlaying = true;
         SpawnFish();
+
+        GameManagerScript.gamemanager.TaskNumber();
     }
 
     // Update is called once per frame
@@ -156,7 +158,7 @@ public class FishingScript : MonoBehaviour
     void TotalFish()
     {
         totalFish = prevFish + addFish;
-        Debug.Log(totalFish);
+        //Debug.Log(totalFish);
         DisplayTotal();
     }
 
