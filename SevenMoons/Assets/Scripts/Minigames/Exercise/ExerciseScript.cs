@@ -33,6 +33,7 @@ public class ExerciseScript : MonoBehaviour
     void Start()
     {
         endGameUI.gameObject.SetActive(false);
+        GameManagerScript.gamemanager.TaskNumber();
     }
 
     // Update is called once per frame

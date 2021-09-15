@@ -48,6 +48,8 @@ public class WoodChoppingScript : MonoBehaviour
         orangeScoreUI.gameObject.SetActive(false);
         greenScoreUI.gameObject.SetActive(false);
         isPlaying = true;
+
+        GameManagerScript.gamemanager.TaskNumber();
     }
 
     // Update is called once per frame

@@ -25,6 +25,8 @@ public class CollectBerriesScript : MonoBehaviour
 
         goodUI.gameObject.SetActive(false);
         badUI.gameObject.SetActive(false);
+
+        GameManagerScript.gamemanager.TaskNumber();
     }
 
     // Update is called once per frame

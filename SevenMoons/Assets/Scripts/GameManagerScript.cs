@@ -1,23 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
     /* this script is used to store data that needs to be consistent thru one play thru of the game
-     * this includes data such as STATS, good + bad berry types*/
+     * this includes data such as STATS, day and night cycles, number of tasks*/
 
     public static GameManagerScript gamemanager;
 
-    //STATS here 
-    public GameObject player1; //Artemis
-    public GameObject player2; //Hapi
-    public GameObject player3; //Griffin
-    public GameObject player4; //Albert
-
     public int tasks;
-    int prevTasks;
-    int totalTasks;
+    int nights;
 
     void Awake()
     {
@@ -32,51 +26,30 @@ public class GameManagerScript : MonoBehaviour
         {
             Destroy(gameObject); //destroys duplicates of script. This is important to avoid a duplicate in the Campsite scene (original scene with GameManager in the scene)
         }
-
-        /*player1.gameObject.SetActive(false);
-        player2.gameObject.SetActive(true);
-        player3.gameObject.SetActive(true);
-        player4.gameObject.SetActive(false);*/
     }
 
     void Start()
     {
-
+        
     }
 
     void Update()
     {
-
+        
     }
 
     public void TaskNumber()
     {
         tasks++;
-        prevTasks = totalTasks;
+        Debug.Log(tasks);
     }
-
-    public void TotalTasks()
+    
+    public void EndofDay()
     {
-        totalTasks = prevTasks + tasks;
-        Debug.Log(totalTasks);
-
-        if (totalTasks >= 1)
-        {
-            player1.gameObject.SetActive(false);
-            player4.gameObject.SetActive(true);
-
-            player3.gameObject.SetActive(true);
-            player2.gameObject.SetActive(true);
-            Debug.Log("next player");
-        }
-
-        else
-        {
-            player1.gameObject.SetActive(true);
-            player4.gameObject.SetActive(false);
-
-            player3.gameObject.SetActive(true);
-            player2.gameObject.SetActive(true);
-        }
+        tasks = 0;
+        nights++;
+        Debug.Log("Day number" + nights);
+        //Debug.Log("end of day narrative");
+        SceneManager.LoadScene("Day 1 Night");
     }
 }
