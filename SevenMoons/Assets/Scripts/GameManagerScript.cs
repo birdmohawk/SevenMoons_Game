@@ -10,6 +10,11 @@ public class GameManagerScript : MonoBehaviour
 
     public static GameManagerScript gamemanager;
 
+    public GameObject firstQuarter; //Artemis
+    public GameObject secondQuarter; //Hapi
+    public GameObject thirdQuarter; //Griffin
+    public GameObject fourthQuarter; //Albert
+
     public int tasks;
     int nights;
 
@@ -35,7 +40,7 @@ public class GameManagerScript : MonoBehaviour
 
     void Update()
     {
-        
+        TimeOfDay();
     }
 
     public void TaskNumber()
@@ -43,13 +48,81 @@ public class GameManagerScript : MonoBehaviour
         tasks++;
         Debug.Log(tasks);
     }
+
+    public void TimeOfDay()
+    {
+        if (tasks == 0)
+        {
+            firstQuarter.gameObject.SetActive(true);
+            secondQuarter.gameObject.SetActive(false);
+            thirdQuarter.gameObject.SetActive(false);
+            fourthQuarter.gameObject.SetActive(false);
+        }
+
+        if (tasks == 1)
+        {
+            firstQuarter.gameObject.SetActive(false);
+            secondQuarter.gameObject.SetActive(true);
+            thirdQuarter.gameObject.SetActive(false);
+            fourthQuarter.gameObject.SetActive(false);
+        }
+
+        if (tasks == 2)
+        {
+            firstQuarter.gameObject.SetActive(false);
+            secondQuarter.gameObject.SetActive(false);
+            thirdQuarter.gameObject.SetActive(true);
+            fourthQuarter.gameObject.SetActive(false);
+        }
+
+        if (tasks == 3)
+        {
+            firstQuarter.gameObject.SetActive(false);
+            secondQuarter.gameObject.SetActive(false);
+            thirdQuarter.gameObject.SetActive(false);
+            fourthQuarter.gameObject.SetActive(true);
+        }
+    }
     
     public void EndofDay()
     {
         tasks = 0;
         nights++;
         Debug.Log("Day number" + nights);
-        //Debug.Log("end of day narrative");
-        SceneManager.LoadScene("Day 1 Night");
+
+        if (nights == 1)
+        {
+            SceneManager.LoadScene("Day 1 Night");
+        }
+
+        if (nights == 2)
+        {
+            SceneManager.LoadScene("Day 2 Night");
+        }
+
+        if (nights == 3)
+        {
+            SceneManager.LoadScene("Day 3 Night");
+        }
+
+        if (nights == 4)
+        {
+            SceneManager.LoadScene("Day 4 Night");
+        }
+
+        if (nights == 5)
+        {
+            SceneManager.LoadScene("Day 5 Night");
+        }
+
+        if (nights == 6)
+        {
+            SceneManager.LoadScene("Day 6 Night");
+        }
+        
+        if (nights == 7)
+        {
+            SceneManager.LoadScene ("End Scene");
+        }
     }
 }

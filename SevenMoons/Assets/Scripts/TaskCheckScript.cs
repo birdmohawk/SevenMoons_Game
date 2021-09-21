@@ -6,10 +6,15 @@ public class TaskCheckScript : MonoBehaviour
 {
     //public static TaskCheckScript taskcheckscript;
 
-    public GameObject player1; //Artemis
-    public GameObject player2; //Hapi
-    public GameObject player3; //Griffin
-    public GameObject player4; //Albert
+    public GameObject Artemis; //Artemis
+    public GameObject Hapi; //Hapi
+    public GameObject Griffin; //Griffin
+    public GameObject Albert; //Albert
+
+    public GameObject Artemis_Idle; //Artemis
+    public GameObject Hapi_Idle; //Hapi
+    public GameObject Griffin_Idle; //Griffin
+    public GameObject Albert_Idle; //Albert
 
     void Awake()
     {
@@ -27,41 +32,61 @@ public class TaskCheckScript : MonoBehaviour
 
         if (totalTasks == 0)
         {
-            player1.gameObject.SetActive(true);
-            player2.gameObject.SetActive(false);
-            player3.gameObject.SetActive(false);
-            player4.gameObject.SetActive(false);
+            Artemis.gameObject.SetActive(true);
+            Hapi.gameObject.SetActive(false);
+            Griffin.gameObject.SetActive(false);
+            Albert.gameObject.SetActive(false);
             Debug.Log("player 1 turn");
+
+            Artemis_Idle.gameObject.SetActive(false);
+            Hapi_Idle.gameObject.SetActive(true);
+            Griffin_Idle.gameObject.SetActive(true);
+            Albert_Idle.gameObject.SetActive(true);
         }
         
         if (totalTasks == 1)
         {
-            player1.gameObject.SetActive(false);
-            player2.gameObject.SetActive(true);
-            player3.gameObject.SetActive(false);
-            player4.gameObject.SetActive(false);
+            Artemis.gameObject.SetActive(false);
+            Hapi.gameObject.SetActive(true);
+            Griffin.gameObject.SetActive(false);
+            Albert.gameObject.SetActive(false);
             Debug.Log("player 2 turn");
+
+            Artemis_Idle.gameObject.SetActive(true);
+            Hapi_Idle.gameObject.SetActive(false);
+            Griffin_Idle.gameObject.SetActive(true);
+            Albert_Idle.gameObject.SetActive(true);
         }
 
         if (totalTasks == 2)
         {
-            player1.gameObject.SetActive(false);
-            player2.gameObject.SetActive(false);
-            player3.gameObject.SetActive(true);
-            player4.gameObject.SetActive(false);
+            Artemis.gameObject.SetActive(false);
+            Hapi.gameObject.SetActive(false);
+            Griffin.gameObject.SetActive(true);
+            Albert.gameObject.SetActive(false);
             Debug.Log("player 3 turn");
+
+            Artemis_Idle.gameObject.SetActive(true);
+            Hapi_Idle.gameObject.SetActive(true);
+            Griffin_Idle.gameObject.SetActive(false);
+            Albert_Idle.gameObject.SetActive(true);
         }
 
         if (totalTasks == 3)
         {
-            player1.gameObject.SetActive(false);
-            player2.gameObject.SetActive(false);
-            player3.gameObject.SetActive(false);
-            player4.gameObject.SetActive(true);
+            Artemis.gameObject.SetActive(false);
+            Hapi.gameObject.SetActive(false);
+            Griffin.gameObject.SetActive(false);
+            Albert.gameObject.SetActive(true);
             Debug.Log("player 4 turn");
+
+            Artemis_Idle.gameObject.SetActive(true);
+            Hapi_Idle.gameObject.SetActive(true);
+            Griffin_Idle.gameObject.SetActive(true);
+            Albert_Idle.gameObject.SetActive(false);
         }
 
-        else if (totalTasks >=4)
+        else if (totalTasks >=4) 
         {
             GameManagerScript.gamemanager.EndofDay();
         }

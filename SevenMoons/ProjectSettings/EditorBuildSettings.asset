@@ -50,4 +50,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Areas/River.unity
     guid: c90bcb6c610515f40a8284621ae06e63
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 2 Night.unity
+    guid: aa16638b57d744a469395e48ee0ea592
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 3 Night.unity
+    guid: 63365f87da4e7e34b9d71ba3b11b60c8
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 4 Night.unity
+    guid: 8b03b8cbb5ff70d4ba361e7558cbbf5b
   m_configObjects: {}
