@@ -13,6 +13,7 @@ TagManager:
   - Fish
   - NoItem
   - Item
+  - moon
   layers:
   - Default
   - TransparentFX

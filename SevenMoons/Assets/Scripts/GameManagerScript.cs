@@ -10,14 +10,20 @@ public class GameManagerScript : MonoBehaviour
 
     public static GameManagerScript gamemanager;
 
+    /* MOON UI INDICATES TURNS */    
     public GameObject firstQuarter; //Artemis
     public GameObject secondQuarter; //Hapi
     public GameObject thirdQuarter; //Griffin
-    public GameObject fourthQuarter; //Albert
+    public GameObject fourthQuarter; //Albert 
 
     public int tasks;
     int nights;
 
+    /* STATS */
+    public int artemisPoints; 
+    public int hapiPoints;
+    public int griffinPoints;
+    public int albertPoints;
     void Awake()
     {
         DontDestroyOnLoad(gameObject); //keeps GameManagerScript thruout all scenes
@@ -43,6 +49,74 @@ public class GameManagerScript : MonoBehaviour
         TimeOfDay();
     }
 
+    public void BestScore()
+    {
+        if (tasks == 1)
+        {
+            artemisPoints = artemisPoints + 3;
+        }
+
+        if (tasks == 2)
+        {
+            hapiPoints = hapiPoints + 3;
+        }
+
+        if (tasks == 3)
+        {
+            griffinPoints = griffinPoints + 3;
+        }
+
+        if (tasks == 4)
+        {
+            albertPoints = albertPoints + 3;
+        }
+    }
+
+    public void GoodScore()
+    {
+        if (tasks == 1)
+        {
+            artemisPoints = artemisPoints + 1;
+        }
+
+        if (tasks == 2)
+        {
+            hapiPoints = hapiPoints + 1;
+        }
+
+        if (tasks == 3)
+        {
+            griffinPoints = griffinPoints + 1;
+        }
+
+        if (tasks == 4)
+        {
+            albertPoints = albertPoints + 1;
+        }
+    }
+
+    public void BadScore()
+    {
+        if (tasks == 1)
+        {
+            artemisPoints = artemisPoints - 1;
+        }
+
+        if (tasks == 2)
+        {
+            hapiPoints = hapiPoints - 1;
+        }
+
+        if (tasks == 3)
+        {
+            griffinPoints = griffinPoints - 1;
+        }
+
+        if (tasks == 4)
+        {
+            albertPoints = albertPoints - 1;
+        }
+    }
     public void TaskNumber()
     {
         tasks++;

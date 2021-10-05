@@ -5,7 +5,6 @@ using UnityEngine;
 public class TaskCheckScript : MonoBehaviour
 {
     //public static TaskCheckScript taskcheckscript;
-
     public GameObject Artemis; //Artemis
     public GameObject Hapi; //Hapi
     public GameObject Griffin; //Griffin
@@ -19,6 +18,10 @@ public class TaskCheckScript : MonoBehaviour
     void Awake()
     {
         NextTurn();
+        Debug.Log("Artemis points are " + GameManagerScript.gamemanager.artemisPoints);
+        Debug.Log("Hapi points are " + GameManagerScript.gamemanager.hapiPoints);
+        Debug.Log("Griffin points are " + GameManagerScript.gamemanager.griffinPoints);
+        Debug.Log("Albert points are " + GameManagerScript.gamemanager.albertPoints);
     }
 
     void Update()

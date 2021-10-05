@@ -15,7 +15,6 @@ public class WoodChoppingScript : MonoBehaviour
     public Animation squareAnim;
     //public Animation slashAnim;
     //public Animator slashAnim;
-
     private bool isPlaying;
 
     private bool isGreen;
@@ -150,6 +149,8 @@ public class WoodChoppingScript : MonoBehaviour
         TotalWood();
         prevWood = totalWood;
         greenScoreUI.gameObject.SetActive(true);
+
+        GameManagerScript.gamemanager.BestScore();
     }
 
     void OrangeScore()
@@ -159,6 +160,7 @@ public class WoodChoppingScript : MonoBehaviour
         TotalWood();
         prevWood = totalWood;
         orangeScoreUI.gameObject.SetActive(true);
+        GameManagerScript.gamemanager.GoodScore();
     }
 
     void RedScore()
@@ -168,6 +170,7 @@ public class WoodChoppingScript : MonoBehaviour
         TotalWood();
         prevWood = totalWood;
         redScoreUI.gameObject.SetActive(true);
+        GameManagerScript.gamemanager.BadScore();
     }
 
     //what happens after stopped. score add + restart round or end minigame
