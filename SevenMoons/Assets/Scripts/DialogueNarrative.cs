@@ -1,20 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class DialogueNarrative : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
+    public Image[] characterPortraits;
+    public Image characterSpeaker;
     private int index;
     public float typingSpeed;
+    public bool movingOn;
 
     public GameObject continueButton;
 
     void Start()
     {
         StartCoroutine(Type());
+        movingOn = false;
+        characterSpeaker = characterPortraits[0];
     }
 
     void Update()
@@ -22,6 +28,12 @@ public class DialogueNarrative : MonoBehaviour
         if(textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
+        }
+
+        if ( movingOn == true)
+        {
+            movingOn = false;
+            characterSpeaker = characterPortraits[index];
         }
     }
 
@@ -37,6 +49,7 @@ public class DialogueNarrative : MonoBehaviour
     public void NextSentence()
     {
         continueButton.SetActive(false);
+        movingOn = true;
 
         if(index < sentences.Length - 1)
         {

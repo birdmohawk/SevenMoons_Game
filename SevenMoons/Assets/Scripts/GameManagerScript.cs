@@ -24,6 +24,7 @@ public class GameManagerScript : MonoBehaviour
     public int hapiPoints;
     public int griffinPoints;
     public int albertPoints;
+    public int totalPoints;
     void Awake()
     {
         DontDestroyOnLoad(gameObject); //keeps GameManagerScript thruout all scenes

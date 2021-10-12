@@ -44,13 +44,37 @@ public class Encounters : MonoBehaviour
 
         if (encounterActive) //encounterActive is true and constantly checking for the button presses
         {
+            int totalTasks = GameManagerScript.gamemanager.tasks;
+            int encounterReward = GameManagerScript.gamemanager.totalPoints;
+
+            if (totalTasks == 0)
+            {
+                GoodWitch();
+            }
+           /*if (totalTasks == 1)
+            {
+                BadWitch();
+            }
+            if (totalTasks == 2)
+            {
+                ShiningPool();
+            }
+            if (totalTasks == 3)
+            {
+                GoodWitch();
+            }*/
+
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 selectedGood = true;
+                Debug.Log("Selected True");
+                encounterReward++;
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
                 selectedBad = true;
+                Debug.Log("Selected False");
+                encounterReward++;
             }
             
             EncounterCheck();
