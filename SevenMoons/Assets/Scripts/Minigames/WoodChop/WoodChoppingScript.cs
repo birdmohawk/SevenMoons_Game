@@ -29,7 +29,11 @@ public class WoodChoppingScript : MonoBehaviour
     private int addRound;
     private int prevRound;
 
+    public GameObject bestGameUI;
+    public GameObject goodGameUI;
+    public GameObject badGameUI;
     public GameObject endGameUI;
+
     public GameObject manager;
     public TMP_Text displayTotal;
     public GameObject instructions;
@@ -37,17 +41,26 @@ public class WoodChoppingScript : MonoBehaviour
     public GameObject orangeScoreUI;
     public GameObject greenScoreUI;
 
-    // Start is called before the first frame update
-    void Start()
+    /* Using Awake() so that UI is deactivated before Start() so that
+     * DialogueMinigames (script) Type() doesn't get called at start of game */
+    void Awake()
     {
-        squareAnim = GetComponent<Animation>();
+        //squareAnim = GetComponent<Animation>();
         //slashAnim = GetComponent<Animation>();
         endGameUI.gameObject.SetActive(false);
+        bestGameUI.gameObject.SetActive(false);
+        goodGameUI.gameObject.SetActive(false);
+        badGameUI.gameObject.SetActive(false);
+
         redScoreUI.gameObject.SetActive(false);
         orangeScoreUI.gameObject.SetActive(false);
         greenScoreUI.gameObject.SetActive(false);
-        isPlaying = true;
 
+        isPlaying = true;
+    }
+
+    void Start()
+    {
         GameManagerScript.gamemanager.TaskNumber();
     }
 
@@ -63,7 +76,7 @@ public class WoodChoppingScript : MonoBehaviour
 
                 manager.GetComponent<PostWwiseEvent>().PlayWoodChopSound();
 
-                if (isGreen && isOrange) //test this 
+                if (isGreen && isOrange) 
                 {
                     OrangeScore();
                 }
@@ -145,7 +158,7 @@ public class WoodChoppingScript : MonoBehaviour
     void GreenScore()
     {
         //Debug.Log("green scored"); 
-        addWood = 5;
+        addWood = 3;
         TotalWood();
         prevWood = totalWood;
         greenScoreUI.gameObject.SetActive(true);
@@ -209,19 +222,34 @@ public class WoodChoppingScript : MonoBehaviour
         Debug.Log(totalWood);
     }
 
-    void DisplayTotal()
-    {
-        displayTotal.text = totalWood.ToString() + " Logs Chopped";
-    }
-
      void GameOver() 
-    {
-        DisplayTotal();
-        endGameUI.gameObject.SetActive(true);
+     {
+        EndGameUI();
         instructions.gameObject.SetActive(false);
 
         redScoreUI.gameObject.SetActive(false);
         orangeScoreUI.gameObject.SetActive(false);
         greenScoreUI.gameObject.SetActive(false);
+     } 
+
+    void EndGameUI()
+    {
+        if (totalWood == 9)
+        {
+            bestGameUI.gameObject.SetActive(true);
+            endGameUI.gameObject.SetActive(true);
+        }
+
+        else if (totalWood <= 1)
+        {
+            badGameUI.gameObject.SetActive(true);
+            endGameUI.gameObject.SetActive(true);
+        }
+
+        else
+        {
+            goodGameUI.gameObject.SetActive(true);
+            endGameUI.gameObject.SetActive(true);
+        } 
     }
 }
