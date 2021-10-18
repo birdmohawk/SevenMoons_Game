@@ -123,56 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &89675783
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 89675785}
-  - component: {fileID: 89675784}
-  m_Layer: 0
-  m_Name: 'Bad End Narrative '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &89675784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89675783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textDisplay: {fileID: 1405674196}
-  sentences:
-  - bad
-  - cool 2 sentences work nice
-  typingSpeed: 0.05
-  movingOn: 0
-  continueButton: {fileID: 1808197172}
---- !u!4 &89675785
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89675783}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08077196, y: 0.17865586, z: -1.1552789}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &111104417
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,8 +584,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279508024
+  m_fontColor: {r: 0.21960786, g: 0.10980393, b: 0.078431375, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1018,10 +968,10 @@ MonoBehaviour:
   textDisplay: {fileID: 1405674196}
   sentences:
   - good
-  - cool 2 sentences work nice
+  - ssecond sentence test
   typingSpeed: 0.05
-  movingOn: 0
   continueButton: {fileID: 1808197172}
+  nextSceneButton: {fileID: 182034719}
 --- !u!4 &690468256
 Transform:
   m_ObjectHideFlags: 0
@@ -2976,10 +2926,9 @@ MonoBehaviour:
   squareAnim: {fileID: 1001687226}
   bestGameUI: {fileID: 1143690332}
   goodGameUI: {fileID: 690468254}
-  badGameUI: {fileID: 89675783}
+  badGameUI: {fileID: 1311888068}
   endGameUI: {fileID: 865381103}
   manager: {fileID: 1580533195}
-  displayTotal: {fileID: 0}
   instructions: {fileID: 226188249}
   redScoreUI: {fileID: 916190403}
   orangeScoreUI: {fileID: 1607907916}
@@ -3175,11 +3124,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1405674196}
   sentences:
-  - best!
-  - cool 2 sentences work nice
+  - best
+  - ssecond sentence test
   typingSpeed: 0.05
-  movingOn: 0
   continueButton: {fileID: 1808197172}
+  nextSceneButton: {fileID: 182034719}
 --- !u!4 &1143690334
 Transform:
   m_ObjectHideFlags: 0
@@ -3193,6 +3142,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1311888068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311888070}
+  - component: {fileID: 1311888069}
+  m_Layer: 0
+  m_Name: Bad End Narrative
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1311888069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311888068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1405674196}
+  sentences:
+  - bad
+  - second sentence test
+  typingSpeed: 0.05
+  continueButton: {fileID: 1808197172}
+  nextSceneButton: {fileID: 182034719}
+--- !u!4 &1311888070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311888068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.08077196, y: 0.17865586, z: -1.1552789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1405674193
 GameObject:
@@ -3228,7 +3227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -6, y: 85.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1405674195
@@ -3261,15 +3260,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
+  m_sharedMaterial: {fileID: 6262966605371064912, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.21960786, g: 0.10980393, b: 0.078431375, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3286,8 +3285,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3322,7 +3321,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: -129.73695}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3901,8 +3900,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279771710
+  m_fontColor: {r: 0.24313727, g: 0.13333334, b: 0.09411766, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4068,7 +4067,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 89675784}
+      - m_Target: {fileID: 1311888069}
         m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
         m_MethodName: NextSentence
         m_Mode: 1
@@ -4135,7 +4134,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.002131462, y: -0.1311}
+  m_AnchoredPosition: {x: -0.002131462, y: -0.2268448}
   m_SizeDelta: {x: 0.58, y: 0.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1936995017

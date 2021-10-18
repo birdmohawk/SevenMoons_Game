@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using TMPro;
 
 public class WoodChoppingScript : MonoBehaviour
-
 {
     public float nextSceneTime = 5;
     public float nextRoundTime = 2;
@@ -35,7 +34,7 @@ public class WoodChoppingScript : MonoBehaviour
     public GameObject endGameUI;
 
     public GameObject manager;
-    public TMP_Text displayTotal;
+    
     public GameObject instructions;
     public GameObject redScoreUI;
     public GameObject orangeScoreUI;
@@ -234,19 +233,19 @@ public class WoodChoppingScript : MonoBehaviour
 
     void EndGameUI()
     {
-        if (totalWood == 9)
-        {
-            bestGameUI.gameObject.SetActive(true);
-            endGameUI.gameObject.SetActive(true);
-        }
-
-        else if (totalWood <= 1)
+        if (totalWood < 2)
         {
             badGameUI.gameObject.SetActive(true);
             endGameUI.gameObject.SetActive(true);
         }
 
-        else
+        else if (totalWood > 7)
+        {
+            bestGameUI.gameObject.SetActive(true);
+            endGameUI.gameObject.SetActive(true);
+        }
+
+        else 
         {
             goodGameUI.gameObject.SetActive(true);
             endGameUI.gameObject.SetActive(true);

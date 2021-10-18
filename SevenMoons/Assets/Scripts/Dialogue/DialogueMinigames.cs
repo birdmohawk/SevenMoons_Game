@@ -10,32 +10,17 @@ public class DialogueMinigames : MonoBehaviour
     public string[] sentences;
     private int index;
     public float typingSpeed;
-    public bool movingOn;
-
-    //private IEnumerator coroutine;
 
     public GameObject continueButton;
+    public GameObject nextSceneButton;
 
     void Start()
     {
-        movingOn = false;
-
-        if (gameObject.activeSelf)
+        /*sometimes this doesn't work, if so move SetActive(false) 
+         * components to Awake() in other script*/
+        if (gameObject.activeSelf) 
         {
             StartCoroutine(Type());
-        }
-    }
-
-    void Update()
-    {
-        if (textDisplay.text == sentences[index])
-        {
-            continueButton.SetActive(true);
-        }
-
-        if (movingOn == true)
-        {
-            movingOn = false;
         }
     }
 
@@ -46,12 +31,16 @@ public class DialogueMinigames : MonoBehaviour
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+
+        if (index < sentences.Length - 1)
+        {
+            continueButton.SetActive(true);
+        }
     }
 
     public void NextSentence()
     {
         continueButton.SetActive(false);
-        movingOn = true;
 
         if (index < sentences.Length - 1)
         {
@@ -63,6 +52,7 @@ public class DialogueMinigames : MonoBehaviour
         else
         {
             textDisplay.text = "";
+            nextSceneButton.SetActive(true);
         }
     }
 }
