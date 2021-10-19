@@ -7,27 +7,34 @@ public class Encounters : MonoBehaviour
     public float encounterTimer = 10.0f;
     public bool selectedGood = false;
     public bool selectedBad = false;
+    float encountersFound = 0;
 
     public GameObject player;
-    public GameObject encounterInfo;
     public GameObject encounterOptions1;
     public GameObject encounterOptions2;
     public GameObject encounterOptions3;
-    /*public GameObject encounterOptions4;
+    public GameObject encounterOptions4;
     public GameObject encounterOptions5;
     public GameObject encounterOptions6;
     public GameObject encounterOptions7;
     public GameObject encounterOptions8;
-    public GameObject encounterOptions9;*/
+    public GameObject encounterOptions9;
 
     bool encounterActive = false;
+    bool GW = false;
+    bool BW = false;
+    bool SP = false;
+    bool WW = false;
+    bool PV = false;
 
     void Start()
     {
-        encounterInfo.gameObject.SetActive(false);
         encounterOptions1.gameObject.SetActive(false);
         encounterOptions2.gameObject.SetActive(false);
         encounterOptions3.gameObject.SetActive(false);
+        encounterOptions4.gameObject.SetActive(false);
+        encounterOptions5.gameObject.SetActive(false);
+        encounterOptions6.gameObject.SetActive(false);
     }
 
     public void Update()
@@ -44,25 +51,40 @@ public class Encounters : MonoBehaviour
 
         if (encounterActive) //encounterActive is true and constantly checking for the button presses
         {
-            int totalTasks = GameManagerScript.gamemanager.tasks;
             int encounterReward = GameManagerScript.gamemanager.totalPoints;
+            int totalTasks = GameManagerScript.gamemanager.tasks;
+            int dayCycle = GameManagerScript.gamemanager.nights;
 
-            if (totalTasks == 0)
+            if (totalTasks == 0 && dayCycle == 0)
             {
                 GoodWitch();
+                GW = true;
+                
             }
-           /*if (totalTasks == 1)
+           if (totalTasks == 1)
             {
                 BadWitch();
+                BW = true;
+                
             }
             if (totalTasks == 2)
             {
+                SP = true;
                 ShiningPool();
+                
             }
             if (totalTasks == 3)
             {
-                GoodWitch();
-            }*/
+                WW = true;
+                Werewolf();
+
+            }
+            if (totalTasks == 0 && dayCycle == 1)
+            {
+               PixieVillage();
+                PV = true;
+
+            }
 
             if (Input.GetKeyDown(KeyCode.Q))
             {
@@ -74,135 +96,171 @@ public class Encounters : MonoBehaviour
             {
                 selectedBad = true;
                 Debug.Log("Selected False");
-                encounterReward++;
+                encounterReward--;
             }
-            
-            EncounterCheck();
-            
-        }
-    }
-    
-    public void OnGoodButtonPress() //for later when checking button presses
-    {
-        selectedGood = true;
-        selectedBad = false;
-    }
 
-    public void OnBadButtonPress()
-    {
-        selectedBad = true;
-        selectedGood = false;
+            EncounterCheck();
+        }
     }
 
     public void EncounterCheck()
     {
-       if ( GoodWitch() ) //checks bool for encounter being over
+        if (GW == true) //checks bool for encounter being over
         {
-            encounterActive = false; //deactivates Active loop
-            encounterTimer = 100.0f; //resets timer
-            player.GetComponent<CharacterMovementScript>().enabled = true; //re-enables player movement
+            if(GoodWitch())
+            {
+                encounterActive = false; //deactivates Active loop
+                encounterTimer = 100.0f; //resets timer
+                encountersFound++;
+                player.GetComponent<CharacterMovementScript>().enabled = true; //re-enables player movement
+            }
+            GW = false;
         }
-        /*if (BadWitch()) //checks bool for encounter being over
+        
+        if (BW == true) //checks bool for encounter being over
         {
-            encounterActive = false; //deactivates Active loop
-            encounterTimer = 100.0f; //resets timer
-            player.GetComponent<CharacterMovementScript>().enabled = true; //re-enables player movement
+            if(BadWitch())
+            {
+                encounterActive = false; //deactivates Active loop
+                encounterTimer = 100.0f; //resets timer
+                encountersFound++;
+                player.GetComponent<CharacterMovementScript>().enabled = true; //re-enables player movement
+            }
+            BW = false;
         }
-        if (ShiningPool()) //checks bool for encounter being over
+       
+        if (SP == true) //checks bool for encounter being over
         {
-            encounterActive = false; //deactivates Active loop
-            encounterTimer = 100.0f; //resets timer
-            player.GetComponent<CharacterMovementScript>().enabled = true; //re-enables player movement
-        }*/
+            if(ShiningPool())
+            {
+                encounterActive = false; //deactivates Active loop
+                encounterTimer = 100.0f; //resets timer
+                encountersFound++;
+                player.GetComponent<CharacterMovementScript>().enabled = true; //re-enables player movement
+            }
+            SP = false;
+        }
+        if (WW == true) //checks bool for encounter being over
+        {
+            if (Werewolf())
+            {
+                encounterActive = false; //deactivates Active loop
+                encounterTimer = 100.0f; //resets timer
+                encountersFound++;
+                player.GetComponent<CharacterMovementScript>().enabled = true; //re-enables player movement
+            }
+            WW = false;
+        }
+        if (PV == true) //checks bool for encounter being over
+        {
+            if (PixieVillage())
+            {
+                encounterActive = false; //deactivates Active loop
+                encounterTimer = 100.0f; //resets timer
+                encountersFound++;
+                player.GetComponent<CharacterMovementScript>().enabled = true; //re-enables player movement
+            }
+            PV = false;
+        }
     }
+
+        
     
     bool GoodWitch()
     {
         bool retval = false;
-        encounterInfo.gameObject.SetActive(true);
         encounterOptions1.gameObject.SetActive(true);
-        encounterOptions2.gameObject.SetActive(true);
-        encounterOptions3.gameObject.SetActive(true);
 
         if (selectedGood == true)
         {
-            encounterInfo.gameObject.SetActive(false);
             encounterOptions1.gameObject.SetActive(false);
-            encounterOptions2.gameObject.SetActive(false);
-            encounterOptions3.gameObject.SetActive(false);
             selectedGood = false; //return stats here
             retval = true;
         }
         else if (selectedBad == true)
         {
-            encounterInfo.gameObject.SetActive(false);
             encounterOptions1.gameObject.SetActive(false);
-            encounterOptions2.gameObject.SetActive(false);
-            encounterOptions3.gameObject.SetActive(false);
             selectedBad = false;// return stats here
             retval = true;
         }
         return retval; //returns retval values
     }
 
- 
-
-    /*bool BadWitch()
+     bool BadWitch()
     {
-        bool retval = false;
-        encounterInfo.gameObject.SetActive(true);
-        encounterOptions4.gameObject.SetActive(true);
-        encounterOptions5.gameObject.SetActive(true);
-        encounterOptions6.gameObject.SetActive(true);
+        bool retval1 = false;
+        encounterOptions2.gameObject.SetActive(true);
 
         if (selectedGood == true)
         {
-            encounterInfo.gameObject.SetActive(false);
-            encounterOptions4.gameObject.SetActive(false);
-            encounterOptions5.gameObject.SetActive(false);
-            encounterOptions6.gameObject.SetActive(false);
+            encounterOptions2.gameObject.SetActive(false);
             selectedGood = false;
-            retval = true;
+            retval1 = true;
         }
         else if (selectedBad == true)
         {
-            encounterInfo.gameObject.SetActive(false);
-            encounterOptions4.gameObject.SetActive(false);
-            encounterOptions5.gameObject.SetActive(false);
-            encounterOptions6.gameObject.SetActive(false);
+            encounterOptions2.gameObject.SetActive(false);
             selectedBad = false;
-            retval = true;
+            retval1 = true;
         }
-        return retval;
+        return retval1;
     }
 
     bool ShiningPool()
     {
-      bool retval = false;
-        encounterInfo.gameObject.SetActive(true);
-        encounterOptions7.gameObject.SetActive(true);
-        encounterOptions8.gameObject.SetActive(true);
-        encounterOptions9.gameObject.SetActive(true);
+      bool retval2 = false;
+        encounterOptions3.gameObject.SetActive(true);
 
         if (selectedGood == true)
         {
-            encounterInfo.gameObject.SetActive(false);
-            encounterOptions7.gameObject.SetActive(false);
-            encounterOptions8.gameObject.SetActive(false);
-            encounterOptions9.gameObject.SetActive(false);
+            encounterOptions3.gameObject.SetActive(false);
             selectedGood = false;
-            retval = true;
+            retval2 = true;
         }
         else if (selectedBad == true)
         {
-            encounterInfo.gameObject.SetActive(false);
-            encounterOptions7.gameObject.SetActive(false);
-            encounterOptions8.gameObject.SetActive(false);
-            encounterOptions9.gameObject.SetActive(false);
+            encounterOptions3.gameObject.SetActive(false);
             selectedBad = false;
-            retval = true;
+            retval2 = true;
         }
-        return retval;
-    }*/
+        return retval2;
+    }
+    bool Werewolf()
+    {
+        bool retval3 = false;
+        encounterOptions4.gameObject.SetActive(true);
 
+        if (selectedGood == true)
+        {
+            encounterOptions4.gameObject.SetActive(false);
+            selectedGood = false;
+            retval3 = true;
+        }
+        else if (selectedBad == true)
+        {
+            encounterOptions4.gameObject.SetActive(false);
+            selectedBad = false;
+            retval3 = true;
+        }
+        return retval3;
+    }
+    bool PixieVillage()
+    {
+        bool retval4 = false;
+        encounterOptions5.gameObject.SetActive(true);
+
+        if (selectedGood == true)
+        {
+            encounterOptions5.gameObject.SetActive(false);
+            selectedGood = false;
+            retval4 = true;
+        }
+        else if (selectedBad == true)
+        {
+            encounterOptions5.gameObject.SetActive(false);
+            selectedBad = false;
+            retval4 = true;
+        }
+        return retval4;
+    }
 }

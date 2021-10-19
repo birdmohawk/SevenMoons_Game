@@ -11,15 +11,14 @@ public class DialogueNarrative : MonoBehaviour
     public Image[] characterPortraits;
     public Image characterSpeaker;
     private int index;
+    private int imageIndex;
     public float typingSpeed;
-    public bool movingOn;
 
     public GameObject continueButton;
 
     void Start()
     {
         StartCoroutine(Type());
-        movingOn = false;
         characterSpeaker = characterPortraits[0];
     }
 
@@ -28,12 +27,6 @@ public class DialogueNarrative : MonoBehaviour
         if(textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
-        }
-
-        if ( movingOn == true)
-        {
-            movingOn = false;
-            characterSpeaker = characterPortraits[index];
         }
     }
 
@@ -49,7 +42,7 @@ public class DialogueNarrative : MonoBehaviour
     public void NextSentence()
     {
         continueButton.SetActive(false);
-        movingOn = true;
+        NextImage();
 
         if(index < sentences.Length - 1)
         {
@@ -61,5 +54,11 @@ public class DialogueNarrative : MonoBehaviour
         {
             textDisplay.text = "";
         }
+    }
+
+    public void NextImage()
+    {
+            imageIndex++;
+            characterSpeaker = characterPortraits[imageIndex];
     }
 }

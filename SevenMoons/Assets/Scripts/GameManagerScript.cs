@@ -17,7 +17,7 @@ public class GameManagerScript : MonoBehaviour
     public GameObject fourthQuarter; //Albert 
 
     public int tasks;
-    int nights;
+    public int nights;
 
     /* STATS */
     public int artemisPoints; 
@@ -198,7 +198,19 @@ public class GameManagerScript : MonoBehaviour
         
         if (nights == 7)
         {
-            SceneManager.LoadScene ("End Scene");
+            if (artemisPoints + griffinPoints + albertPoints + hapiPoints + totalPoints > 50)
+            {
+                SceneManager.LoadScene ("EndScene1");
+            }
+            if (artemisPoints + griffinPoints + albertPoints + hapiPoints + totalPoints < 20)
+            {
+                SceneManager.LoadScene ("EndScene3");
+            }
+            else
+            {
+                SceneManager.LoadScene ("EndScene2");
+            }
+            
         }
     }
 }
