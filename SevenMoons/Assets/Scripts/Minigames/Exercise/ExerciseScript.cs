@@ -17,7 +17,6 @@ public class ExerciseScript : MonoBehaviour
 
     private float score = 0;
 
-    public GameObject endGameUI;
     public GameObject timerBox;
     public GameObject startTimerBox;
     public GameObject instructions;
@@ -29,14 +28,26 @@ public class ExerciseScript : MonoBehaviour
     public TMP_Text go;
     public GameObject manager;
 
-    // Start is called before the first frame update
-    void Start()
+    public GameObject bestGameUI;
+    public GameObject goodGameUI;
+    public GameObject badGameUI;
+    public GameObject endGameUI;
+
+    /* Using Awake() so that UI is deactivated before Start() so that
+     * DialogueMinigames (script) Type() doesn't get called at start of game */
+    void Awake()
     {
         endGameUI.gameObject.SetActive(false);
+        bestGameUI.gameObject.SetActive(false);
+        goodGameUI.gameObject.SetActive(false);
+        badGameUI.gameObject.SetActive(false);
+    }
+
+    void Start()
+    {
         GameManagerScript.gamemanager.TaskNumber();
     }
 
-    // Update is called once per frame
     void Update()
     {
         StartTime();
@@ -95,17 +106,31 @@ public class ExerciseScript : MonoBehaviour
         }
     }
 
-    void TotalScore()
-    {
-        Debug.Log(score);
-        displayTotal.text = score.ToString() + " steps";
-    }
-
     private void GameOver()
     {
-        TotalScore();
-        endGameUI.gameObject.SetActive(true);
+        EndGameUI();
         timerBox.gameObject.SetActive(false);
         instructions.gameObject.SetActive(false);
+    }
+
+    void EndGameUI()
+    {
+        if (score > 100)
+        {
+            bestGameUI.gameObject.SetActive(true);
+            endGameUI.gameObject.SetActive(true);
+        }
+
+        else if (score > 80)
+        {
+            goodGameUI.gameObject.SetActive(true);
+            endGameUI.gameObject.SetActive(true);
+        }
+
+        else 
+        {
+            badGameUI.gameObject.SetActive(true);
+            endGameUI.gameObject.SetActive(true);
+        } 
     }
 }

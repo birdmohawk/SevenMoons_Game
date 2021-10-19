@@ -21,6 +21,7 @@ public class DialogueMinigames : MonoBehaviour
         if (gameObject.activeSelf) 
         {
             StartCoroutine(Type());
+            //nextSceneButton.SetActive(false);
         }
     }
 
@@ -35,6 +36,7 @@ public class DialogueMinigames : MonoBehaviour
         if (index < sentences.Length - 1)
         {
             continueButton.SetActive(true);
+            //nextSceneButton.SetActive(false);
         }
     }
 
