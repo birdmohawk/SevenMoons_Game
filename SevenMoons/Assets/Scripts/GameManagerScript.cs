@@ -10,12 +10,6 @@ public class GameManagerScript : MonoBehaviour
 
     public static GameManagerScript gamemanager;
 
-    /* MOON UI INDICATES TURNS */    
-    public GameObject firstQuarter; //Artemis
-    public GameObject secondQuarter; //Hapi
-    public GameObject thirdQuarter; //Griffin
-    public GameObject fourthQuarter; //Albert 
-
     public int tasks;
     int nights;
 
@@ -39,16 +33,6 @@ public class GameManagerScript : MonoBehaviour
         {
             Destroy(gameObject); //destroys duplicates of script. This is important to avoid a duplicate in the Campsite scene (original scene with GameManager in the scene)
         }
-    }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        TimeOfDay();
     }
 
     public void BestScore()
@@ -123,41 +107,6 @@ public class GameManagerScript : MonoBehaviour
     {
         tasks++;
         Debug.Log(tasks);
-    }
-
-    public void TimeOfDay()
-    {
-        if (tasks == 0)
-        {
-            firstQuarter.gameObject.SetActive(true);
-            secondQuarter.gameObject.SetActive(false);
-            thirdQuarter.gameObject.SetActive(false);
-            fourthQuarter.gameObject.SetActive(false);
-        }
-
-        if (tasks == 1)
-        {
-            firstQuarter.gameObject.SetActive(false);
-            secondQuarter.gameObject.SetActive(true);
-            thirdQuarter.gameObject.SetActive(false);
-            fourthQuarter.gameObject.SetActive(false);
-        }
-
-        if (tasks == 2)
-        {
-            firstQuarter.gameObject.SetActive(false);
-            secondQuarter.gameObject.SetActive(false);
-            thirdQuarter.gameObject.SetActive(true);
-            fourthQuarter.gameObject.SetActive(false);
-        }
-
-        if (tasks == 3)
-        {
-            firstQuarter.gameObject.SetActive(false);
-            secondQuarter.gameObject.SetActive(false);
-            thirdQuarter.gameObject.SetActive(false);
-            fourthQuarter.gameObject.SetActive(true);
-        }
     }
     
     public void EndofDay()

@@ -13,7 +13,7 @@ public class FishingScript : MonoBehaviour
 
     public Animation squareAnim;
 
-    public Text totalDisplayed;
+    //public Text totalDisplayed;
 
     private bool isPlaying;
     private bool isFish;
@@ -30,16 +30,25 @@ public class FishingScript : MonoBehaviour
     public Transform[] spawnPos;
 
     public GameObject manager;
-    public GameObject endGameUI;
+    
     private GameObject cloneFish;
     public GameObject instructions;
-    public TMP_Text displayTotal;
+    //public TMP_Text displayTotal;
 
-    // Start is called before the first frame update
-    void Start()
+    public GameObject bestGameUI;
+    public GameObject goodGameUI;
+    public GameObject badGameUI;
+    public GameObject endGameUI;
+
+    void Awake()
     {
         endGameUI.gameObject.SetActive(false);
-
+        bestGameUI.gameObject.SetActive(false);
+        goodGameUI.gameObject.SetActive(false);
+        badGameUI.gameObject.SetActive(false);
+    }
+    void Start()
+    {
         squareAnim = GetComponent<Animation>();
         isPlaying = true;
         SpawnFish();
@@ -159,18 +168,40 @@ public class FishingScript : MonoBehaviour
     {
         totalFish = prevFish + addFish;
         //Debug.Log(totalFish);
-        DisplayTotal();
+        //DisplayTotal();
     }
 
-    void DisplayTotal()
+    /*void DisplayTotal()
     {
         displayTotal.text = totalFish.ToString() + " Fish Caught";
-    }
+    }*/
 
     private void GameOver()
     {
-        TotalFish();
-        endGameUI.gameObject.SetActive(true);
+        //TotalFish();
+        totalFish = prevFish + addFish;
         instructions.gameObject.SetActive(false);
+        EndGameUI();
+    }
+
+    void EndGameUI()
+    {
+        if (totalFish < 1)
+        {
+            badGameUI.gameObject.SetActive(true);
+            endGameUI.gameObject.SetActive(true);
+        }
+
+        else if (totalFish > 2)
+        {
+            bestGameUI.gameObject.SetActive(true);
+            endGameUI.gameObject.SetActive(true);
+        }
+
+        else 
+        {
+            goodGameUI.gameObject.SetActive(true);
+            endGameUI.gameObject.SetActive(true);
+        } 
     }
 }

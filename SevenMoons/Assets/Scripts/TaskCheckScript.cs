@@ -15,6 +15,12 @@ public class TaskCheckScript : MonoBehaviour
     public GameObject Griffin_Idle; //Griffin
     public GameObject Albert_Idle; //Albert
 
+    /* MOON UI INDICATES TURNS */    
+    public GameObject firstQuarter; //Artemis
+    public GameObject secondQuarter; //Hapi
+    public GameObject thirdQuarter; //Griffin
+    public GameObject fourthQuarter; //Albert 
+
     void Awake()
     {
         NextTurn();
@@ -22,6 +28,8 @@ public class TaskCheckScript : MonoBehaviour
         Debug.Log("Hapi points are " + GameManagerScript.gamemanager.hapiPoints);
         Debug.Log("Griffin points are " + GameManagerScript.gamemanager.griffinPoints);
         Debug.Log("Albert points are " + GameManagerScript.gamemanager.albertPoints);
+
+        TimeOfDay();
     }
 
     void Update()
@@ -92,6 +100,43 @@ public class TaskCheckScript : MonoBehaviour
         else if (totalTasks >=4) 
         {
             GameManagerScript.gamemanager.EndofDay();
+        }
+    }
+
+    public void TimeOfDay()
+    {
+        int totalTasks = GameManagerScript.gamemanager.tasks;
+
+        if (totalTasks == 0)
+        {
+            firstQuarter.gameObject.SetActive(true);
+            secondQuarter.gameObject.SetActive(false);
+            thirdQuarter.gameObject.SetActive(false);
+            fourthQuarter.gameObject.SetActive(false);
+        }
+
+        if (totalTasks == 1)
+        {
+            firstQuarter.gameObject.SetActive(false);
+            secondQuarter.gameObject.SetActive(true);
+            thirdQuarter.gameObject.SetActive(false);
+            fourthQuarter.gameObject.SetActive(false);
+        }
+
+        if (totalTasks == 2)
+        {
+            firstQuarter.gameObject.SetActive(false);
+            secondQuarter.gameObject.SetActive(false);
+            thirdQuarter.gameObject.SetActive(true);
+            fourthQuarter.gameObject.SetActive(false);
+        }
+
+        if (totalTasks == 3)
+        {
+            firstQuarter.gameObject.SetActive(false);
+            secondQuarter.gameObject.SetActive(false);
+            thirdQuarter.gameObject.SetActive(false);
+            fourthQuarter.gameObject.SetActive(true);
         }
     }
 }
