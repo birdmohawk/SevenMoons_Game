@@ -9,13 +9,24 @@ public class ScavengeItemScript : MonoBehaviour
 {
     public int triggers;
 
-    public GameObject endGameUI;
     public GameObject instructions;
     public TMP_Text displayTotal;
 
     public float timePassed;
 
-    // Start is called before the first frame update
+    public GameObject bestGameUI;
+    public GameObject goodGameUI;
+    public GameObject badGameUI;
+    public GameObject endGameUI;
+
+    void Awake()
+    {
+        endGameUI.gameObject.SetActive(false);
+        bestGameUI.gameObject.SetActive(false);
+        goodGameUI.gameObject.SetActive(false);
+        badGameUI.gameObject.SetActive(false);
+    }
+
     void Start()
     {
         endGameUI.gameObject.SetActive(false);
@@ -27,7 +38,7 @@ public class ScavengeItemScript : MonoBehaviour
     {
         if (triggers <= 0)
         {
-            Debug.Log("game over");
+            //Debug.Log("game over");
             GameOver();
         }
 
@@ -36,24 +47,19 @@ public class ScavengeItemScript : MonoBehaviour
             endGameUI.gameObject.SetActive(false); //trying this to avoid scavenge bug for now >:(
             instructions.gameObject.SetActive(true);
             displayTotal.text = "";
+            timePassed += Time.deltaTime;
         }
-
-        timePassed += Time.deltaTime;
     }
 
-    void OnMouseDown()
-    {
-        //Debug.Log("book clicked");
-    }
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("items");
+        //Debug.Log("items");
         triggers++;
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("no items");
+        //Debug.Log("no items");
         triggers--;
     }
 
@@ -61,16 +67,26 @@ public class ScavengeItemScript : MonoBehaviour
     {
         endGameUI.gameObject.SetActive(true);
         instructions.gameObject.SetActive(false);
-        displayTotal.text = "Great Job";
 
-        /*if (timePassed <= 8)
+        if (timePassed <= 15)
+        {
+            Debug.Log("great score!");
+            //GameManagerScript.gamemanager.BestScore();
+            bestGameUI.gameObject.SetActive(true);
+        }
+
+        else if (timePassed > 15 && timePassed < 30)
         {
             Debug.Log("good score!");
+            //GameManagerScript.gamemanager.GoodScore();
+            goodGameUI.gameObject.SetActive(true);
         }
-        
-        if (timePassed > 8)
+
+        else 
         {
             Debug.Log("bad score!");
-        }*/
+            //GameManagerScript.gamemanager.BadScore();
+            badGameUI.gameObject.SetActive(true);
+        }
     }
 }

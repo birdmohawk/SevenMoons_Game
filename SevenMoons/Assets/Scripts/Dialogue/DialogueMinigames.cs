@@ -14,6 +14,12 @@ public class DialogueMinigames : MonoBehaviour
     public GameObject continueButton;
     public GameObject nextSceneButton;
 
+    /*void Awake()
+    {
+        continueButton.gameObject.SetActive(false);
+        nextSceneButton.gameObject.SetActive(false);
+    }*/
+
     void Start()
     {
         /*sometimes this doesn't work, if so move SetActive(false) 
