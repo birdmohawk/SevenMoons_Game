@@ -7,5 +7,21 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Griffin_Charater
-  m_Controller: {fileID: 0}
-  m_Clips: []
+  m_Controller: {fileID: 9100000, guid: 94caf9f14d4b72a48bd4b14e56c95e88, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: aa774e282e8d3584a979557f4e9e561c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6fe8633c6de9f5c4388fad2f8c4fd56d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a1edc8ac736d8a747bf6431c36f9dce2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c3a3fe109e4aee54fac65ee8ba89d128, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c4d1f3210bd4d3641a2931a0406c2390, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 03c3c58f5e1746a4ab5d5193296fa2ff, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 068e358f160f60e43a9ac176d71a094c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 455bc3ac5f84ad940ad872f08b6b9560, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 241d99694b6d9674a9d90564383c0eef, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 74287911c87724d45a9f2596af895385, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0e48ad918b5406f47a698133543e715f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 912d869b11b26f040a0c88140f324dc8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 88a1b3fe29e36f7428c2a35c7d053aa3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2b0ed2b9cde19344eb006270e3691ae5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7b160395596436644824d6d50b0fd4c8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 24b0661950cd1834fbc81460dd5f1571, type: 2}

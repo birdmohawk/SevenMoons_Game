@@ -9,9 +9,10 @@ public class CollectBerriesScript : MonoBehaviour
 
     public float nextSceneTime = 5;
 
-    public GameObject goodUI;
-    public GameObject badUI;
+    //public GameObject goodUI;
+    //public GameObject badUI;
 
+    public GameObject[] endUI;
     public GameObject[] berries;
     //[HideInInspector]
     public GameObject badBerry = null; //public so that they are accessible from CollectBerriesScript
@@ -23,8 +24,10 @@ public class CollectBerriesScript : MonoBehaviour
     {
         SpawnBerryPositions();
 
-        goodUI.gameObject.SetActive(false);
-        badUI.gameObject.SetActive(false);
+        foreach(GameObject obj in endUI) 
+        {
+            obj.SetActive(false);
+        }
 
         GameManagerScript.gamemanager.TaskNumber();
     }
@@ -38,31 +41,12 @@ public class CollectBerriesScript : MonoBehaviour
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
 
-            if (hit)
+            if (hit) //how to check hit goodberry/badberry?? - just randomise UI -___-
             {
                 GameOver();
             }
         }
     }
-
-    void GoodBerryUI()
-    {
-        Debug.Log("good UI");
-        goodUI.gameObject.SetActive(true);
-        goodBerry.gameObject.SetActive(false);
-        badBerry.gameObject.SetActive(false);
-        //GameOver();
-    }
-
-    void BadBerryUI()
-    {
-        Debug.Log("bad UI");
-        badUI.gameObject.SetActive(true);
-        goodBerry.gameObject.SetActive(false);
-        badBerry.gameObject.SetActive(false);
-        //GameOver();
-    }
-
     private void SpawnBerryPositions()
     {
         //1. Get the game manager to decide which berry type is bad, and which is good.
@@ -114,31 +98,18 @@ public class CollectBerriesScript : MonoBehaviour
         //So, at the end, we should have a good berry and a bad berry that are different berries from the berries array.
         //These are both instantiated, and hidden.
     }
-
     public void PositionAndEnableBerry(GameObject berry, Vector2 pos)
     {
         berry.transform.position = pos;
         berry.SetActive(true);
     }
-
     private void GameOver()
     {
         Debug.Log("GameOver");
-        //berry.gameObject.SetActive(false);
-        if (goodBerry)
-        {
-            //Debug.Log(hit.collider.name);
-
-            GoodBerryUI();
-            //badUI.gameObject.SetActive(false);
-        }
-
-        else if (badBerry)
-        {
-            //Debug.Log(hit.collider.name);
-
-            BadBerryUI();
-            //badUI.gameObject.SetActive(false);
-        }
+        badBerry.gameObject.SetActive(false);
+        goodBerry.gameObject.SetActive(false);
+        
+        int uiIndex = UnityEngine.Random.Range(0, endUI.Length);
+        endUI[uiIndex].SetActive(true);
     }
 }
