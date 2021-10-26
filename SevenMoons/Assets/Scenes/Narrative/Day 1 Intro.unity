@@ -1308,7 +1308,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2db8b38aa14abd14fa258f3bbb6764be, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72be327c1d3fd3a489469f0ca50aa9fd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1555,8 +1555,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -502.99988, y: 10}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -502.99988, y: -28.675003}
+  m_SizeDelta: {x: 66.667, y: 57.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1881726823
 CanvasRenderer:
@@ -1586,8 +1586,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5840751906166582055, guid: 2ec9bbb05d9b47b499e2d0aba3cd9bb4, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 086449c3a116c574781b777e03deba4b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1689,10 +1689,14 @@ MonoBehaviour:
   - {fileID: 1096329722}
   - {fileID: 1881726824}
   - {fileID: 1988389952}
-  characterSpeaker: {fileID: 1681121584}
+  characterSpeaker: {fileID: 0}
   typingSpeed: 0.01
-  movingOn: 0
   continueButton: {fileID: 1784103756}
+  artemisImage: {fileID: 1681121584}
+  griffinImage: {fileID: 1047936247}
+  albertImage: {fileID: 1988389952}
+  hapiImage: {fileID: 1096329722}
+  everyoneImage: {fileID: 1881726824}
 --- !u!4 &1918704348
 Transform:
   m_ObjectHideFlags: 0

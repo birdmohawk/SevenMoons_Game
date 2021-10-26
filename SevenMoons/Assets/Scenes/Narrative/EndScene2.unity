@@ -522,6 +522,81 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!1 &1047936244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1047936245}
+  - component: {fileID: 1047936246}
+  - component: {fileID: 1047936247}
+  m_Layer: 5
+  m_Name: Griffin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1047936245
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047936244}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1597618311}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -502.99988, y: 10}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1047936246
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047936244}
+  m_CullTransparentMesh: 1
+--- !u!114 &1047936247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047936244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fd90316cad2d5004ca4cac6307eabd0a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1055879828
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +813,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055879828}
   m_CullTransparentMesh: 1
+--- !u!1 &1096329719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1096329720}
+  - component: {fileID: 1096329721}
+  - component: {fileID: 1096329722}
+  m_Layer: 5
+  m_Name: Hapi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1096329720
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096329719}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1597618311}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -502.99988, y: 10}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1096329721
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096329719}
+  m_CullTransparentMesh: 1
+--- !u!114 &1096329722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096329719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2bc83a7abe1e26346b9db5a2adfcf758, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1128782380
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +1134,10 @@ RectTransform:
   m_LocalScale: {x: 0.89, y: 0.89, z: 0.89}
   m_Children:
   - {fileID: 1988389950}
+  - {fileID: 1681121582}
+  - {fileID: 1047936245}
+  - {fileID: 1096329720}
+  - {fileID: 1881726822}
   m_Father: {fileID: 1128782384}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1089,6 +1243,81 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1681121581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1681121582}
+  - component: {fileID: 1681121583}
+  - component: {fileID: 1681121584}
+  m_Layer: 5
+  m_Name: Artemis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1681121582
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681121581}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1597618311}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -502.99988, y: 10}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1681121583
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681121581}
+  m_CullTransparentMesh: 1
+--- !u!114 &1681121584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681121581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 72be327c1d3fd3a489469f0ca50aa9fd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1784103756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,6 +1521,81 @@ RectTransform:
   m_AnchoredPosition: {x: 596.51996, y: -259.3}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1881726821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1881726822}
+  - component: {fileID: 1881726823}
+  - component: {fileID: 1881726824}
+  m_Layer: 5
+  m_Name: BlankStandIn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1881726822
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881726821}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1597618311}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -502.99988, y: -28.675003}
+  m_SizeDelta: {x: 66.667, y: 57.35}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1881726823
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881726821}
+  m_CullTransparentMesh: 1
+--- !u!114 &1881726824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881726821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 086449c3a116c574781b777e03deba4b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1918704346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,72 +1627,73 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1597618313}
   sentences:
-  - 'ARTEMIS: Come on you two, what does it say?'
-  - HAPI:(nervously looks at the two boys reading the notice board)
-  - 'GRIFFIN: Uhhhh....'
-  - ALBERT:.....
-  - ALBERT:...why are you making such a face? Do you even know how to read?
-  - 'GRIFFIN: Nope! No idea! All I see is some funny scribbles'
-  - 'ALBERT: Ugh...it says "THEY WILL COME IN SEVEN DAYS", suggesting that...'
-  - 'GRIFFIN: Oh, I see now! Why didn''t they just use numbers? We use numbers on
-    the farm.'
-  - 'ALBERT: I can already see we are going to get along swimmingly'
-  - 'ALBERT: In any case, there were people here before us, and whatever got to them
-    will be here at the end of the week'
-  - 'ALBERT: I doubt it will be pleasant given the tents'
-  - (Everyone felt a cold chill down their spine at the thought
-  - 'ALBERT: Now if you will excuse me, I am off to take a nap'
-  - 'ARTEMIS: WHAT?! You can''t just take a nap after dropping a bombshell like that
-    on us!!'
-  - 'HAPI: What we need is a plan, not just sit around and do nothing'
-  - 'GRIFFIN: Yeah! What she said!'
-  - 'ALBERT: Clearly you haven''t been listening, I have a plan'
-  - 'ALBERT: Take a nap'
-  - 'HAPI: Fine. Be like that. I''m going to explore these woods and find out what''s
-    out there'
-  - 'GRIFFIN: Easy there, we should probably go together, get to know each other
-    as well'
-  - 'GRIFFIN: I''ll go first. I''m Griffin! And if you need anything heavy lifted,
-    give me a call'
-  - 'ARTEMIS: I''m Artemis, and you can count on me too, unlike lazy bones over there'
-  - 'ALBERT: The name is Albert, and if you find any interesting books, I''m sure
-    I can translate them for you'
-  - 'HAPI: And I''m Hapi! Nice to meet you all!'
-  - 'HAPI: Now let''s go and explore!'
-  - 'GRIFFIN AND ARTEMIS: Yeah!!!'
-  - 'ALBERT: Urgh...'
+  - And so the seventh began. Before the final embers of the fire withered and died,
+    the beasts did come. Befouled creatures of the unknown land , come to slay the
+    unwitting trespassers on their land.
+  - The stranded campers braced themselves; there was no going back. The cursed spirit
+    that ruled this realm came forth, ready to face it once and for all
+  - The prey would escape their perilous fate, but such an escape would come at a
+    cost. Once the beasts were gone, the campers were awash in strange light and
+    awoke in the woods outside their home towns, never to see the others again.
+  - Wounds would run deep and no one returned home the same. Sanity torn and body
+    weak, each camper would feel a pit in their stomach that would swallow the rest
+    of their lives into one dark void.
+  - Never one to stay still, a close shave with death kept Artemis more on her toes.
+    She left her village, and was never seen again.
+  - A few whispered she tried to find an ancient ruin, a way to enter a realm only
+    spoken of in hushed tones. Others say she went mad, that she became a witch in
+    the plains, cursing those who went looking for her.
+  - The only certainty is that whatever happened the in the forest she raved on about
+    broke her.
+  - 'For Hapi, the nightmares never went away. She was shunned by all she spoke with
+    about them. '
+  - She scared her parents and teachers with each description, each drawing she drew
+    of the encounters, reminded every day that they were not real.
+  - In the end, she learned to cope with the images burned into her mind, even if
+    her body could not.
+  - 'The loss bruised Griffins ego the worst. He couldn''t protect anyone in the
+    end, not without such lasting injuries for everyone. '
+  - He tripled his regular load of work, exhausting himself day in and day out. He
+    would mutter the name of his friends under his breath every time, a mantra to
+    remind him why he was doing this
+  - His work on the farm never stopped, and the forests near his home remain bare
+    to this day.
+  - The experience had scarred Albert, being so close to death. He sunk further into
+    his studies, looking into the arcane, the fantastical and the nonsensical.
+  - He forgot to eat regularly, and barely left for home.
+  - In the libraries of his hometown, it is said he still haunts the library, his
+    skeletal frame terrifying all who come to his dark corner.
+  - The forest remained as it ever was, with unwitting souls taken from their homes.
+    Whispers of a cursed woodland spirit remained, but it was all a tale, a rumor
+    to be ignored
+  - For how could such a twisted thing be true?
   characterPortraits:
+  - {fileID: 1881726824}
+  - {fileID: 1881726824}
+  - {fileID: 1881726824}
+  - {fileID: 1881726824}
+  - {fileID: 1681121584}
+  - {fileID: 1681121584}
+  - {fileID: 1681121584}
+  - {fileID: 1096329722}
+  - {fileID: 1096329722}
+  - {fileID: 1096329722}
+  - {fileID: 1047936247}
+  - {fileID: 1047936247}
+  - {fileID: 1047936247}
   - {fileID: 1988389952}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  characterSpeaker: {fileID: 1988389952}
+  - {fileID: 1988389952}
+  - {fileID: 1988389952}
+  - {fileID: 1881726824}
+  - {fileID: 1881726824}
+  characterSpeaker: {fileID: 0}
   typingSpeed: 0.01
-  movingOn: 0
   continueButton: {fileID: 1784103756}
+  artemisImage: {fileID: 1681121584}
+  griffinImage: {fileID: 1047936247}
+  albertImage: {fileID: 1988389952}
+  hapiImage: {fileID: 1096329722}
+  everyoneImage: {fileID: 1881726824}
 --- !u!4 &1918704348
 Transform:
   m_ObjectHideFlags: 0
@@ -1415,7 +1720,7 @@ GameObject:
   - component: {fileID: 1988389951}
   - component: {fileID: 1988389952}
   m_Layer: 5
-  m_Name: CharacterImage
+  m_Name: Albert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1437,7 +1742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -503, y: 10}
+  m_AnchoredPosition: {x: -502.99988, y: 10}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1988389951
@@ -1468,7 +1773,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d855ee5cc6df004439152f1b339ee962, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

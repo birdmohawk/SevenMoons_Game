@@ -27,9 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Areas/Ruined_Town.unity
     guid: f153cdedae7ae6f4f9371315ef98b622
   - enabled: 1
-    path: Assets/Scenes/Narrative/Day 1 Night.unity
-    guid: 56c57d69d1cd3624bab22a403dcba37f
-  - enabled: 1
     path: Assets/Scenes/Minigames/WoodChopMinigame.unity
     guid: 508e6e4effe4d054a911ff8693385654
   - enabled: 1
@@ -51,12 +48,48 @@ EditorBuildSettings:
     path: Assets/Scenes/Areas/River.unity
     guid: c90bcb6c610515f40a8284621ae06e63
   - enabled: 1
+    path: Assets/Scenes/Narrative/Day 1 Night.unity
+    guid: dcecd48a68670964899bb324c195aa06
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 2 Intro.unity
+    guid: 34661c60b9827b4459a077c01edfa7e1
+  - enabled: 1
     path: Assets/Scenes/Narrative/Day 2 Night.unity
-    guid: aa16638b57d744a469395e48ee0ea592
+    guid: 0cde284b340b8ae42a95accac8797028
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 3 Intro.unity
+    guid: f1cfec3c0f5d0c94d8692ac96b3bd65e
   - enabled: 1
     path: Assets/Scenes/Narrative/Day 3 Night.unity
-    guid: 63365f87da4e7e34b9d71ba3b11b60c8
+    guid: b2f9db6216c1e804b8775c00d0fce8fb
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 4 Intro.unity
+    guid: 132f9cf09ce0b384fb47bd8870e947a7
   - enabled: 1
     path: Assets/Scenes/Narrative/Day 4 Night.unity
-    guid: 8b03b8cbb5ff70d4ba361e7558cbbf5b
+    guid: ed42aee5538d8e04888c6b90f2dac1a7
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 5 Intro.unity
+    guid: fa2384d6f07356a4cad04b4bb9a6dce2
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 5 Night.unity
+    guid: b8f501ea2986231459c26d394ecb41ec
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 6 Intro.unity
+    guid: 897895ffbfb575f4eabaf32b6f683e0b
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 6 Night.unity
+    guid: 4aefe9dcc70c4f34f8ed002a0bdb6b05
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 7 Intro.unity
+    guid: bae57774821179741aed8b2f31ecd350
+  - enabled: 1
+    path: Assets/Scenes/Narrative/EndScene1.unity
+    guid: 8dc03bc30445e2d419cef1dc9502946e
+  - enabled: 1
+    path: Assets/Scenes/Narrative/EndScene2.unity
+    guid: c32d994bb99e1d043bd6efa11d9effdd
+  - enabled: 1
+    path: Assets/Scenes/Narrative/EndScene3.unity
+    guid: c34429ad3c8fb7e47b87b47b8b6ae398
   m_configObjects: {}

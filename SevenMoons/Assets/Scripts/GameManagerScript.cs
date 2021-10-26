@@ -147,11 +147,11 @@ public class GameManagerScript : MonoBehaviour
         
         if (nights == 7)
         {
-            if (artemisPoints + griffinPoints + albertPoints + hapiPoints + totalPoints > 50)
+            if (artemisPoints + griffinPoints + albertPoints + hapiPoints + totalPoints > 80)
             {
                 SceneManager.LoadScene ("EndScene1");
             }
-            if (artemisPoints + griffinPoints + albertPoints + hapiPoints + totalPoints < 20)
+            if (artemisPoints + griffinPoints + albertPoints + hapiPoints + totalPoints < 40)
             {
                 SceneManager.LoadScene ("EndScene3");
             }

@@ -16,10 +16,22 @@ public class DialogueNarrative : MonoBehaviour
 
     public GameObject continueButton;
 
+    public Image artemisImage;
+    public Image griffinImage;
+    public Image albertImage;
+    public Image hapiImage;
+    public Image everyoneImage;
+
     void Start()
     {
         StartCoroutine(Type());
+        artemisImage.enabled = false;
+        albertImage.enabled = false;
+        griffinImage.enabled = false;
+        hapiImage.enabled = false;
+        everyoneImage.enabled = false;
         characterSpeaker = characterPortraits[0];
+        characterSpeaker.enabled = true;
     }
 
     void Update()
@@ -58,7 +70,10 @@ public class DialogueNarrative : MonoBehaviour
 
     public void NextImage()
     {
-            imageIndex++;
+        characterSpeaker.enabled = false;    
+        imageIndex++;
             characterSpeaker = characterPortraits[imageIndex];
+        characterSpeaker.enabled = true;
+            
     }
 }
