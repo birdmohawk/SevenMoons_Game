@@ -14,12 +14,6 @@ public class DialogueMinigames : MonoBehaviour
     public GameObject continueButton;
     public GameObject nextSceneButton;
 
-    /*void Awake()
-    {
-        continueButton.gameObject.SetActive(false);
-        nextSceneButton.gameObject.SetActive(false);
-    }*/
-
     void Start()
     {
         /*sometimes this doesn't work, if so move SetActive(false) 
@@ -42,7 +36,11 @@ public class DialogueMinigames : MonoBehaviour
         if (index < sentences.Length - 1)
         {
             continueButton.SetActive(true);
-            //nextSceneButton.SetActive(false);
+        }
+
+        else
+        {
+            nextSceneButton.SetActive(true);
         }
     }
 
@@ -60,7 +58,6 @@ public class DialogueMinigames : MonoBehaviour
         else
         {
             textDisplay.text = "";
-            nextSceneButton.SetActive(true);
         }
     }
 }

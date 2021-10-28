@@ -15,6 +15,7 @@ public class WoodChoppingScript : MonoBehaviour
     //public Animation slashAnim;
     //public Animator slashAnim;
     private bool isPlaying;
+    private bool ended = false;
 
     private bool isGreen;
     private bool isOrange;
@@ -28,9 +29,13 @@ public class WoodChoppingScript : MonoBehaviour
     private int addRound;
     private int prevRound;
 
-    public GameObject bestGameUI;
-    public GameObject goodGameUI;
-    public GameObject badGameUI;
+    public GameObject[] bestGameUI;
+    public GameObject[] goodGameUI;
+    public GameObject[] badGameUI;
+    GameObject bestUI;
+    GameObject goodUI;
+    GameObject badUI;
+
     public GameObject endGameUI;
 
     public GameObject manager;
@@ -47,9 +52,21 @@ public class WoodChoppingScript : MonoBehaviour
         //squareAnim = GetComponent<Animation>();
         //slashAnim = GetComponent<Animation>();
         endGameUI.gameObject.SetActive(false);
-        bestGameUI.gameObject.SetActive(false);
-        goodGameUI.gameObject.SetActive(false);
-        badGameUI.gameObject.SetActive(false);
+
+        foreach (GameObject obj in bestGameUI)
+        {
+            obj.SetActive(false);
+        }
+        
+        foreach (GameObject obj in goodGameUI)
+        {
+            obj.SetActive(false);
+        } 
+        
+        foreach (GameObject obj in badGameUI)
+        {
+            obj.SetActive(false);
+        }
 
         redScoreUI.gameObject.SetActive(false);
         orangeScoreUI.gameObject.SetActive(false);
@@ -66,6 +83,11 @@ public class WoodChoppingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        InPlay();
+    }
+
+    void InPlay()
+    {
         if (isPlaying)
         {
             if (Input.GetKeyDown("e"))
@@ -75,7 +97,7 @@ public class WoodChoppingScript : MonoBehaviour
 
                 manager.GetComponent<PostWwiseEvent>().PlayWoodChopSound();
 
-                if (isGreen && isOrange) 
+                if (isGreen && isOrange)
                 {
                     OrangeScore();
                 }
@@ -83,7 +105,7 @@ public class WoodChoppingScript : MonoBehaviour
                 else if (isGreen)
                 {
                     GreenScore();
-                } 
+                }
 
                 else if (isOrange && isRed) //test this
                 {
@@ -223,32 +245,40 @@ public class WoodChoppingScript : MonoBehaviour
 
      void GameOver() 
      {
-        EndGameUI();
         instructions.gameObject.SetActive(false);
 
         redScoreUI.gameObject.SetActive(false);
         orangeScoreUI.gameObject.SetActive(false);
         greenScoreUI.gameObject.SetActive(false);
+
+        endGameUI.gameObject.SetActive(true);
+
+        if (!ended)
+        {
+            if (totalWood < 2)
+            {
+                int index = UnityEngine.Random.Range(0, badGameUI.Length);
+                badGameUI[index].SetActive(true);
+                Debug.Log("Ending is #: " + index);
+
+                ended = true;
+            }
+
+            else if (totalWood > 7)
+            {
+                int Index = UnityEngine.Random.Range(0, bestGameUI.Length);
+                bestGameUI[Index].SetActive(true);
+
+                ended = true;
+            }
+
+            else
+            {
+                int Index = UnityEngine.Random.Range(0, goodGameUI.Length);
+                goodGameUI[Index].SetActive(true);
+
+                ended = true;
+            }
+        }
      } 
-
-    void EndGameUI()
-    {
-        if (totalWood < 2)
-        {
-            badGameUI.gameObject.SetActive(true);
-            endGameUI.gameObject.SetActive(true);
-        }
-
-        else if (totalWood > 7)
-        {
-            bestGameUI.gameObject.SetActive(true);
-            endGameUI.gameObject.SetActive(true);
-        }
-
-        else 
-        {
-            goodGameUI.gameObject.SetActive(true);
-            endGameUI.gameObject.SetActive(true);
-        } 
-    }
 }
