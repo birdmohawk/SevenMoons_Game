@@ -10,7 +10,7 @@ public class DayAssetChanger : MonoBehaviour
     public GameObject[] day7; //days 5 and 6
 
     // Start is called before the first frame update
-    void Update()
+    void Start()
     {
         CheckAssets();
     }
@@ -19,19 +19,14 @@ public class DayAssetChanger : MonoBehaviour
     {
         int dayNumber = GameManagerScript.gamemanager.nights;
 
-        if (dayNumber <= 0 && dayNumber < 3) //days 1  and 2
+        if (dayNumber < 3) //days 1  and 2
         {
             Debug.Log("display day 1 and 2 assets");
-            
-            foreach(GameObject obj in day1) 
-            {
-            obj.SetActive(true);
-            }
 
              foreach(GameObject obj in day5) 
-            {
-            obj.SetActive(false);
-            }
+             {
+             obj.SetActive(false);
+             }
 
             foreach(GameObject obj in day3) 
             {
@@ -41,6 +36,11 @@ public class DayAssetChanger : MonoBehaviour
             foreach(GameObject obj in day7) 
             {
             obj.SetActive(false);
+            }
+
+            foreach (GameObject obj in day1)
+            {
+                obj.SetActive(true);
             }
         }
 
@@ -48,11 +48,6 @@ public class DayAssetChanger : MonoBehaviour
         {
             Debug.Log("display day 3 and 4 assets");
 
-            foreach(GameObject obj in day3) 
-            {
-            obj.SetActive(true);
-            }
-
              foreach(GameObject obj in day5) 
             {
             obj.SetActive(false);
@@ -66,17 +61,17 @@ public class DayAssetChanger : MonoBehaviour
             foreach(GameObject obj in day7) 
             {
             obj.SetActive(false);
+            }
+
+            foreach (GameObject obj in day3)
+            {
+                obj.SetActive(true);
             }
         }
         
-        if (dayNumber >= 5 && dayNumber < 7) //days 5 and 6
+        if (dayNumber == 5) //days 5 and 6
         {
             Debug.Log("display day 5 and 6 assets");
-
-             foreach(GameObject obj in day5) 
-            {
-            obj.SetActive(true);
-            }
 
             foreach(GameObject obj in day7) 
             {
@@ -92,16 +87,16 @@ public class DayAssetChanger : MonoBehaviour
             {
             obj.SetActive(false);
             }
+
+            foreach (GameObject obj in day5)
+            {
+                obj.SetActive(true);
+            }
         }
 
-        if (dayNumber >= 7) //day 7
+        if (dayNumber >= 6) //day 7
         {
             Debug.Log("display day 7 assets");
-
-            foreach(GameObject obj in day7) 
-            {
-            obj.SetActive(true);
-            }
 
             foreach(GameObject obj in day5) 
             {
@@ -116,6 +111,11 @@ public class DayAssetChanger : MonoBehaviour
             foreach(GameObject obj in day1) 
             {
             obj.SetActive(false);
+            }
+
+            foreach (GameObject obj in day7)
+            {
+                obj.SetActive(true);
             }
         }
     }

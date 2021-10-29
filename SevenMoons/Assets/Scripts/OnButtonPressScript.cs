@@ -52,7 +52,7 @@ public class OnButtonPressScript : MonoBehaviour
 
     public void OnButtonPress4() //Forest scene
     {
-        SceneManager.LoadScene("TrueForest");
+        SceneManager.LoadScene("Forest");
     }
 
     public void OnButtonPress5() //WoodChopMinigame scene

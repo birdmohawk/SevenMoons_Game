@@ -101415,10 +101415,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932136057}
     m_Modifications:
-    - target: {fileID: 732344580, guid: d5a35d2c104ff1c4a9f6cbde79947d59, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2670281399414173585, guid: d5a35d2c104ff1c4a9f6cbde79947d59, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -102373,17 +102369,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932136057}
     m_Modifications:
-    - target: {fileID: 758149078, guid: 054498cb0cbecb6459a6818c2cfb1e74, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5596473733227290532, guid: 054498cb0cbecb6459a6818c2cfb1e74, type: 3}
       propertyPath: m_Name
       value: Hapi
-      objectReference: {fileID: 0}
-    - target: {fileID: 5596473733227290535, guid: 054498cb0cbecb6459a6818c2cfb1e74, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5596473733227290537, guid: 054498cb0cbecb6459a6818c2cfb1e74, type: 3}
       propertyPath: m_RootOrder
@@ -128807,10 +128795,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932136057}
     m_Modifications:
-    - target: {fileID: 882277220, guid: 34e13fe2ab75a5649b5469c23ac29ead, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8098623675208414260, guid: 34e13fe2ab75a5649b5469c23ac29ead, type: 3}
       propertyPath: m_Name
       value: Albert

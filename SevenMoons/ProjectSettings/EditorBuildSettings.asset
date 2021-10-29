@@ -21,14 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Taskboard.unity
     guid: 4659769d92fc60343a0554f9cf1f25f5
   - enabled: 1
-    path: Assets/Scenes/Areas/Forest.unity
-    guid: f28fff9d569278448a5caa932680a7bf
-  - enabled: 1
-    path: Assets/Scenes/Areas/Ruined_Town_1.unity
-    guid: 31bd48fc23ec3ae45a4808b057e8a2de
-  - enabled: 1
     path: Assets/Scenes/Areas/River.unity
     guid: c90bcb6c610515f40a8284621ae06e63
+  - enabled: 1
+    path: Assets/Scenes/Areas/Forest.unity
+    guid: 759b851812845e54499c61bbf88213bf
   - enabled: 1
     path: Assets/Scenes/Minigames/WoodChopMinigame.unity
     guid: 508e6e4effe4d054a911ff8693385654
@@ -92,4 +89,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Narrative/EndScene3.unity
     guid: c34429ad3c8fb7e47b87b47b8b6ae398
+  - enabled: 1
+    path: Assets/Scenes/Areas/Ruined_Town.unity
+    guid: a07621b5a046d544a95e9a4706c6db80
   m_configObjects: {}
