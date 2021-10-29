@@ -17,11 +17,11 @@ public class DialogueMinigames : MonoBehaviour
     void Start()
     {
         /*sometimes this doesn't work, if so move SetActive(false) 
-         * components to Awake() in other script*/
+         * components to Awake() in other minigame script*/
         if (gameObject.activeSelf) 
         {
             StartCoroutine(Type());
-            //nextSceneButton.SetActive(false);
+            nextSceneButton.SetActive(false);
         }
     }
 
@@ -36,6 +36,7 @@ public class DialogueMinigames : MonoBehaviour
         if (index < sentences.Length - 1)
         {
             continueButton.SetActive(true);
+            nextSceneButton.SetActive(false);
         }
 
         else

@@ -968,8 +968,8 @@ MonoBehaviour:
   textDisplay: {fileID: 1405674196}
   sentences:
   - 'Well. Some wood is better than no wood. '
-  - I guess.
-  typingSpeed: 0.05
+  - II guess.
+  typingSpeed: 0.02
   continueButton: {fileID: 1808197172}
   nextSceneButton: {fileID: 182034719}
 --- !u!4 &690468256
@@ -1152,8 +1152,8 @@ MonoBehaviour:
   textDisplay: {fileID: 1405674196}
   sentences:
   - 'At least I''ll be warm. '
-  - (I'm not so sure about the others though)
-  typingSpeed: 0.05
+  - ((I'm not so sure about the others though)
+  typingSpeed: 0.02
   continueButton: {fileID: 1808197172}
   nextSceneButton: {fileID: 182034719}
 --- !u!4 &837063576
@@ -2776,7 +2776,7 @@ MonoBehaviour:
   textDisplay: {fileID: 1405674196}
   sentences:
   - I guess I'm going to freeze tonight!
-  typingSpeed: 0.05
+  typingSpeed: 0.02
   continueButton: {fileID: 1808197172}
   nextSceneButton: {fileID: 182034719}
 --- !u!4 &960243846
@@ -3230,8 +3230,8 @@ MonoBehaviour:
   textDisplay: {fileID: 1405674196}
   sentences:
   - Phew!
-  - This is plent of wood to keep the fire going all night.
-  typingSpeed: 0.05
+  - This is plenty of wood to keep the fire going all night.
+  typingSpeed: 0.02
   continueButton: {fileID: 1808197172}
   nextSceneButton: {fileID: 182034719}
 --- !u!4 &1143690334
@@ -3281,7 +3281,7 @@ MonoBehaviour:
   sentences:
   - 'Logs: 0   Me: 1'
   - Better luck next time trees.
-  typingSpeed: 0.05
+  typingSpeed: 0.02
   continueButton: {fileID: 1808197172}
   nextSceneButton: {fileID: 182034719}
 --- !u!4 &1293995606
@@ -3331,7 +3331,7 @@ MonoBehaviour:
   sentences:
   - Ouch!
   - That gave me a splinter!
-  typingSpeed: 0.05
+  typingSpeed: 0.02
   continueButton: {fileID: 1808197172}
   nextSceneButton: {fileID: 182034719}
 --- !u!4 &1311888070

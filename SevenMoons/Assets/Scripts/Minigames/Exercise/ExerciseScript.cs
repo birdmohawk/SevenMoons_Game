@@ -27,20 +27,34 @@ public class ExerciseScript : MonoBehaviour
     public TMP_Text displayTotal;
     public TMP_Text go;
     public GameObject manager;
-
-    public GameObject bestGameUI;
-    public GameObject goodGameUI;
-    public GameObject badGameUI;
     public GameObject endGameUI;
+
+    public GameObject[] bestGameUI;
+    public GameObject[] goodGameUI;
+    public GameObject[] badGameUI;
+
+    private bool ended = false;
 
     /* Using Awake() so that UI is deactivated before Start() so that
      * DialogueMinigames (script) Type() doesn't get called at start of game */
     void Awake()
     {
         endGameUI.gameObject.SetActive(false);
-        bestGameUI.gameObject.SetActive(false);
-        goodGameUI.gameObject.SetActive(false);
-        badGameUI.gameObject.SetActive(false);
+
+        foreach (GameObject obj in bestGameUI)
+        {
+            obj.SetActive(false);
+        }
+
+        foreach (GameObject obj in goodGameUI)
+        {
+            obj.SetActive(false);
+        }
+
+        foreach (GameObject obj in badGameUI)
+        {
+            obj.SetActive(false);
+        }
     }
 
     void Start()
@@ -108,29 +122,34 @@ public class ExerciseScript : MonoBehaviour
 
     private void GameOver()
     {
-        EndGameUI();
         timerBox.gameObject.SetActive(false);
         instructions.gameObject.SetActive(false);
-    }
+        endGameUI.gameObject.SetActive(true);
 
-    void EndGameUI()
-    {
-        if (score > 100)
+        if (!ended)
         {
-            bestGameUI.gameObject.SetActive(true);
-            endGameUI.gameObject.SetActive(true);
+            ended = true;
+
+            if (score > 110)
+            {
+                int index = UnityEngine.Random.Range(0, bestGameUI.Length);
+                bestGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.BestScore();
+            }
+
+            else if (score > 80)
+            {
+                int index = UnityEngine.Random.Range(0, goodGameUI.Length);
+                goodGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.GoodScore();
+            }
+
+            else
+            {
+                int index = UnityEngine.Random.Range(0, badGameUI.Length);
+                badGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.BadScore();
+            }
         }
-
-        else if (score > 80)
-        {
-            goodGameUI.gameObject.SetActive(true);
-            endGameUI.gameObject.SetActive(true);
-        }
-
-        else 
-        {
-            badGameUI.gameObject.SetActive(true);
-            endGameUI.gameObject.SetActive(true);
-        } 
     }
 }

@@ -14,17 +14,30 @@ public class ScavengeItemScript : MonoBehaviour
 
     public float timePassed;
 
-    public GameObject bestGameUI;
-    public GameObject goodGameUI;
-    public GameObject badGameUI;
     public GameObject endGameUI;
+    public GameObject[] bestGameUI;
+    public GameObject[] goodGameUI;
+    public GameObject[] badGameUI;
+
+    private bool ended = false;
 
     void Awake()
     {
         endGameUI.gameObject.SetActive(false);
-        bestGameUI.gameObject.SetActive(false);
-        goodGameUI.gameObject.SetActive(false);
-        badGameUI.gameObject.SetActive(false);
+        foreach (GameObject obj in bestGameUI)
+        {
+            obj.SetActive(false);
+        }
+
+        foreach (GameObject obj in goodGameUI)
+        {
+            obj.SetActive(false);
+        }
+
+        foreach (GameObject obj in badGameUI)
+        {
+            obj.SetActive(false);
+        }
     }
 
     void Start()
@@ -68,25 +81,33 @@ public class ScavengeItemScript : MonoBehaviour
         endGameUI.gameObject.SetActive(true);
         instructions.gameObject.SetActive(false);
 
-        if (timePassed <= 15)
+        if (!ended)
         {
-            Debug.Log("great score!");
-            //GameManagerScript.gamemanager.BestScore();
-            bestGameUI.gameObject.SetActive(true);
-        }
+            ended = true;
 
-        else if (timePassed > 15 && timePassed < 30)
-        {
-            Debug.Log("good score!");
-            //GameManagerScript.gamemanager.GoodScore();
-            goodGameUI.gameObject.SetActive(true);
-        }
+            if (timePassed <= 15)
+            {
+                //Debug.Log("great score!");
+                int index = UnityEngine.Random.Range(0, bestGameUI.Length);
+                bestGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.BestScore();
+            }
 
-        else 
-        {
-            Debug.Log("bad score!");
-            //GameManagerScript.gamemanager.BadScore();
-            badGameUI.gameObject.SetActive(true);
+            else if (timePassed > 15 && timePassed < 35)
+            {
+                //Debug.Log("good score!");
+                int index = UnityEngine.Random.Range(0, goodGameUI.Length);
+                goodGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.GoodScore();
+            }
+
+            else
+            {
+                //Debug.Log("bad score!");
+                int index = UnityEngine.Random.Range(0, badGameUI.Length);
+                badGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.BadScore();
+            }
         }
     }
 }

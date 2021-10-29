@@ -183,8 +183,6 @@ public class WoodChoppingScript : MonoBehaviour
         TotalWood();
         prevWood = totalWood;
         greenScoreUI.gameObject.SetActive(true);
-
-        GameManagerScript.gamemanager.BestScore();
     }
 
     void OrangeScore()
@@ -194,7 +192,6 @@ public class WoodChoppingScript : MonoBehaviour
         TotalWood();
         prevWood = totalWood;
         orangeScoreUI.gameObject.SetActive(true);
-        GameManagerScript.gamemanager.GoodScore();
     }
 
     void RedScore()
@@ -204,7 +201,6 @@ public class WoodChoppingScript : MonoBehaviour
         TotalWood();
         prevWood = totalWood;
         redScoreUI.gameObject.SetActive(true);
-        GameManagerScript.gamemanager.BadScore();
     }
 
     //what happens after stopped. score add + restart round or end minigame
@@ -255,29 +251,28 @@ public class WoodChoppingScript : MonoBehaviour
 
         if (!ended)
         {
+            ended = true;
+
             if (totalWood < 2)
             {
                 int index = UnityEngine.Random.Range(0, badGameUI.Length);
                 badGameUI[index].SetActive(true);
-                Debug.Log("Ending is #: " + index);
-
-                ended = true;
+                //Debug.Log("Ending is #: " + index);
+                GameManagerScript.gamemanager.BadScore();
             }
 
             else if (totalWood > 7)
             {
-                int Index = UnityEngine.Random.Range(0, bestGameUI.Length);
-                bestGameUI[Index].SetActive(true);
-
-                ended = true;
+                int index = UnityEngine.Random.Range(0, bestGameUI.Length);
+                bestGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.BestScore();
             }
 
             else
             {
-                int Index = UnityEngine.Random.Range(0, goodGameUI.Length);
-                goodGameUI[Index].SetActive(true);
-
-                ended = true;
+                int index = UnityEngine.Random.Range(0, goodGameUI.Length);
+                goodGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.GoodScore();
             }
         }
      } 

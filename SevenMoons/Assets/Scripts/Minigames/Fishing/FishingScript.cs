@@ -35,17 +35,30 @@ public class FishingScript : MonoBehaviour
     public GameObject instructions;
     //public TMP_Text displayTotal;
 
-    public GameObject bestGameUI;
-    public GameObject goodGameUI;
-    public GameObject badGameUI;
+    public GameObject[] bestGameUI;
+    public GameObject[] goodGameUI;
+    public GameObject[] badGameUI;
     public GameObject endGameUI;
+    private bool ended = false;
 
     void Awake()
     {
         endGameUI.gameObject.SetActive(false);
-        bestGameUI.gameObject.SetActive(false);
-        goodGameUI.gameObject.SetActive(false);
-        badGameUI.gameObject.SetActive(false);
+
+        foreach (GameObject obj in bestGameUI)
+        {
+            obj.SetActive(false);
+        }
+
+        foreach (GameObject obj in goodGameUI)
+        {
+            obj.SetActive(false);
+        }
+
+        foreach (GameObject obj in badGameUI)
+        {
+            obj.SetActive(false);
+        }
     }
     void Start()
     {
@@ -164,44 +177,37 @@ public class FishingScript : MonoBehaviour
         }
     }
 
-    void TotalFish()
-    {
-        totalFish = prevFish + addFish;
-        //Debug.Log(totalFish);
-        //DisplayTotal();
-    }
-
-    /*void DisplayTotal()
-    {
-        displayTotal.text = totalFish.ToString() + " Fish Caught";
-    }*/
-
     private void GameOver()
     {
-        //TotalFish();
         totalFish = prevFish + addFish;
         instructions.gameObject.SetActive(false);
-        EndGameUI();
-    }
 
-    void EndGameUI()
-    {
-        if (totalFish < 1)
+        endGameUI.gameObject.SetActive(true);
+
+        if (!ended)
         {
-            badGameUI.gameObject.SetActive(true);
-            endGameUI.gameObject.SetActive(true);
+            ended = true;
+
+            if (totalFish < 1)
+            {
+                int index = UnityEngine.Random.Range(0, badGameUI.Length);
+                badGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.BadScore();
+            }
+
+            else if (totalFish > 2)
+            {
+                int index = UnityEngine.Random.Range(0, bestGameUI.Length);
+                bestGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.BestScore();
+            }
+
+            else
+            {
+                int index = UnityEngine.Random.Range(0, goodGameUI.Length);
+                goodGameUI[index].SetActive(true);
+                GameManagerScript.gamemanager.GoodScore();
+            }
         }
-
-        else if (totalFish > 2)
-        {
-            bestGameUI.gameObject.SetActive(true);
-            endGameUI.gameObject.SetActive(true);
-        }
-
-        else 
-        {
-            goodGameUI.gameObject.SetActive(true);
-            endGameUI.gameObject.SetActive(true);
-        } 
     }
 }

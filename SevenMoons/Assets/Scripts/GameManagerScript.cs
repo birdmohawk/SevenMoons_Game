@@ -106,14 +106,14 @@ public class GameManagerScript : MonoBehaviour
     public void TaskNumber()
     {
         tasks++;
-        Debug.Log(tasks);
+        Debug.Log("Task #" + tasks);
     }
     
     public void EndofDay()
     {
         tasks = 0;
         nights++;
-        Debug.Log("Day number" + nights);
+        Debug.Log("Day #" + nights);
 
         if (nights == 1)
         {
