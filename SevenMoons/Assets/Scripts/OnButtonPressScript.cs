@@ -52,7 +52,7 @@ public class OnButtonPressScript : MonoBehaviour
 
     public void OnButtonPress4() //Forest scene
     {
-        SceneManager.LoadScene("Forest");
+        SceneManager.LoadScene("TrueForest");
     }
 
     public void OnButtonPress5() //WoodChopMinigame scene
@@ -80,9 +80,9 @@ public class OnButtonPressScript : MonoBehaviour
         SceneManager.LoadScene("ChopReedsMinigame");
     }
 
-    public void OnButtonPress10() //Day 1 Night for PGF
+    public void OnButtonPress10() //Day 2 Intro
     {
-        SceneManager.LoadScene("Day 1 Night");
+        SceneManager.LoadScene("Day 2 Intro");
     }
 
     public void OnButtonPress11() //Ruined Town
@@ -103,5 +103,25 @@ public class OnButtonPressScript : MonoBehaviour
     public void OnButtonPress14() //Day 1 Day for PGF
     {
         SceneManager.LoadScene("StartGame");
+    }
+    public void OnButtonPress15() //Day 3 Intro
+    {
+        SceneManager.LoadScene("Day 3 Intro");
+    }
+    public void OnButtonPress16() //Day 4 Intro
+    {
+        SceneManager.LoadScene("Day 4 Intro");
+    }
+    public void OnButtonPress17() //Day 5 Intro
+    {
+        SceneManager.LoadScene("Day 5 Intro");
+    }
+    public void OnButtonPress18() //Day 6 Intro
+    {
+        SceneManager.LoadScene("Day 6 Intro");
+    }
+    public void OnButtonPress19() //Day 7 Intro
+    {
+        SceneManager.LoadScene("Day 7 Intro");
     }
 }

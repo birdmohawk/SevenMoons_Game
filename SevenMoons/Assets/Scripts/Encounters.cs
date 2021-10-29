@@ -250,13 +250,13 @@ public class Encounters : MonoBehaviour
             {
                 selectedGood = true;
                 Debug.Log("Selected True");
-                encounterReward++;
+                encounterReward = encounterReward + 1;
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
                 selectedBad = true;
                 Debug.Log("Selected False");
-                encounterReward--;
+                encounterReward = encounterReward - 1;
             }
 
             EncounterCheck();

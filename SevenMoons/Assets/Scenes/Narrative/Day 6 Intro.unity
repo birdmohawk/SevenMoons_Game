@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 72be327c1d3fd3a489469f0ca50aa9fd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 019a2b5dd919f254ca722d7ae4c40291, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1666,7 +1666,7 @@ MonoBehaviour:
   griffinImage: {fileID: 1047936247}
   albertImage: {fileID: 1988389952}
   hapiImage: {fileID: 1096329722}
-  everyoneImage: {fileID: 0}
+  everyoneImage: {fileID: 1389569983}
 --- !u!4 &1918704348
 Transform:
   m_ObjectHideFlags: 0
@@ -1746,7 +1746,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d855ee5cc6df004439152f1b339ee962, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 509a8f072f88d124991cd62c645997b9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
