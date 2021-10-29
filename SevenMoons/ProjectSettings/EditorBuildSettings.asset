@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Taskboard.unity
     guid: 4659769d92fc60343a0554f9cf1f25f5
   - enabled: 1
-    path: Assets/Scenes/Areas/TrueForest.unity
+    path: Assets/Scenes/Areas/Forest.unity
     guid: f28fff9d569278448a5caa932680a7bf
   - enabled: 1
     path: Assets/Scenes/Areas/Ruined_Town_1.unity

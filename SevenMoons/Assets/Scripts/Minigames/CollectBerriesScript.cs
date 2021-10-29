@@ -8,11 +8,10 @@ public class CollectBerriesScript : MonoBehaviour
     public Transform[] spawnPos;
 
     public float nextSceneTime = 5;
-
-    //public GameObject goodUI;
-    //public GameObject badUI;
-
-    public GameObject[] endUI;
+    private bool  ended = false;
+    public GameObject instructions;
+    public GameObject endUI;
+    public GameObject[] endUIOutcome;
     public GameObject[] berries;
     //[HideInInspector]
     public GameObject badBerry = null; //public so that they are accessible from CollectBerriesScript
@@ -24,12 +23,13 @@ public class CollectBerriesScript : MonoBehaviour
     {
         SpawnBerryPositions();
 
-        foreach(GameObject obj in endUI) 
+        foreach(GameObject obj in endUIOutcome) 
         {
             obj.SetActive(false);
         }
 
         GameManagerScript.gamemanager.TaskNumber();
+        endUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -105,11 +105,30 @@ public class CollectBerriesScript : MonoBehaviour
     }
     private void GameOver()
     {
-        Debug.Log("GameOver");
+        //Debug.Log("GameOver");
         badBerry.gameObject.SetActive(false);
         goodBerry.gameObject.SetActive(false);
+        instructions.SetActive(false);
+
+        endUI.SetActive(true);
         
-        int uiIndex = UnityEngine.Random.Range(0, endUI.Length);
-        endUI[uiIndex].SetActive(true);
+        if (!ended)
+        {
+            ended = true;
+            int index = UnityEngine.Random.Range(0, endUIOutcome.Length);
+            endUIOutcome[index].SetActive(true);
+
+            if (endUIOutcome[index].tag == "good")
+            {
+                GameManagerScript.gamemanager.BestScore();
+                Debug.Log("score is good");
+            }
+
+            else
+            {
+                GameManagerScript.gamemanager.BadScore();
+                Debug.Log("score is bad");
+            }
+        }
     }
 }

@@ -16,7 +16,7 @@ public class SortingOrderScript : MonoBehaviour
     void Start()
     {
         tm = GetComponent<TilemapRenderer>();
-        character = GetComponent<SpriteRenderer>();
+        //character = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -25,13 +25,13 @@ public class SortingOrderScript : MonoBehaviour
         if (objectBehind)
         {
             tm.sortingLayerName = behind;
-            character.sortingOrder = 1;
+            //character.sortingOrder = 1;
         }
 
         else
         {
             tm.sortingLayerName = inFront;
-            character.sortingOrder = 0;
+            //character.sortingOrder = 0;
         }
     }
 
