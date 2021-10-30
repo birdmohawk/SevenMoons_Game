@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 882277219}
   - component: {fileID: 882277220}
   - component: {fileID: 1460181582}
+  - component: {fileID: 4437893500667737339}
   m_Layer: 0
   m_Name: Albert
   m_TagString: Player
@@ -469,3 +470,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4437893500667737339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8098623675208414260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f24d5cb2102464ea4c787ee580d26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Footsteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 33e191c4fd607f8459806a5ef405eafa, type: 2}
+  Select:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  MyEvent3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  MyEvent4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

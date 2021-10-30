@@ -8,6 +8,7 @@ public class TaskboardInteraction : MonoBehaviour
     public GameObject taskboard;
 
     public GameObject character;
+    public GameObject charCanvas;
     public Camera camera;
 
     private bool inRange; 
@@ -61,6 +62,7 @@ public class TaskboardInteraction : MonoBehaviour
     public void Taskboard()
     {
         character.gameObject.SetActive(false);
+        charCanvas.gameObject.SetActive(false);
         camera.gameObject.SetActive(true);
         taskboardButton.gameObject.SetActive(false);
         taskboard.gameObject.SetActive(true);
@@ -70,6 +72,7 @@ public class TaskboardInteraction : MonoBehaviour
     public void TaskboardExit()
     {
         character.gameObject.SetActive(true);
+        charCanvas.gameObject.SetActive(true);
         camera.gameObject.SetActive(false);
         //taskboardButton.gameObject.SetActive(false);
         taskboard.gameObject.SetActive(false);
