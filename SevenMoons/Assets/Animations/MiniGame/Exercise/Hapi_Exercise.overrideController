@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hapi_Exercise
+  m_Controller: {fileID: 9100000, guid: 1ad29b70d906724428cd0feecb85f29f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: aaa846e3c2a53f449ad91106ea843572, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 150d199e6e7bd654cab46020b2257233, type: 2}

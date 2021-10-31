@@ -939,7 +939,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b86c569e457af94d8e3c5e3eeaf59246
     GuidInternal: 
-    m_lastTime: -8585718883908125122
+    m_lastTime: -8585659377238085910
     List:
     - name: CampfireDistance
       guid: aafb40166c74924b93c6ca991c702dfd
@@ -1269,7 +1269,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 03b9fe9caa3ccb4193ed088473b5f322
     GuidInternal: 
-    m_lastTime: -8585713872372412363
+    m_lastTime: -8585659321583694783
     List:
     - name: Ambience_DayNumber
       guid: 7227c83d8761454fb157a75fb3ccdaa4
@@ -1564,7 +1564,7 @@ MonoBehaviour:
     m_lastTime: -8585724279802356411
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 01000000060000000700000008000000090000000a0000000d0000000e0000001500000016000000170000001f000000200000002100000028000000290000002a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -13,6 +13,7 @@ public class DialogueMinigames : MonoBehaviour
 
     public GameObject continueButton;
     public GameObject nextSceneButton;
+    private bool dialogueRunning = false;
 
     void Start()
     {
@@ -22,26 +23,39 @@ public class DialogueMinigames : MonoBehaviour
         {
             StartCoroutine(Type());
             nextSceneButton.SetActive(false);
+            continueButton.SetActive(false);
         }
     }
 
     IEnumerator Type()
     {
+        dialogueRunning = true;
+
         foreach (char letter in sentences[index].ToCharArray())
         {
+            
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
 
-        if (index < sentences.Length - 1)
-        {
-            continueButton.SetActive(true);
-            nextSceneButton.SetActive(false);
-        }
+        dialogueRunning = false;
+        Buttons();
+    }
 
-        else
+    void Buttons()
+    {
+        if (!dialogueRunning)
         {
-            nextSceneButton.SetActive(true);
+            if (index < sentences.Length - 1)
+            {
+                continueButton.SetActive(true);
+                nextSceneButton.SetActive(false);
+            }
+
+            else
+            {
+                nextSceneButton.SetActive(true);
+            }
         }
     }
 
@@ -49,7 +63,7 @@ public class DialogueMinigames : MonoBehaviour
     {
         continueButton.SetActive(false);
 
-        if (index < sentences.Length - 1)
+        if (index < sentences.Length - 1 && !dialogueRunning)
         {
             index++;
             textDisplay.text = "";

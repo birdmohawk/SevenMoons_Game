@@ -10,7 +10,6 @@ public class ScavengeItemScript : MonoBehaviour
     public int triggers;
 
     public GameObject instructions;
-    public TMP_Text displayTotal;
 
     public float timePassed;
 
@@ -59,7 +58,6 @@ public class ScavengeItemScript : MonoBehaviour
         {
             endGameUI.gameObject.SetActive(false); //trying this to avoid scavenge bug for now >:(
             instructions.gameObject.SetActive(true);
-            displayTotal.text = "";
             timePassed += Time.deltaTime;
         }
     }
