@@ -5,6 +5,7 @@ using UnityEngine;
 public class Encounters : MonoBehaviour
 {
     public float encounterTimer = 20.0f;
+    public float outcomeTimer = 2.0f;
     public bool selectedGood = false;
     public bool selectedBad = false;
     float encountersFound = 0;
@@ -25,6 +26,8 @@ public class Encounters : MonoBehaviour
     public GameObject encounterOptions10;
     public GameObject encounterOptions11;
     public GameObject encounterOptions12;
+    public GameObject goodOutcome;
+    public GameObject badOutcome;
 
     bool encounterActive = false;
     bool GW = false;
@@ -54,6 +57,8 @@ public class Encounters : MonoBehaviour
         encounterOptions10.gameObject.SetActive(false);
         encounterOptions11.gameObject.SetActive(false);
         encounterOptions12.gameObject.SetActive(false);
+        goodOutcome.gameObject.SetActive(false);
+        badOutcome.gameObject.SetActive(false);
     }
 
     public void Update()
@@ -251,12 +256,26 @@ public class Encounters : MonoBehaviour
                 selectedGood = true;
                 Debug.Log("Selected True");
                 encounterReward = encounterReward + 1;
+                goodOutcome.gameObject.SetActive(true);
+                outcomeTimer -= Time.deltaTime;
+                if (outcomeTimer <= 0)
+                {
+                    goodOutcome.gameObject.SetActive(false);
+                    outcomeTimer = 2.0f;
+                }
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
                 selectedBad = true;
                 Debug.Log("Selected False");
                 encounterReward = encounterReward - 1;
+                badOutcome.gameObject.SetActive(true);
+                outcomeTimer -= Time.deltaTime;
+                if (outcomeTimer <= 0)
+                {
+                    badOutcome.gameObject.SetActive(false);
+                    outcomeTimer = 2.0f;
+                }
             }
 
             EncounterCheck();
