@@ -904,10 +904,8 @@ MonoBehaviour:
   - {fileID: 880006984}
   goodGameUI:
   - {fileID: 2096375852}
-  - {fileID: 259564027}
   badGameUI:
   - {fileID: 590407290}
-  - {fileID: 61300123}
 --- !u!212 &343372878
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1435,10 +1433,8 @@ MonoBehaviour:
   - {fileID: 880006984}
   goodGameUI:
   - {fileID: 2096375852}
-  - {fileID: 259564027}
   badGameUI:
   - {fileID: 590407290}
-  - {fileID: 61300123}
 --- !u!212 &455340322
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2387,7 +2383,7 @@ MonoBehaviour:
   sentences:
   - The wind whips through your hair as you fly along the grass.
   - IIt's always a good idea to practice your running skills when you're stuck in
-    unknown forest.
+    an unknown forest.
   - JJust in case.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
@@ -2986,10 +2982,8 @@ MonoBehaviour:
   - {fileID: 880006984}
   goodGameUI:
   - {fileID: 2096375852}
-  - {fileID: 259564027}
   badGameUI:
   - {fileID: 590407290}
-  - {fileID: 61300123}
 --- !u!212 &1643541860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3123,10 +3117,8 @@ MonoBehaviour:
   - {fileID: 880006984}
   goodGameUI:
   - {fileID: 2096375852}
-  - {fileID: 259564027}
   badGameUI:
   - {fileID: 590407290}
-  - {fileID: 61300123}
 --- !u!212 &1907947454
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3412,8 +3404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 76721515}
   sentences:
-  - good
-  - second sentence test
+  - 'That was ok. '
+  - YYou're not very fast though.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
   nextSceneButton: {fileID: 804489146}
@@ -3445,6 +3437,7 @@ GameObject:
   - component: {fileID: 2146323879}
   - component: {fileID: 2146323881}
   - component: {fileID: 2146323882}
+  - component: {fileID: 2146323884}
   - component: {fileID: 2146323880}
   m_Layer: 0
   m_Name: Manager
@@ -3559,10 +3552,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: eaf14e8f8ce8b9248943417157aa1569, type: 2}
-  DayNumber:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1fa15f32307b5884b9db102577b4c086, type: 2}
 --- !u!114 &2146323882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3609,3 +3598,37 @@ MonoBehaviour:
   secondQuarter: {fileID: 1105045976}
   thirdQuarter: {fileID: 1105045976}
   fourthQuarter: {fileID: 1105045976}
+--- !u!114 &2146323884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146323876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2cb740a3f9717b4e8b08504e0c4a4f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1fa15f32307b5884b9db102577b4c086, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
+  LargeModePositions: []
+  multiPositionArray: []

@@ -3587,7 +3587,7 @@ GameObject:
   - component: {fileID: 1580533197}
   - component: {fileID: 1580533196}
   - component: {fileID: 1580533199}
-  - component: {fileID: 1580533202}
+  - component: {fileID: 1580533203}
   - component: {fileID: 1580533201}
   - component: {fileID: 1580533200}
   m_Layer: 0
@@ -3671,7 +3671,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 65fd6696b393b514c95bc417d93261bf, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 6d64f7ccb6c8ff548abf2af38fcb400e, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -3734,7 +3734,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &1580533202
+--- !u!114 &1580533203
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3751,7 +3751,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6d64f7ccb6c8ff548abf2af38fcb400e, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ae1b86c0bb815d24fb40e8f496ac960d, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0

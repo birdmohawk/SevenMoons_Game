@@ -1273,8 +1273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1529475478}
   sentences:
-  - best 1
-  - sentence 2 test
+  - Wow!
+  - A book!
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
@@ -2145,8 +2145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1529475478}
   sentences:
-  - good
-  - sentence 2 test
+  - Ok.
+  - A book.
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
@@ -2399,7 +2399,6 @@ MonoBehaviour:
   - {fileID: 643200586}
   goodGameUI:
   - {fileID: 433981154}
-  - {fileID: 2046234805}
   badGameUI:
   - {fileID: 37643045}
   - {fileID: 1068942958}
@@ -3115,8 +3114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1529475478}
   sentences:
-  - best 2
-  - ssentence 2 test
+  - You unconvered that book at the speed of lightning.
+  - Hhope you can read as fast!
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
@@ -4480,6 +4479,7 @@ GameObject:
   - component: {fileID: 1195654492}
   - component: {fileID: 1195654491}
   - component: {fileID: 1195654490}
+  - component: {fileID: 1195654493}
   - component: {fileID: 1195654489}
   m_Layer: 0
   m_Name: Manager
@@ -4562,7 +4562,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ae1b86c0bb815d24fb40e8f496ac960d, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 6d64f7ccb6c8ff548abf2af38fcb400e, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -4586,7 +4586,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6d64f7ccb6c8ff548abf2af38fcb400e, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ae1b86c0bb815d24fb40e8f496ac960d, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -4635,10 +4635,40 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: eaf14e8f8ce8b9248943417157aa1569, type: 2}
-  DayNumber:
+--- !u!114 &1195654493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195654485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2cb740a3f9717b4e8b08504e0c4a4f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1fa15f32307b5884b9db102577b4c086, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
+  LargeModePositions: []
+  multiPositionArray: []
 --- !u!1 &1244158214
 GameObject:
   m_ObjectHideFlags: 0
