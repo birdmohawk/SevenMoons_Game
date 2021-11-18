@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Narrative/Opening Narrative.unity
     guid: 9ee26183b7251a442a8e9916a1bbdb0a
   - enabled: 1
-    path: Assets/Scenes/Narrative/Day 1 Intro.unity
+    path: Assets/Scenes/Narrative/New Scenes/Opening Narrative 1.unity
     guid: 85e83df84de5d674cbb1a578311a26cb
   - enabled: 1
     path: Assets/Scenes/Areas/Campsite.unity
