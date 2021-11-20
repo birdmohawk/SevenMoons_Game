@@ -1879,17 +1879,17 @@ MonoBehaviour:
     find that library again today. Wish me luck'
   - 'GRIFFIN: Uh, good luck I guess?'
   characterPortraits:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1047936247}
+  - {fileID: 1988389952}
+  - {fileID: 1047936247}
+  - {fileID: 1988389952}
+  - {fileID: 1047936247}
+  - {fileID: 1988389952}
+  - {fileID: 1047936247}
+  - {fileID: 1988389952}
+  - {fileID: 1047936247}
+  - {fileID: 1988389952}
+  - {fileID: 1047936247}
   characterSpeaker: {fileID: 0}
   typingSpeed: 0.01
   continueButton: {fileID: 1784103756}

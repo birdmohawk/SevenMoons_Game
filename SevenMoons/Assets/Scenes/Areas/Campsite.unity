@@ -56301,7 +56301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5123264811767540453, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
       propertyPath: nights
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5123264811767540453, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
       propertyPath: firstQuarter

@@ -1881,21 +1881,21 @@ MonoBehaviour:
   - 'HAPI: ...hmmm....deal! But only you because you''re my friend'
   - 'ARTEMIS: ha, I guess we have to be now'
   characterPortraits:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1096329722}
+  - {fileID: 1988389952}
+  - {fileID: 1681121584}
+  - {fileID: 1988389952}
+  - {fileID: 1681121584}
+  - {fileID: 1988389952}
+  - {fileID: 1681121584}
+  - {fileID: 1047936247}
+  - {fileID: 1681121584}
+  - {fileID: 1047936247}
+  - {fileID: 1681121584}
+  - {fileID: 1096329722}
+  - {fileID: 1681121584}
+  - {fileID: 1096329722}
+  - {fileID: 1681121584}
   characterSpeaker: {fileID: 0}
   typingSpeed: 0.01
   continueButton: {fileID: 1784103756}
