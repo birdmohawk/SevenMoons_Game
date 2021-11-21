@@ -386,6 +386,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!4 &37643047
 Transform:
   m_ObjectHideFlags: 0
@@ -1274,10 +1275,11 @@ MonoBehaviour:
   textDisplay: {fileID: 1529475478}
   sentences:
   - Wow!
-  - A book!
+  - AA book!
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!1 &174800380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,10 +2148,11 @@ MonoBehaviour:
   textDisplay: {fileID: 1529475478}
   sentences:
   - Ok.
-  - A book.
+  - AA book.
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!1 &443576301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,6 +2402,7 @@ MonoBehaviour:
   - {fileID: 643200586}
   goodGameUI:
   - {fileID: 433981154}
+  - {fileID: 2046234805}
   badGameUI:
   - {fileID: 37643045}
   - {fileID: 1068942958}
@@ -3115,10 +3119,11 @@ MonoBehaviour:
   textDisplay: {fileID: 1529475478}
   sentences:
   - You unconvered that book at the speed of lightning.
-  - Hhope you can read as fast!
+  - HHope you can read as fast!
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!1 &696119786
 GameObject:
   m_ObjectHideFlags: 0
@@ -4321,6 +4326,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!1 &1137025558
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,22 +4535,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f24d5cb2102464ea4c787ee580d26c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Footsteps:
-    idInternal: 0
+  Sounds:
+  - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  Select:
-    idInternal: 0
+    WwiseObjectReference: {fileID: 11400000, guid: b149ae8641917e54aba1575b3d293522, type: 2}
+  - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6e6344cf9d10b0341a1704cd6192f056, type: 2}
-  MyEvent3:
-    idInternal: 0
+  - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  MyEvent4:
-    idInternal: 0
+    WwiseObjectReference: {fileID: 11400000, guid: e37719ff99f4bc649b29e1e16db3079a, type: 2}
+  - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 55b1c1ce594855c40b56ebda4609edf5, type: 2}
 --- !u!114 &1195654489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4562,7 +4565,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6d64f7ccb6c8ff548abf2af38fcb400e, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 170c4f537cffe8e41a37710e441eb671, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -4608,7 +4611,7 @@ MonoBehaviour:
   m_listeners:
     initialListenerList: []
     useDefaultListeners: 1
-  isEnvironmentAware: 1
+  isEnvironmentAware: 0
   isStaticObject: 0
   m_positionOffsetData:
     KeepMe: 0
@@ -6134,7 +6137,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1195654488}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
-        m_MethodName: PlaySelectSound
+        m_MethodName: PlaySound0
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8335,7 +8338,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1195654488}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
-        m_MethodName: PlaySelectSound
+        m_MethodName: PlaySound1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8551,6 +8554,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!1 &2088187926
 GameObject:
   m_ObjectHideFlags: 0

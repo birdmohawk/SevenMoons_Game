@@ -2437,47 +2437,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &100651659 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 510678851, guid: 34e13fe2ab75a5649b5469c23ac29ead, type: 3}
-  m_PrefabInstance: {fileID: 1168524055}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &100651661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100651659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e3bec38c47c630499f98bdd75115a0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
---- !u!114 &100651662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100651659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5509ae6aedd5ca44988e09366ce8c3cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &132825404
 GameObject:
   m_ObjectHideFlags: 0
@@ -38619,6 +38578,7 @@ GameObject:
   - component: {fileID: 822480877}
   - component: {fileID: 822480871}
   - component: {fileID: 822480878}
+  - component: {fileID: 822480879}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -38791,22 +38751,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f24d5cb2102464ea4c787ee580d26c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Footsteps:
-    idInternal: 0
+  Sounds:
+  - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 33e191c4fd607f8459806a5ef405eafa, type: 2}
-  Select:
-    idInternal: 0
+    WwiseObjectReference: {fileID: 11400000, guid: b149ae8641917e54aba1575b3d293522, type: 2}
+  - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6e6344cf9d10b0341a1704cd6192f056, type: 2}
-  MyEvent3:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 350ba2364ea76c74abd09463884efaf5, type: 2}
-  MyEvent4:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 350ba2364ea76c74abd09463884efaf5, type: 2}
 --- !u!114 &822480877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38871,6 +38822,30 @@ MonoBehaviour:
   - {fileID: 164224474}
   - {fileID: 686037353}
   - {fileID: 1871003865}
+--- !u!114 &822480879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822480869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b2f63575d95e54092fb2bb1f9c68d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ae1b86c0bb815d24fb40e8f496ac960d, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!114 &822480880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39516,6 +39491,7 @@ MonoBehaviour:
   character: {fileID: 373816158}
   charCanvas: {fileID: 1230460273}
   camera: {fileID: 1132464428}
+  manager: {fileID: 0}
 --- !u!58 &852755633
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41763,7 +41739,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 822480876}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
-        m_MethodName: PlaySelectSound
+        m_MethodName: PlaySound1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -43171,6 +43147,7 @@ MonoBehaviour:
   character: {fileID: 373816158}
   charCanvas: {fileID: 1230460273}
   camera: {fileID: 1132464428}
+  manager: {fileID: 0}
 --- !u!58 &1114304167
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43197,7 +43174,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1132464429}
   - component: {fileID: 1132464428}
-  - component: {fileID: 1132464427}
   - component: {fileID: 1132464426}
   m_Layer: 0
   m_Name: Taskboard Camera
@@ -43228,20 +43204,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &1132464427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132464421}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e3bec38c47c630499f98bdd75115a0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 0
-  listenerId: 0
 --- !u!20 &1132464428
 Camera:
   m_ObjectHideFlags: 0
@@ -43435,7 +43397,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 822480876}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
-        m_MethodName: PlaySelectSound
+        m_MethodName: PlaySound1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -47337,6 +47299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: {fileID: 620529214}
   itemInfo: {fileID: 919832497}
+  manager: {fileID: 822480869}
 --- !u!1 &1514455411
 GameObject:
   m_ObjectHideFlags: 0
@@ -49330,7 +49293,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 822480876}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
-        m_MethodName: PlaySelectSound
+        m_MethodName: PlaySound1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52169,6 +52132,7 @@ MonoBehaviour:
   character: {fileID: 373816158}
   charCanvas: {fileID: 1230460273}
   camera: {fileID: 1132464428}
+  manager: {fileID: 0}
 --- !u!58 &1773094260
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53916,6 +53880,7 @@ MonoBehaviour:
   character: {fileID: 373816158}
   charCanvas: {fileID: 1230460273}
   camera: {fileID: 1132464428}
+  manager: {fileID: 822480869}
 --- !u!58 &1912731869
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56298,26 +56263,6 @@ PrefabInstance:
     - target: {fileID: 5123264811767540453, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
       propertyPath: tasks
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123264811767540453, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
-      propertyPath: nights
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123264811767540453, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
-      propertyPath: firstQuarter
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123264811767540453, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
-      propertyPath: thirdQuarter
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123264811767540453, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
-      propertyPath: fourthQuarter
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123264811767540453, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
-      propertyPath: secondQuarter
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}

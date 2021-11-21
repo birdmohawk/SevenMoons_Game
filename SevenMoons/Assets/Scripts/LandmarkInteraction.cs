@@ -6,7 +6,7 @@ public class LandmarkInteraction : MonoBehaviour
 {
     public GameObject itemName;
     public GameObject itemInfo;
-    //public GameObject manager;
+    public GameObject manager;
 
     private bool inRange; //needed to call MoreInfo() function in fixedupdate so that it checks every frame
 
@@ -17,7 +17,7 @@ public class LandmarkInteraction : MonoBehaviour
         itemName.gameObject.SetActive(false);
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (inRange && Input.GetKey(KeyCode.E))
         {
@@ -58,9 +58,11 @@ public class LandmarkInteraction : MonoBehaviour
 
     public void ItemInfo()
     {
-        //bring up more info for - UI or yarnspinner??both?? what happens on buttonpress goes here and gets called above
         itemInfo.gameObject.SetActive(true);
         itemName.gameObject.SetActive(false);
+        manager.GetComponent<PostWwiseEvent>().PlaySound0();
+
+        inRange = false;
     }
 
     public void NoItemInfo()

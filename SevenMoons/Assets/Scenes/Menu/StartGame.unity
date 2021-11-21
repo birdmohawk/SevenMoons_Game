@@ -4357,7 +4357,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2028276726}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
-        m_MethodName: PlaySelectSound
+        m_MethodName: PlaySound0
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4648,7 +4648,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2028276726}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
-        m_MethodName: PlaySelectSound
+        m_MethodName: PlaySound0
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4881,22 +4881,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f24d5cb2102464ea4c787ee580d26c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Footsteps:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  Select:
-    idInternal: 0
+  Sounds:
+  - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6e6344cf9d10b0341a1704cd6192f056, type: 2}
-  MyEvent3:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  MyEvent4:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &2028276727
 MonoBehaviour:
   m_ObjectHideFlags: 0

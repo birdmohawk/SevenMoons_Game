@@ -7,8 +7,9 @@ public class InteractionScript : MonoBehaviour
 {
     public GameObject interactButton;
     public string SceneName;
+    public GameObject manager;
 
-    private bool inRange; //needed to call MoreInfo() function in fixedupdate so that it checks every frame vs OnTriggerStay not working bc stupid 
+    private bool inRange; 
 
     // Start is called before the first frame update
     void Start()
@@ -61,5 +62,7 @@ public class InteractionScript : MonoBehaviour
     {
         interactButton.gameObject.SetActive(false);
         SceneManager.LoadScene(SceneName);
+        manager.GetComponent<PostWwiseEvent>().PlaySound0();
+        inRange = false;
     }
 }

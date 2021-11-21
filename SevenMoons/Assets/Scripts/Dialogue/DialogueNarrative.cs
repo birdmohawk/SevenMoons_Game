@@ -14,6 +14,8 @@ public class DialogueNarrative : MonoBehaviour
     private int imageIndex;
     public float typingSpeed;
 
+    private bool typingSound = false;
+
     public GameObject continueButton;
 
     public Image artemisImage;
@@ -21,6 +23,8 @@ public class DialogueNarrative : MonoBehaviour
     public Image albertImage;
     public Image hapiImage;
     public Image everyoneImage;
+
+    public GameObject manager;
 
     void Start()
     {
@@ -39,16 +43,22 @@ public class DialogueNarrative : MonoBehaviour
         if(textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
+            typingSound = false;
         }
     }
 
     IEnumerator Type()
     {
-        foreach(char letter in sentences[index].ToCharArray())
+        manager.GetComponent<PostWwiseEvent>().PlaySound2();
+
+        foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
+            
             yield return new WaitForSeconds(typingSpeed);
         }
+
+        manager.GetComponent<PostWwiseEvent>().StopSound2();
     }
 
     public void NextSentence()

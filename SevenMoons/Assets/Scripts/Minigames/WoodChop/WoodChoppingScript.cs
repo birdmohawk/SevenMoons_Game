@@ -95,7 +95,7 @@ public class WoodChoppingScript : MonoBehaviour
                 squareAnim.Stop();
                 isPlaying = false;
 
-                manager.GetComponent<PostWwiseEvent>().PlayWoodChopSound();
+                manager.GetComponent<PostWwiseEvent>().PlaySound3();
 
                 if (isGreen && isOrange)
                 {

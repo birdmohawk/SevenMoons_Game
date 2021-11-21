@@ -200,7 +200,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 690376809}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
-        m_MethodName: PlaySelectSound
+        m_MethodName: PlaySound1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -975,22 +975,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f24d5cb2102464ea4c787ee580d26c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Footsteps:
-    idInternal: 0
+  Sounds:
+  - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  Select:
-    idInternal: 0
+    WwiseObjectReference: {fileID: 11400000, guid: b149ae8641917e54aba1575b3d293522, type: 2}
+  - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6e6344cf9d10b0341a1704cd6192f056, type: 2}
-  MyEvent3:
-    idInternal: 0
+  - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  MyEvent4:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: e37719ff99f4bc649b29e1e16db3079a, type: 2}
 --- !u!114 &690376810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1074,7 +1068,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6d64f7ccb6c8ff548abf2af38fcb400e, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: e476f931e01c9a44597db0880e618661, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -1296,6 +1290,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1360508247}
   nextSceneButton: {fileID: 115393828}
+  manager: {fileID: 690376805}
 --- !u!4 &844646562
 Transform:
   m_ObjectHideFlags: 0
@@ -1713,6 +1708,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1360508247}
   nextSceneButton: {fileID: 115393828}
+  manager: {fileID: 690376805}
 --- !u!4 &1188616425
 Transform:
   m_ObjectHideFlags: 0
@@ -1763,6 +1759,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1360508247}
   nextSceneButton: {fileID: 115393828}
+  manager: {fileID: 690376805}
 --- !u!4 &1202024851
 Transform:
   m_ObjectHideFlags: 0
@@ -1897,6 +1894,7 @@ MonoBehaviour:
   typingSpeed: 0.02
   continueButton: {fileID: 1360508247}
   nextSceneButton: {fileID: 115393828}
+  manager: {fileID: 690376805}
 --- !u!4 &1284360401
 Transform:
   m_ObjectHideFlags: 0
@@ -2044,7 +2042,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 690376809}
         m_TargetAssemblyTypeName: PostWwiseEvent, Assembly-CSharp
-        m_MethodName: PlaySelectSound
+        m_MethodName: PlaySound0
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

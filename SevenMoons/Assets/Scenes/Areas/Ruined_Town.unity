@@ -8439,6 +8439,7 @@ GameObject:
   - component: {fileID: 996032152}
   - component: {fileID: 996032151}
   - component: {fileID: 996032155}
+  - component: {fileID: 996032157}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -8458,22 +8459,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f24d5cb2102464ea4c787ee580d26c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Footsteps:
-    idInternal: 0
+  Sounds:
+  - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  Select:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  MyEvent3:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  MyEvent4:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: b149ae8641917e54aba1575b3d293522, type: 2}
 --- !u!4 &996032150
 Transform:
   m_ObjectHideFlags: 0
@@ -8546,7 +8535,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 734f69f20f0c28248b86d8c8c5fd19ea, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -8659,6 +8648,30 @@ MonoBehaviour:
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions: []
   multiPositionArray: []
+--- !u!114 &996032157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996032148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b2f63575d95e54092fb2bb1f9c68d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ae1b86c0bb815d24fb40e8f496ac960d, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1004217388
 GameObject:
   m_ObjectHideFlags: 0
@@ -11945,6 +11958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactButton: {fileID: 833264193}
   SceneName: CollectBerriesMinigame
+  manager: {fileID: 0}
 --- !u!58 &1297938543
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15518,6 +15532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactButton: {fileID: 99341303}
   SceneName: ScavengeMinigame
+  manager: {fileID: 0}
 --- !u!1 &1558154253
 GameObject:
   m_ObjectHideFlags: 0
@@ -15876,6 +15891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactButton: {fileID: 99341303}
   SceneName: ScavengeMinigame
+  manager: {fileID: 0}
 --- !u!1 &1597247664
 GameObject:
   m_ObjectHideFlags: 0

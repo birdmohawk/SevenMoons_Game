@@ -112,10 +112,10 @@ public class ExerciseScript : MonoBehaviour
         {
             if (Input.GetKeyDown("a") || (Input.GetKeyDown("d")))
             {
-                manager.GetComponent<PostWwiseEvent>().PlayFootstepSound();
                 Vector2 move = new Vector2(distance, 0);
                 transform.Translate(move * speed * Time.deltaTime);
                 score++;
+                manager.GetComponent<PostWwiseEvent>().PlaySound3();
             }
         }
     }

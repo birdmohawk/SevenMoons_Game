@@ -6,6 +6,7 @@ public class Encounters : MonoBehaviour
 {
     public float encounterTimer = 20.0f;
     public float outcomeTimer = 2.0f;
+    bool outcomeTimerStart = false; //added this to make outcome timer work
     public bool selectedGood = false;
     public bool selectedBad = false;
     float encountersFound = 0;
@@ -257,28 +258,31 @@ public class Encounters : MonoBehaviour
                 Debug.Log("Selected True");
                 encounterReward = encounterReward + 1;
                 goodOutcome.gameObject.SetActive(true);
-                outcomeTimer -= Time.deltaTime;
-                if (outcomeTimer <= 0)
-                {
-                    goodOutcome.gameObject.SetActive(false);
-                    outcomeTimer = 2.0f;
-                }
+                outcomeTimerStart = true;
             }
+
             if (Input.GetKeyDown(KeyCode.E))
             {
                 selectedBad = true;
                 Debug.Log("Selected False");
                 encounterReward = encounterReward - 1;
                 badOutcome.gameObject.SetActive(true);
-                outcomeTimer -= Time.deltaTime;
-                if (outcomeTimer <= 0)
-                {
-                    badOutcome.gameObject.SetActive(false);
-                    outcomeTimer = 2.0f;
-                }
+                outcomeTimerStart = true;
             }
 
             EncounterCheck();
+        }
+
+        if (outcomeTimerStart)
+        {
+            outcomeTimer -= Time.deltaTime;
+            if (outcomeTimer <= 0)
+            {
+                goodOutcome.gameObject.SetActive(false);
+                badOutcome.gameObject.SetActive(false);
+                outcomeTimerStart = false;
+                outcomeTimer = 2.0f;
+            }
         }
     }
 

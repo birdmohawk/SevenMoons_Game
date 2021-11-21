@@ -10,9 +10,6 @@ EditorBuildSettings:
     guid: 04bf61c7bcd29054fb045689d9bb3d9e
   - enabled: 1
     path: Assets/Scenes/Narrative/Opening Narrative.unity
-    guid: 9ee26183b7251a442a8e9916a1bbdb0a
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Opening Narrative.unity
     guid: 85e83df84de5d674cbb1a578311a26cb
   - enabled: 1
     path: Assets/Scenes/Areas/Campsite.unity
@@ -45,51 +42,51 @@ EditorBuildSettings:
     path: Assets/Scenes/Minigames/ChopReedsMinigame.unity
     guid: 03ae88235555fda419a6982d58b9f8ed
   - enabled: 1
-    path: Assets/Scenes/Narrative/Day 1 Night.unity
-    guid: dcecd48a68670964899bb324c195aa06
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 2 Intro.unity
-    guid: 34661c60b9827b4459a077c01edfa7e1
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 2 Night.unity
-    guid: 0cde284b340b8ae42a95accac8797028
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 3 Intro.unity
-    guid: f1cfec3c0f5d0c94d8692ac96b3bd65e
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 3 Night.unity
-    guid: b2f9db6216c1e804b8775c00d0fce8fb
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 4 Intro.unity
-    guid: 132f9cf09ce0b384fb47bd8870e947a7
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 4 Night.unity
-    guid: ed42aee5538d8e04888c6b90f2dac1a7
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 5 Intro.unity
-    guid: fa2384d6f07356a4cad04b4bb9a6dce2
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 5 Night.unity
-    guid: b8f501ea2986231459c26d394ecb41ec
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 6 Intro.unity
-    guid: 897895ffbfb575f4eabaf32b6f683e0b
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 6 Night.unity
-    guid: 4aefe9dcc70c4f34f8ed002a0bdb6b05
-  - enabled: 1
-    path: Assets/Scenes/Narrative/Day 7 Intro.unity
-    guid: bae57774821179741aed8b2f31ecd350
-  - enabled: 1
-    path: Assets/Scenes/Narrative/EndScene1.unity
-    guid: 8dc03bc30445e2d419cef1dc9502946e
-  - enabled: 1
-    path: Assets/Scenes/Narrative/EndScene2.unity
-    guid: c32d994bb99e1d043bd6efa11d9effdd
-  - enabled: 1
-    path: Assets/Scenes/Narrative/EndScene3.unity
-    guid: c34429ad3c8fb7e47b87b47b8b6ae398
-  - enabled: 1
     path: Assets/Scenes/Areas/Ruined_Town.unity
     guid: a07621b5a046d544a95e9a4706c6db80
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 1 Night.unity
+    guid: d34ef5c13d7065b468c6dbe6b8c2d306
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 2 Intro.unity
+    guid: 4d0407528d9092149aad9a9f63be15ad
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 2 Night.unity
+    guid: 716b137962c833d428d506e4cc930cd0
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 3 Intro.unity
+    guid: c599133921b25c045b1f158462ac3e20
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 3 Night.unity
+    guid: d9994741ffb9d08469e3e3d2b0503373
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 4 Intro.unity
+    guid: 96c3ff7e68c154f4b8f65bef06867737
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 4 Night.unity
+    guid: 1bb87db219f81d34a8b749ccc3fa5aef
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 5 Intro.unity
+    guid: 2adf49c14de3a684d874b637f9454dba
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 5 Night.unity
+    guid: e076c2f02b2785e4093ccc9f2a6c5242
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 6 Intro.unity
+    guid: d34eee9c860cc714abea22f11bf7ed7f
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 6 Night.unity
+    guid: 0f86f775cd366604a88a80030561a887
+  - enabled: 1
+    path: Assets/Scenes/Narrative/Day 7 Intro.unity
+    guid: 72f5c7a24977e8040be097754a5e100f
+  - enabled: 1
+    path: Assets/Scenes/Narrative/EndScene1.unity
+    guid: 3d4587110883fa44f8c360022334f0e4
+  - enabled: 1
+    path: Assets/Scenes/Narrative/EndScene2.unity
+    guid: 5f7aa6a8a565b0847b8ce69a852db17c
+  - enabled: 1
+    path: Assets/Scenes/Narrative/EndScene3.unity
+    guid: c8c76b8b7de708043a7b2afe5ebcc1a7
   m_configObjects: {}

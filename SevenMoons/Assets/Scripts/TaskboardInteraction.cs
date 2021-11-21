@@ -11,6 +11,8 @@ public class TaskboardInteraction : MonoBehaviour
     public GameObject charCanvas;
     public Camera camera;
 
+    public GameObject manager;
+
     private bool inRange; 
 
     // Start is called before the first frame update
@@ -66,7 +68,10 @@ public class TaskboardInteraction : MonoBehaviour
         camera.gameObject.SetActive(true);
         taskboardButton.gameObject.SetActive(false);
         taskboard.gameObject.SetActive(true);
+        manager.GetComponent<PostWwiseEvent>().PlaySound0();
         //SceneManager.LoadScene("Taskboard");
+
+        inRange = false;
     }
 
     public void TaskboardExit()

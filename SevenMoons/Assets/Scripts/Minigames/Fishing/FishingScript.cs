@@ -78,7 +78,7 @@ public class FishingScript : MonoBehaviour
             {
                 squareAnim.Stop();
                 isPlaying = false;
-                manager.GetComponent<PostWwiseEvent>().PlayBobberSound();
+                manager.GetComponent<PostWwiseEvent>().PlaySound3(); //bobber sound, assigned in PostWwiseEvent script on manager
 
                 if (isFish) 
                 {

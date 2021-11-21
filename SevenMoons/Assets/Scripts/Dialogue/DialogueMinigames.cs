@@ -15,6 +15,8 @@ public class DialogueMinigames : MonoBehaviour
     public GameObject nextSceneButton;
     private bool dialogueRunning = false;
 
+    public GameObject manager;
+
     void Start()
     {
         /*sometimes this doesn't work, if so move SetActive(false) 
@@ -30,14 +32,16 @@ public class DialogueMinigames : MonoBehaviour
     IEnumerator Type()
     {
         dialogueRunning = true;
+        manager.GetComponent<PostWwiseEvent>().PlaySound2();
 
         foreach (char letter in sentences[index].ToCharArray())
         {
-            
             textDisplay.text += letter;
+            
             yield return new WaitForSeconds(typingSpeed);
         }
 
+        manager.GetComponent<PostWwiseEvent>().StopSound2();
         dialogueRunning = false;
         Buttons();
     }

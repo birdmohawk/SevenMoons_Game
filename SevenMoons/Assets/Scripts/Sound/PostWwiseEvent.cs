@@ -4,39 +4,52 @@ using UnityEngine;
 
 public class PostWwiseEvent : MonoBehaviour
 {
-    public AK.Wwise.Event Footsteps;
+    /*public AK.Wwise.Event Footsteps;
     public AK.Wwise.Event Select;
-    public AK.Wwise.Event MyEvent3;
-    public AK.Wwise.Event MyEvent4;
+    public AK.Wwise.Event WoodChop;
+    public AK.Wwise.Event MyEvent4;*/ 
 
-    public void PlayFootstepSound()
+    public AK.Wwise.Event []Sounds; //changed to array so can change number of sounds in each scene as needed and use same script
+
+    public void PlaySound0() //usually use this for select
     {
-        Footsteps.Post(gameObject);
+        Sounds[0].Post(gameObject);
     }
 
-    public void PlaySelectSound()
+    public void PlaySound1() 
     {
-        Select.Post(gameObject);
+        Sounds[1].Post(gameObject);
     }
 
-    public void PlayWoodChopSound()
+    public void PlaySound2() //usually typing sound
     {
-        MyEvent3.Post(gameObject);
-    }
-    
-    public void PlayBobberSound()
-    {
-        MyEvent4.Post(gameObject);
+        Sounds[2].Post(gameObject);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void StopSound2()
     {
-       
+        Sounds[2].Stop(gameObject);
     }
 
-    // Update is called once per frame.
-    void Update()
+    public void PlaySound3()
     {
-
+        Sounds[3].Post(gameObject);
     }
+
+    public void StopSound3()
+    {
+        Sounds[3].Stop(gameObject);
+    }
+
+    public void PlaySound4()
+    {
+        Sounds[4].Post(gameObject);
+    }
+
+    public void PlaySound5()
+    {
+        Sounds[5].Post(gameObject);
+    }
+
+    //add more functions as needed
 }
