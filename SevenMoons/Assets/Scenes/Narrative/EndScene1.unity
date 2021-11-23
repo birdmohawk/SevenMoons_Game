@@ -472,8 +472,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.22004, y: -270.29}
-  m_SizeDelta: {x: 1600, y: 240}
+  m_AnchoredPosition: {x: 0.22004, y: -273.27}
+  m_SizeDelta: {x: 1600, y: 315.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761236990
 MonoBehaviour:
@@ -839,7 +839,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
   m_text: End Game
+=======
+  m_text: END GAME
+>>>>>>> Stashed changes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
   m_sharedMaterial: {fileID: 6262966605371064912, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
@@ -848,8 +852,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279511629
-  m_fontColor: {r: 0.3019608, g: 0.16470589, b: 0.078431375, a: 1}
+    rgba: 4286578688
+  m_fontColor: {r: 0, g: 0, b: 0.5019608, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1746,7 +1750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.74, y: -272.15002}
+  m_AnchoredPosition: {x: 435.74, y: -302.45}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1855,9 +1859,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1597618313}
   sentences:
-  - 'And so the seventh began. Before the final embers of the fire withered and died,
-    the beasts did come. Befouled creatures of the unknown land , come to slay the
-    unwitting trespassers on their land. '
+  - And so the seventh night began. Before the final embers of the fire withered
+    and died, the beasts did come. Befouled creatures of the unknown land, come to
+    slay the unwitting trespassers on their land
   - The stranded campers braced themselves; there was no going back. The cursed spirit
     that ruled this realm came forth, ready to face it once and for all
   - 'The creature failed to realise that these were not regular prey. And in the

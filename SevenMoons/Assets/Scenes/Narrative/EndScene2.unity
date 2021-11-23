@@ -472,8 +472,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.22004, y: -270.29}
-  m_SizeDelta: {x: 1600, y: 240}
+  m_AnchoredPosition: {x: 0.22004, y: -274.31}
+  m_SizeDelta: {x: 1600, y: 312.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761236990
 MonoBehaviour:
@@ -839,7 +839,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
   m_text: End Game
+=======
+  m_text: END GAME
+>>>>>>> Stashed changes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
   m_sharedMaterial: {fileID: 6262966605371064912, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
@@ -848,8 +852,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279511629
-  m_fontColor: {r: 0.3019608, g: 0.16470589, b: 0.078431375, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1746,7 +1750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.74, y: -272.15002}
+  m_AnchoredPosition: {x: 438, y: -312.21}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1855,9 +1859,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1597618313}
   sentences:
-  - And so the seventh began. Before the final embers of the fire withered and died,
-    the beasts did come. Befouled creatures of the unknown land , come to slay the
-    unwitting trespassers on their land.
+  - And so the seventh night began. Before the final embers of the fire withered
+    and died, the beasts did come. Befouled creatures of the unknown land, come to
+    slay the unwitting trespassers on their land
   - The stranded campers braced themselves; there was no going back. The cursed spirit
     that ruled this realm came forth, ready to face it once and for all
   - The prey would escape their perilous fate, but such an escape would come at a
@@ -1866,13 +1870,13 @@ MonoBehaviour:
   - Wounds would run deep and no one returned home the same. Sanity torn and body
     weak, each camper would feel a pit in their stomach that would swallow the rest
     of their lives into one dark void.
-  - Never one to stay still, a close shave with death kept Artemis more on her toes.
-    She left her village, and was never seen again.
+  - Never one to stay still, a close shave with death kept Artemis ever more on her
+    toes. She left her village, and was never seen again.
   - A few whispered she tried to find an ancient ruin, a way to enter a realm only
     spoken of in hushed tones. Others say she went mad, that she became a witch in
     the plains, cursing those who went looking for her.
-  - The only certainty is that whatever happened the in the forest she raved on about
-    broke her.
+  - The only certainty is that whatever happened to her that fateful night broke
+    her
   - 'For Hapi, the nightmares never went away. She was shunned by all she spoke with
     about them. '
   - She scared her parents and teachers with each description, each drawing she drew

@@ -736,8 +736,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 463.16, y: -234.95001}
-  m_SizeDelta: {x: 280, y: 80}
+  m_AnchoredPosition: {x: 463.16, y: -223.2}
+  m_SizeDelta: {x: 280, y: 51.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1055879830
 MonoBehaviour:
@@ -797,7 +797,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 366314062}
         m_TargetAssemblyTypeName: OnButtonPressScript, Assembly-CSharp
-        m_MethodName: OnButtonPress2
+        m_MethodName: OnButtonPress15
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Go to Campsite
+  m_text: Next Day...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
   m_sharedMaterial: {fileID: 6262966605371064912, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4279511629
   m_fontColor: {r: 0.3019608, g: 0.16470589, b: 0.078431375, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1746,7 +1746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.74, y: -272.15002}
+  m_AnchoredPosition: {x: 444, y: -289}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1862,9 +1862,9 @@ MonoBehaviour:
   - 'ALBERT: And I think I found us a clue from a library I stumbled across'
   - 'GRIFFIN: Really? A library out here? Find anything interesting?'
   - 'ALBERT: It was rather unclear, but given how the books were written, it treats
-    the folklore of my home as true'
+    the folklore of my home as truth'
   - 'ARTEMIS: Well that clears up the monster somewhat'
-  - 'HAPI: That also explains the pixies I met'
+  - 'HAPI: That  explains the pixies I met too'
   - 'ARTEMIS, ALBERT & GRIFFIN: ...you met PIXIES!!!!!!'
   - 'HAPI: Didn''t I tell you guys? I was walking down this path when....'
   characterPortraits:
@@ -1876,7 +1876,7 @@ MonoBehaviour:
   - {fileID: 1988389952}
   - {fileID: 1681121584}
   - {fileID: 1096329722}
-  - {fileID: 1681121584}
+  - {fileID: 1881726824}
   - {fileID: 1096329722}
   characterSpeaker: {fileID: 0}
   typingSpeed: 0.01

@@ -774,7 +774,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 366314062}
         m_TargetAssemblyTypeName: OnButtonPressScript, Assembly-CSharp
-        m_MethodName: OnButtonPress2
+        m_MethodName: OnButtonPress10
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Go to Campsite
+  m_text: Next Day...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
   m_sharedMaterial: {fileID: 6262966605371064912, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
@@ -1723,7 +1723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.74, y: -272.15002}
+  m_AnchoredPosition: {x: 440, y: -298.5}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1834,17 +1834,17 @@ MonoBehaviour:
   sentences:
   - HAPI:That was so fun! I wonder what else is out there!
   - 'GRIFFIN: I''m a little confused though. We walked pretty far, shouldn''t we
-    have seen any other animal'
+    have seen animals or bugs at least?'
   - 'ARTEMIS: We probably just scared them away. The four of us exploring the forest
-    probably scared off most of them. Especially with a big guy like you'
-  - 'GRIFFIN: THANK YOU!'
+    probably scared off most of them. Especially with a big guy like you with us'
+  - 'GRIFFIN: MY PLEASURE'
   - 'GRIFFIN: Still, we were unarmed. From where I''m from, lots of predators don''t
-    mind jumping big guys like me'
-  - 'ALBERT: Griffin''s is almost correct. We are not anywhere near our original
-    homes'
-  - 'ARTEMIS: Oh yeah? What makes you say that? You''ve just been sleeping all day'
-  - 'ALBERT: Not exactly. Look at the sky. Do any of you recognise anything?'
-  - 'HAPI: I do! ....Wait...no I don''t'
+    mind jumping big guys like me protecting people like you'
+  - 'ALBERT: Griffin is almost correct. We are not anywhere near our original homes'
+  - 'ARTEMIS: Oh yeah? What makes you so sure? You''ve just been sleeping all day'
+  - 'ALBERT: I failed to do that and ask for you to do what I did instead of a fulfilling
+    nap; Look at the sky. Do any of you recognise anything?'
+  - 'HAPI: I do! .............Wait...no I don''t'
   - 'GRIFFIN: Yeah, I don''t see the Southern Anchor or the Cattle Star...or any
     stars for that matter'
   - 'ALBERT: Exactly. From your belongings, common language and dress, we all come

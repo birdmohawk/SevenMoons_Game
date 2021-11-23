@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Encounters : MonoBehaviour
 {
-    public float encounterTimer = 20.0f;
+    public float encounterTimer = 15.0f;
     public float outcomeTimer = 2.0f;
     bool outcomeTimerStart = false; //added this to make outcome timer work
     public bool selectedGood = false;
