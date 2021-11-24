@@ -1,0 +1,92 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2263156506	Campsite_Ambience			\Default Work Unit\Ambience\Campsite_Ambience	
+	2385628198	Footsteps			\Default Work Unit\Sync_Sounds\Footsteps	
+	2463107249	Chest_Interact			\Default Work Unit\Sync_Sounds\Chest_Interact	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1015245057	Ambience_DayNumber			\Default Work Unit\Ambience_DayNumber	
+
+Switch	ID	Name	Switch Group			Notes
+	2043358088	Day3	Ambience_DayNumber			
+	2043358089	Day2	Ambience_DayNumber			
+	2043358090	Day1	Ambience_DayNumber			
+	2043358092	Day7	Ambience_DayNumber			
+	2043358093	Day6	Ambience_DayNumber			
+	2043358094	Day5	Ambience_DayNumber			
+	2043358095	Day4	Ambience_DayNumber			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1056582355	Music_CampsiteAreas			\Default Work Unit\Music_CampsiteAreas	
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+	2463107249	Chest_Interact			\Default Work Unit\Chest_Interact	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music_CampsiteAreas			
+	2284997542	Area_1	Music_CampsiteAreas			
+	2773492441	Area_2_Taskboard	Music_CampsiteAreas			
+	748895195	None	Footsteps			
+	1216965916	Stone	Footsteps			
+	2195636714	Dirt	Footsteps			
+	4248645337	Grass	Footsteps			
+	136945955	Locked	Chest_Interact			
+	748895195	None	Chest_Interact			
+	2798721810	Unlocked	Chest_Interact			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	945996559	CampfireDistance			\Default Work Unit\CampfireDistance	
+	2154774526	DayNumber			\Default Work Unit\DayNumber	
+	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	6121712	Toe_02	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Grass\Footstep_Toe\Toe_02		17928
+	25942047	Heel_02	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Grass\Footstep_Heel\Heel_02		15602
+	55115602	Heel_02_Dirt	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_02_Dirt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Dirt\Footstep_Heel\Heel_02_Dirt		21056
+	93320325	MainMotif_Melody	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\MainMotif_Melody_07D733A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music_MainMotif\MainMotif_Melody		1940464
+	102194178	Toe_02_Dirt	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_02_Dirt_393BB0C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Dirt\Footstep_Toe\Toe_02_Dirt		18172
+	110253101	Heel_04_Dirt	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_04_Dirt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Dirt\Footstep_Heel\Heel_04_Dirt		10102
+	128417762	Rustling_03	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Rustling_03_7974E2CC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Rustling\Rustling_03		586256
+	146031570	Heel_03	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_03_0CB57C1B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Grass\Footstep_Heel\Heel_03		23070
+	156028652	Heel_03_Dirt	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_03_Dirt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Dirt\Footstep_Heel\Heel_03_Dirt		8926
+	181574782	Toe_03	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Grass\Footstep_Toe\Toe_03		27682
+	197612723	Section2_Melody	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Section2_Melody_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music_Sect_2\Section2_Melody		1146664
+	205979494	Bird_Bright_ThreeTimes	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Bird_Bright_ThreeTimes_D57C740A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Birds_Songbirds\Bird_Bright_ThreeTimes		238274
+	216439648	Toe_04_Stone	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_04_Stone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Stone\Footstep_Toe\Toe_04_Stone		16716
+	232517779	Heel_05	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Grass\Footstep_Heel\Heel_05		23720
+	246779309	Rustling_04	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Rustling_04_B31E2FE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Rustling\Rustling_04		729714
+	272100441	Bird_High	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Bird_High_0CD153C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Birds_Songbirds\Bird_High		42492
+	335460372	MainMotif_Accomp_L	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\MainMotif_Accomp_L_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music_MainMotif\MainMotif_Accomp_L		1940464
+	341888859	Toe_01	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Grass\Footstep_Toe\Toe_01		19350
+	378481834	Wind_2	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Wind_2_2BAEF418.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Wind\Wind_2		800812
+	432555293	Toe_03_Dirt	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_03_Dirt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Dirt\Footstep_Toe\Toe_03_Dirt		19774
+	505933468	Bird_Warble	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Bird_Warble_4EC0C162.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Birds_Songbirds\Bird_Warble		112608
+	529570113	Wind_3	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Wind_3_2752E938.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Wind\Wind_3		1224132
+	549763930	Heel_04	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Grass\Footstep_Heel\Heel_04		22956
+	553369943	Heel_04_Stone	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_04_Stone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Stone\Footstep_Heel\Heel_04_Stone		4250
+	553737717	Crow_3	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Crow_3_E3051226.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Birds_Crows\Crow_3		52272
+	574920045	MainMotif_Accomp_R	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\MainMotif_Accomp_R_A6354C12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music_MainMotif\MainMotif_Accomp_R		1940464
+	608886382	Crickets	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Crickets_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Crickets		671480
+	625589939	Toe_05	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_05_02D52E61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Grass\Footstep_Toe\Toe_05		17966
+	636529220	Section2_L	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Section2_L_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music_Sect_2\Section2_L		1146664
+	645559806	Bird_Honey	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Bird_Honey_532D7FCC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Birds_Songbirds\Bird_Honey		25946
+	667158073	Heel_01_Dirt	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_01_Dirt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Dirt\Footstep_Heel\Heel_01_Dirt		18032
+	687200383	Wind_1	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Wind_1_086B53FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Wind\Wind_1		1448196
+	706889211	Crow_1	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Crow_1_E9074D4D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Birds_Crows\Crow_1		56740
+	709932023	Chest_Locked	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Locked_9EDFC4E9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Chest_Interact\Chest_Locked		55686
+	714262434	Rustling_02	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Rustling_02_7A0A4720.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Rustling\Rustling_02		176842
+	759752481	Heel_01_Stone	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_01_Stone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Stone\Footstep_Heel\Heel_01_Stone		9602
+	761393171	Heel_03_Stone	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_03_Stone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Stone\Footstep_Heel\Heel_03_Stone		3418
+	763753444	Campfire	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Campfire_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Campfire		603552
+	768068063	Heel_01	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Grass\Footstep_Heel\Heel_01		14030
+	824356311	Section2_R	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Section2_R_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Music_Sect_2\Section2_R		1146664
+	846138817	Toe_04	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Grass\Footstep_Toe\Toe_04		15774
+	847245654	Bird_Bright_Once	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Bird_Bright_ThreeTimes_F39EB838.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Birds_Songbirds\Bird_Bright_Once		51136
+	923645953	Toe_02_Stone	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_02_Stone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Stone\Footstep_Toe\Toe_02_Stone		17874
+	947556318	Toe_04_Dirt	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_04_Dirt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Dirt\Footstep_Toe\Toe_04_Dirt		18506
+	958083218	Toe_01_Dirt	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_01_Dirt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Dirt\Footstep_Toe\Toe_01_Dirt		20406
+	961728151	Crow_2	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Crow_2_A1170B61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Birds_Crows\Crow_2		45594
+	972008196	Wind_4	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Wind_4_155958C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Wind\Wind_4		743516
+	981625332	Toe_01_Stone	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_01_Stone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Stone\Footstep_Toe\Toe_01_Stone		21080
+	1000783936	Toe_03_Stone	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Toe_03_Stone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Stone\Footstep_Toe\Toe_03_Stone		11412
+	1006568753	Rustling_01	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Rustling_01_C20DF289.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience_Sounds\Campsite_Sounds\Rustling\Rustling_01		317702
+	1044162928	Heel_02_Stone	C:\Users\bells\Documents\WwiseProjects\Interactive Project\.cache\Windows\SFX\Heel_02_Stone_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Footsteps\Footsteps_Stone\Footstep_Heel\Heel_02_Stone		4584
+

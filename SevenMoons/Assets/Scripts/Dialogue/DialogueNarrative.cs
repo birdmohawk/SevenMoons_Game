@@ -14,8 +14,6 @@ public class DialogueNarrative : MonoBehaviour
     private int imageIndex;
     public float typingSpeed;
 
-    private bool typingSound = false;
-
     public GameObject continueButton;
 
     public Image artemisImage;
@@ -36,6 +34,8 @@ public class DialogueNarrative : MonoBehaviour
         everyoneImage.enabled = false;
         characterSpeaker = characterPortraits[0];
         characterSpeaker.enabled = true;
+
+       // manager.GetComponent<PostWwiseEvent>().PlaySound2();
     }
 
     void Update()
@@ -43,7 +43,7 @@ public class DialogueNarrative : MonoBehaviour
         if(textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
-            typingSound = false;
+            manager.GetComponent<PostWwiseEvent>().StopSound2();
         }
     }
 
@@ -71,10 +71,12 @@ public class DialogueNarrative : MonoBehaviour
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
+            //manager.GetComponent<PostWwiseEvent>().PlaySound2();
         }
         else
         {
             textDisplay.text = "";
+            //manager.GetComponent<PostWwiseEvent>().StopSound2();
         }
     }
 
@@ -86,4 +88,5 @@ public class DialogueNarrative : MonoBehaviour
         characterSpeaker.enabled = true;
             
     }
+
 }

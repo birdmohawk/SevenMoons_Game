@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	216783309	Narrative_Music			\Default Work Unit\Narrative_Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	420329232	SevenMoonsFullTheme_MusicBox	C:\Users\bells\Desktop\SOU375\SevenMoonsAudio\.cache\Windows\SFX\SevenMoonsFullTheme_MusicBox_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SevenMoonsFullTheme_MusicBox		15964676
+

@@ -40,6 +40,8 @@ public class TaskCheckScript : MonoBehaviour
         Debug.Log("Albert points are " + GameManagerScript.gamemanager.albertPoints);
 
         TimeOfDay();
+
+        //manager.GetComponent<PostWwiseEvent>().StopSound2();
     }
 
     void Update()

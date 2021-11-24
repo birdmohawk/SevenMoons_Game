@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1764505177	Bobber_Splash			\Default Work Unit\Sync_Sounds\Bobber_Splash	
+	3605787649	River			\Default Work Unit\Ambience\River	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	30860369	Bobber_Splash	C:\Users\bells\Documents\GitHub\SevenMoons\Sound\SevenMoonsAudio\.cache\Windows\SFX\Bobber_Splash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sync_Sounds\Bobber_Splash		127032
+	420038443	RiverRunning	C:\Users\bells\Documents\GitHub\SevenMoons\Sound\SevenMoonsAudio\.cache\Windows\SFX\RiverRunning_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\RiverRunning		783432
+
