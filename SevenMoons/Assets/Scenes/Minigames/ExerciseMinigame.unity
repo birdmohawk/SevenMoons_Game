@@ -154,8 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 76721515}
   sentences:
-  - bad 2
-  - second sentence test
+  - Well, didn't get far before throwing up
+  - Having that fish before doing this was a bad idea
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
   nextSceneButton: {fileID: 804489146}
@@ -762,8 +762,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 76721515}
   sentences:
-  - good 2
-  - second sentence test
+  - You think you got some good kinds, certainly helps a little
+  - Legs still ache though
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
   nextSceneButton: {fileID: 804489146}
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   textDisplay: {fileID: 76721515}
   sentences:
   - That was a great workout!
-  - YYou are feeling energised and like you could take on anything this forest throws
+  - You are feeling energised and like you could take on anything this forest throws
     at you.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
@@ -2390,9 +2390,9 @@ MonoBehaviour:
   textDisplay: {fileID: 76721515}
   sentences:
   - The wind whips through your hair as you fly along the grass.
-  - IIt's always a good idea to practice your running skills when you're stuck in
+  - It's always a good idea to practice your running skills when you're stuck in
     an unknown forest.
-  - JJust in case.
+  - Just in case.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
   nextSceneButton: {fileID: 804489146}
@@ -3418,7 +3418,7 @@ MonoBehaviour:
   textDisplay: {fileID: 76721515}
   sentences:
   - 'That was ok. '
-  - YYou're not very fast though.
+  - You're not very fast though.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
   nextSceneButton: {fileID: 804489146}

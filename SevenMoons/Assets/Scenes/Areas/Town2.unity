@@ -13195,10 +13195,10 @@ MonoBehaviour:
   outcomeTimer: 2
   selectedGood: 0
   selectedBad: 0
-  player1: {fileID: 0}
-  player2: {fileID: 0}
-  player3: {fileID: 0}
-  player4: {fileID: 0}
+  player1: {fileID: 418849026}
+  player2: {fileID: 1013084810}
+  player3: {fileID: 1244005335}
+  player4: {fileID: 1428844899}
   encounterOptions1: {fileID: 739980112}
   encounterOptions2: {fileID: 1635669263}
   encounterOptions3: {fileID: 1954795212}
