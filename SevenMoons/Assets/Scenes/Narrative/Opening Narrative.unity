@@ -1723,7 +1723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.74, y: -287}
+  m_AnchoredPosition: {x: 435.74, y: -272.15002}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1837,7 +1837,7 @@ MonoBehaviour:
   - 'GRIFFIN: Uhhhh....'
   - ALBERT:.....
   - ALBERT:...why are you making such a face? Do you even know how to read?
-  - 'GRIFFIN: Nope, no idea. All I see is some funny scribbles'
+  - 'GRIFFIN: Nope! No idea! All I see is some funny scribbles'
   - 'ALBERT: Ugh...it says "THEY WILL COME IN SEVEN DAYS", suggesting that...'
   - 'GRIFFIN: Oh, I see now! Why didn''t they just use numbers? We use numbers on
     the farm.'
@@ -1847,24 +1847,24 @@ MonoBehaviour:
   - 'ALBERT: I doubt it will be pleasant given the tents'
   - (Everyone felt a cold chill down their spine at the thought)
   - 'ALBERT: Now if you will excuse me, I am off to take a nap'
-  - 'ARTEMIS: WHAT? You can''t just take a nap after dropping a bombshell like that
-    on us!'
+  - 'ARTEMIS: WHAT?! You can''t just take a nap after dropping a bombshell like that
+    on us!!'
   - 'HAPI: What we need is a plan, not just sit around and do nothing'
-  - 'GRIFFIN: Yeah, what she said'
+  - 'GRIFFIN: Yeah! What she said!'
   - 'ALBERT: Clearly you haven''t been listening, I have a plan'
   - 'ALBERT: Take a nap'
   - 'HAPI: Fine. Be like that. I''m going to explore these woods and find out what''s
     out there'
   - 'GRIFFIN: Easy there, we should probably go together, get to know each other
     as well'
-  - 'GRIFFIN: I''ll go first. I''m Griffin, and if you need anything heavy lifted,
+  - 'GRIFFIN: I''ll go first. I''m Griffin! And if you need anything heavy lifted,
     give me a call'
   - 'ARTEMIS: I''m Artemis, and you can count on me too, unlike lazy bones over there'
   - 'ALBERT: The name is Albert, and if you find any interesting books, I''m sure
     I can translate them for you'
   - 'HAPI: And I''m Hapi! Nice to meet you all!'
   - 'HAPI: Now let''s go and explore!'
-  - 'GRIFFIN AND ARTEMIS: Yeah!'
+  - 'GRIFFIN AND ARTEMIS: Yeah!!!'
   - 'ALBERT: Urgh...'
   characterPortraits:
   - {fileID: 1681121584}

@@ -797,7 +797,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 366314062}
         m_TargetAssemblyTypeName: OnButtonPressScript, Assembly-CSharp
-        m_MethodName: OnButtonPress16
+        m_MethodName: OnButtonPress2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next Day...
+  m_text: Go to Campsite
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
   m_sharedMaterial: {fileID: 6262966605371064912, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
@@ -1746,7 +1746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 440, y: -298.5}
+  m_AnchoredPosition: {x: 435.74, y: -272.15002}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1860,12 +1860,12 @@ MonoBehaviour:
   - 'HAPI: Where do we...come from? I don''t get it'
   - 'ALBERT: You want us to know about the each other I take it? To better be friends
     or for our survival?'
-  - 'ARTEMIS: Sure Glasses, spin it however you want. It''s not like you want to
+  - 'ARTEMIS: Sure Glasses, wspin it however you want. It''s not like you want to
     be friends with any of us anyway'
   - 'ALBERT: That...that''s not strictly true. I''m not used to such company, I often
     study alone at the college'
-  - 'GRIFFIN: You must be super smart to be in college. My pa wanted me to go but
-    I ain''t got the smarts for it'
+  - 'GRIFFIN: You must be super smart to be studying at college. My pa wanted me
+    to go but I ain''t got the smarts for it'
   - 'ALBERT: That''s nothing without the power to back it up most of the time. You
     already know star charts and can chop wood like it was nothing.'
   - 'GRIFFIN: Well you know me, farmhand of me pa''s farm. I don''t get out out much,
@@ -1878,7 +1878,7 @@ MonoBehaviour:
   - 'GRIFFIN: Kids with no parents, my pa says they were born with rotten luck. Most
     fairy tales I heard had...'
   - 'ALBERT: That''s quite enough you two. I suggest we go and rest now. I''ll take
-    first watch this time'
+    first watch this time.'
   - 'ARTEMIS: (muttering under her breath) thanks Glasses'
   characterPortraits:
   - {fileID: 1881726824}

@@ -797,7 +797,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 366314062}
         m_TargetAssemblyTypeName: OnButtonPressScript, Assembly-CSharp
-        m_MethodName: OnButtonPress17
+        m_MethodName: OnButtonPress2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next Day...
+  m_text: Go to Campsite
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
   m_sharedMaterial: {fileID: 6262966605371064912, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
@@ -1859,11 +1859,11 @@ MonoBehaviour:
   - 'HAPI: It''s darker too. It''s getting scarier'
   - 'ARTEMIS: Yeah, I don''t think any amount of magically appearing blood is normal
     either'
-  - 'ALBERT: Evidence in that department is considerable, but there''s more'
+  - 'ALBERT: Evidence in that department is considerable, but there''s more.'
   - 'ARTEMIS: We don''t need evidence! It''s simply Occam''s razor. Heard of that
     theory, Glasses?'
   - 'ALBERT: Ah, so you are more than just charging into danger mindlessly. But you
-    are right'
+    are right.'
   - Albert placed down a dusty, wood engraved tome, it's pages heavy and stern at
     the touch
   - 'HAPI: Wow, what is it? It looks like a story book my mum read to me as a baby,
