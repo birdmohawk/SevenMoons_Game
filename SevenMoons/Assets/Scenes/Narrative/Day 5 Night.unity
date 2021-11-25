@@ -797,7 +797,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 366314062}
         m_TargetAssemblyTypeName: OnButtonPressScript, Assembly-CSharp
-        m_MethodName: OnButtonPress2
+        m_MethodName: OnButtonPress18
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1855,7 +1855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1597618313}
   sentences:
-  - 'HAPI: Hey everyone! I thought we could share future stories!'
+  - 'HAPI: Hey everyone, I thought we could share future stories!'
   - 'ALBERT: Future stories?'
   - 'ARTEMIS: Hapi and I were talking about it this morning. She wants to write and
     I''d like to help people a bit more'
@@ -1868,9 +1868,9 @@ MonoBehaviour:
   - 'ARTEMIS: Come on Muscles, you gotta be thinking of getting out there, helping
     people like you have us'
   - 'ALBERT: Are you suggesting he become like an adventurer from one of those fairy
-    tales?'
+    tales? A fairy tale we''re currently living?'
   - 'GRIFFIN: Hey, I like that word. Mind if I keep it?'
-  - 'HAPI: Yeah! Adventurer Griffin, defender of the weak, protector of the helpless!'
+  - 'HAPI: Adventurer Griffin, defender of the weak, protector of the helpless!'
   - Laughter filled the void surronding the campfire, echoing out defiantly into
     the darkness
   characterPortraits:

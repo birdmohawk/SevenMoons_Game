@@ -1746,7 +1746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.74, y: -272.15002}
+  m_AnchoredPosition: {x: 441, y: -298.5}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1872,8 +1872,8 @@ MonoBehaviour:
     but with enthusiasm!'
   - 'ARTEMIS: Not bad, I like it. Tell you what, I''ll let you call me Artie if I
     can keep calling you Kid.'
-  - 'HAPI: ...hmmm....deal! But only you because you''re my friend'
-  - 'ARTEMIS: ha, I guess we have to be now'
+  - 'HAPI: ...hmmm....deal. But only you because you''re my friend'
+  - 'ARTEMIS: ha, I guess we are'
   characterPortraits:
   - {fileID: 1096329722}
   - {fileID: 1988389952}
@@ -1882,7 +1882,7 @@ MonoBehaviour:
   - {fileID: 1681121584}
   - {fileID: 1988389952}
   - {fileID: 1681121584}
-  - {fileID: 1047936247}
+  - {fileID: 1881726824}
   - {fileID: 1681121584}
   - {fileID: 1047936247}
   - {fileID: 1681121584}

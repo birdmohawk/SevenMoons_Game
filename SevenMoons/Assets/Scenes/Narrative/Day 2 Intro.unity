@@ -1746,7 +1746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.74, y: -272.15002}
+  m_AnchoredPosition: {x: 438, y: -298.5}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1860,16 +1860,16 @@ MonoBehaviour:
   - 'ARTEMIS: I''m just glad nothing weird happened while we were sleeping'
   - 'ALBERT: If I were to guess, this area itself is warded against what lurks beyond
     the tree line'
-  - 'HAPI: WOW! This is a magical adventure!'
+  - 'HAPI: WOW! This is a magical adventure'
   - 'ARTEMIS: Heavens Kid, how can this not be scary to you?'
   - 'GRIFFIN: I mean, we can just stay here until adults come along then right?'
   - 'ALBERT:  I doubt it. Given the notice, we need supplies for when the ward comes
     down on the seventh night'
   - 'ARTEMIS: You mean we''ll be attacked?!'
-  - 'ALBERT: I''m 9 million percent sure, given the noises we heard last night'
+  - 'ALBERT: I''m 9 million percent sure'
   - 'GRIFFIN: Well if nothing attacks us during the day, then exploring n getting
     supplies should be easy as for that night'
-  - 'HAPI: Yay! Let''s go explore again!'
+  - 'HAPI: Yay, let''s go explore again!'
   characterPortraits:
   - {fileID: 1681121584}
   - {fileID: 1047936247}

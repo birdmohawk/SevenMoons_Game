@@ -472,8 +472,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.22004, y: -270.29}
-  m_SizeDelta: {x: 1600, y: 240}
+  m_AnchoredPosition: {x: 0.22004, y: -276.62}
+  m_SizeDelta: {x: 1600, y: 257.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761236990
 MonoBehaviour:
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: End Game
+  m_text: END GAME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
   m_sharedMaterial: {fileID: 6262966605371064912, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
@@ -1296,8 +1296,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90.827, y: -264.71002}
-  m_SizeDelta: {x: 1210, y: 150}
+  m_AnchoredPosition: {x: -90.827, y: -274.84}
+  m_SizeDelta: {x: 1210, y: 174.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1597618312
 CanvasRenderer:
@@ -1746,7 +1746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.74, y: -272.15002}
+  m_AnchoredPosition: {x: 438, y: -298.5}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1856,8 +1856,8 @@ MonoBehaviour:
   textDisplay: {fileID: 1597618313}
   sentences:
   - And so the seventh began. Before the final embers of the fire withered and died,
-    the beasts did come. Befouled creatures of the unknown land , come to slay the
-    unwitting trespassers on their land.
+    the beasts did come. Befouled creatures of the unknown land, come to slay the
+    unwitting trespassers on their land
   - The stranded campers braced themselves; there was no going back. The cursed spirit
     that ruled this realm came forth, ready to face it once and for all
   - The prey would escape their perilous fate, but such an escape would come at a

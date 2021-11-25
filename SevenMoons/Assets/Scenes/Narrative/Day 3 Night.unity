@@ -797,7 +797,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 366314062}
         m_TargetAssemblyTypeName: OnButtonPressScript, Assembly-CSharp
-        m_MethodName: OnButtonPress2
+        m_MethodName: OnButtonPress16
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Go to Campsite
+  m_text: Next Day
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
   m_sharedMaterial: {fileID: 6262966605371064912, guid: 23389c521d1eb1d4cbbc21b78c21d6c5, type: 2}
@@ -1746,7 +1746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.74, y: -272.15002}
+  m_AnchoredPosition: {x: 438, y: -298.5}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1860,7 +1860,7 @@ MonoBehaviour:
   - 'HAPI: Where do we...come from? I don''t get it'
   - 'ALBERT: You want us to know about the each other I take it? To better be friends
     or for our survival?'
-  - 'ARTEMIS: Sure Glasses, wspin it however you want. It''s not like you want to
+  - 'ARTEMIS: Sure Glasses, spin it however you want. It''s not like you want to
     be friends with any of us anyway'
   - 'ALBERT: That...that''s not strictly true. I''m not used to such company, I often
     study alone at the college'

@@ -848,8 +848,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279511629
-  m_fontColor: {r: 0.3019608, g: 0.16470589, b: 0.078431375, a: 1}
+    rgba: 4278190237
+  m_fontColor: {r: 0.6156863, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1746,7 +1746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 435.74, y: -272.15002}
+  m_AnchoredPosition: {x: 438, y: -298.5}
   m_SizeDelta: {x: 200, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1881726821
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   - 'ALBERT: I''m not saying that, but we are probably better prepared than most.
     We are ready defeat this thing'
   - 'ARTEMIS: Don''t worry Kid, we can beat it. Besides I''ve got your back'
-  - 'HAPI: And I have yours! Let''s go Artie!'
+  - 'HAPI: And I have yours, let''s go Artie!'
   characterPortraits:
   - {fileID: 1881726824}
   - {fileID: 1047936247}
