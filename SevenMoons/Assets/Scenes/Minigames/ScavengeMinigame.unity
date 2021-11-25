@@ -2396,6 +2396,7 @@ MonoBehaviour:
   triggers: 0
   instructions: {fileID: 14091682}
   timePassed: 0
+  startTime: 3
   endGameUI: {fileID: 116915622}
   bestGameUI:
   - {fileID: 168077959}
@@ -4560,7 +4561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b2f63575d95e54092fb2bb1f9c68d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: ae8d9d44f7e1664c
   useOtherObject: 0
   data:
     idInternal: 0
@@ -4584,7 +4585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b2f63575d95e54092fb2bb1f9c68d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: ae8d9d44f7e1664c
   useOtherObject: 0
   data:
     idInternal: 0

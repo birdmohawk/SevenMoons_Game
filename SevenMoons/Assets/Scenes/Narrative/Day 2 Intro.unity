@@ -217,7 +217,6 @@ GameObject:
   - component: {fileID: 193812123}
   - component: {fileID: 193812127}
   - component: {fileID: 193812125}
-  - component: {fileID: 193812126}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -286,30 +285,6 @@ MonoBehaviour:
   - idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e37719ff99f4bc649b29e1e16db3079a, type: 2}
---- !u!114 &193812126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193812122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5b2f63575d95e54092fb2bb1f9c68d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ae1b86c0bb815d24fb40e8f496ac960d, type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!114 &193812127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1168,6 +1143,7 @@ GameObject:
   - component: {fileID: 1501347376}
   - component: {fileID: 1501347375}
   - component: {fileID: 1501347374}
+  - component: {fileID: 1501347378}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -1269,6 +1245,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1501347378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501347373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b2f63575d95e54092fb2bb1f9c68d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ae1b86c0bb815d24fb40e8f496ac960d, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1597618310
 GameObject:
   m_ObjectHideFlags: 0

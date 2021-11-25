@@ -87,7 +87,7 @@ public class OnButtonPressScript : MonoBehaviour
 
     public void OnButtonPress11() //Ruined Town
     {
-        SceneManager.LoadScene("Ruined_Town");
+        SceneManager.LoadScene("Ruined_Town 1");
     }
 
     public void OnButtonPress12() //quits game

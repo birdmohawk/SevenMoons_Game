@@ -12,6 +12,7 @@ public class ScavengeItemScript : MonoBehaviour
     public GameObject instructions;
 
     public float timePassed;
+    public float startTime;
 
     public GameObject endGameUI;
     public GameObject[] bestGameUI;
@@ -48,7 +49,9 @@ public class ScavengeItemScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (triggers <= 0)
+        startTime -= Time.deltaTime;
+
+        if (triggers <= 0 && startTime <= 0)
         {
             //Debug.Log("game over");
             GameOver();

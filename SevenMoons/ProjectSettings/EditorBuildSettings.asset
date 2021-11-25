@@ -89,4 +89,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Narrative/EndScene3.unity
     guid: c8c76b8b7de708043a7b2afe5ebcc1a7
+  - enabled: 1
+    path: Assets/Scenes/Areas/Ruined_Town 1.unity
+    guid: 9697f3bc97c088d4a80b697937d208fb
   m_configObjects: {}

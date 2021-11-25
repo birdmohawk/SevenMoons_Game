@@ -35,7 +35,7 @@ public class DialogueNarrative : MonoBehaviour
         characterSpeaker = characterPortraits[0];
         characterSpeaker.enabled = true;
 
-       // manager.GetComponent<PostWwiseEvent>().PlaySound2();
+        manager.GetComponent<PostWwiseEvent>().PlaySound2();
     }
 
     void Update()
@@ -49,7 +49,7 @@ public class DialogueNarrative : MonoBehaviour
 
     IEnumerator Type()
     {
-        manager.GetComponent<PostWwiseEvent>().PlaySound2();
+        //manager.GetComponent<PostWwiseEvent>().PlaySound2();
 
         foreach (char letter in sentences[index].ToCharArray())
         {
@@ -58,7 +58,7 @@ public class DialogueNarrative : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
 
-        manager.GetComponent<PostWwiseEvent>().StopSound2();
+        //manager.GetComponent<PostWwiseEvent>().StopSound2();
     }
 
     public void NextSentence()
@@ -71,12 +71,12 @@ public class DialogueNarrative : MonoBehaviour
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
-            //manager.GetComponent<PostWwiseEvent>().PlaySound2();
+            manager.GetComponent<PostWwiseEvent>().PlaySound2();
         }
         else
         {
             textDisplay.text = "";
-            //manager.GetComponent<PostWwiseEvent>().StopSound2();
+            manager.GetComponent<PostWwiseEvent>().StopSound2();
         }
     }
 

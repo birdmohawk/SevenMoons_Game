@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 1afa3c4f49ca634b887f793fd12226cc
     GuidInternal: 
-    m_lastTime: -8585682006734016164
+    m_lastTime: -8585724279802504965
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Reflect Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Reflect Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8585682006734016164
+    m_lastTime: -8585724279802475460
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1b46c456f67c7343b81ff0cdd9af9f21
     GuidInternal: 
-    m_lastTime: -8585682006746199893
+    m_lastTime: -8585724279803531931
     List:
     - name: Ambience_Campsite
       guid: fb7a0d968b39e8478ddc3b49baf26268
@@ -413,7 +413,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f42b59196625dc49ad1f432037c13bc9
     GuidInternal: 
-    m_lastTime: -8585682006734056126
+    m_lastTime: -8585641218013876841
     List:
     - name: Campsite
       guid: a62074fab6088948a887b635dda1c031
@@ -429,6 +429,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: a62074fab6088948a887b635dda1c031
       Path: SoundBanks\Default Work Unit\Campsite
+    - name: CollectBerries_Minigame
+      guid: 14a2754c71206d489d193411a530f8cb
+      id: 54607621
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: CollectBerries_Minigame
+        ObjectType: 7
+        guid: 14a2754c71206d489d193411a530f8cb
+      Path: SoundBanks\Default Work Unit\CollectBerries_Minigame
     - name: Exercise_Minigame
       guid: b14f49599e7e1849b59cabe8121008c2
       id: 1508477845
@@ -485,6 +499,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: e1bb8195813eac42a2d4d829712a361e
       Path: SoundBanks\Default Work Unit\Narrative_Theme
+    - name: River
+      guid: e7a7def4caab5946a373a76fdb4a1dd0
+      id: 3605787649
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: River
+        ObjectType: 7
+        guid: e7a7def4caab5946a373a76fdb4a1dd0
+      Path: SoundBanks\Default Work Unit\River
     - name: Scavenge_Minigame
       guid: 75884921fb8a2d4a8b56d2cb583647d6
       id: 329140285
@@ -499,6 +527,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 75884921fb8a2d4a8b56d2cb583647d6
       Path: SoundBanks\Default Work Unit\Scavenge_Minigame
+    - name: Town
+      guid: faa5abf66f91794989a8c11a101f411d
+      id: 3091570009
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f42b59196625dc49ad1f432037c13bc9
+      - ElementName: Town
+        ObjectType: 7
+        guid: faa5abf66f91794989a8c11a101f411d
+      Path: SoundBanks\Default Work Unit\Town
     - name: UI_Menu
       guid: bfe3ecd05eec6c47939cdb2feacbd5a8
       id: 2511555531
@@ -539,7 +581,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8d2f21bdaf2f4f4cb22a46651589bcce
     GuidInternal: 
-    m_lastTime: -8585682006752950894
+    m_lastTime: -8585641139693060432
     List:
     - name: Ambience
       guid: ee453e39896e21498d69680944f9210e
@@ -767,8 +809,8 @@ MonoBehaviour:
         guid: 429974cfdcc91b48992545c192359ea1
       Path: Events\Default Work Unit\Sync_Sounds\Rustling
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Select
       guid: 26f7e4849e25d14cbe6e50df218b1832
       id: 1432588725
@@ -826,6 +868,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Typing
+      guid: 038d8dc4aa0561418e8c13dd36b4c98b
+      id: 1599183472
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d2f21bdaf2f4f4cb22a46651589bcce
+      - ElementName: Menu
+        ObjectType: 4
+        guid: bf3570d64b0650459d6059dac866e597
+      - ElementName: Typing
+        ObjectType: 3
+        guid: 038d8dc4aa0561418e8c13dd36b4c98b
+      Path: Events\Default Work Unit\Menu\Typing
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Wood_Chop
       guid: 2245bc6fc8d5f143b3da860c33f54d2e
       id: 1483562389
@@ -857,7 +919,7 @@ MonoBehaviour:
     ParentPath: Events\Factory Tencent GME
     guid: b1390e77527c2a44a4f7653ae6b0c847
     GuidInternal: 
-    m_lastTime: -8585682006752950894
+    m_lastTime: -8585724279802733381
     List:
     - name: Play_GME_Receive
       guid: b9fd181e09834b479d8449b3160f1d07
@@ -939,7 +1001,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b86c569e457af94d8e3c5e3eeaf59246
     GuidInternal: 
-    m_lastTime: -8585657828232113712
+    m_lastTime: -8585659377238085910
     List:
     - name: CampfireDistance
       guid: aafb40166c74924b93c6ca991c702dfd
@@ -994,7 +1056,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Motion
     guid: 225213d7dbd1d042adc0930743567776
     GuidInternal: 
-    m_lastTime: -8585682006752950894
+    m_lastTime: -8585724279802906981
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -1035,7 +1097,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory SoundSeed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8585682006752950894
+    m_lastTime: -8585724279802564741
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -1189,7 +1251,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d920bcc9152b5b45b9afa9652d635190
     GuidInternal: 
-    m_lastTime: -8585682006734016164
+    m_lastTime: -8585713872371852823
     List:
     - name: Chest_Interact
       guid: 97f075f1bdf8db4284f4304b32838574
@@ -1269,7 +1331,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 03b9fe9caa3ccb4193ed088473b5f322
     GuidInternal: 
-    m_lastTime: -8585657828224202307
+    m_lastTime: -8585659321583694783
     List:
     - name: Ambience_DayNumber
       guid: 7227c83d8761454fb157a75fb3ccdaa4
@@ -1561,10 +1623,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 0b6436189e513640ac85730ea1be94c8
     GuidInternal: 
-    m_lastTime: -8585682006734016164
+    m_lastTime: -8585724279802356411
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 150000001600000017000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
