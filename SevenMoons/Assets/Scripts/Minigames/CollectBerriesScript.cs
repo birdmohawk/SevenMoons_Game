@@ -19,7 +19,7 @@ public class CollectBerriesScript : MonoBehaviour
     public GameObject goodBerry = null; //public so that they are accessible from CollectBerriesScript
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         SpawnBerryPositions();
 

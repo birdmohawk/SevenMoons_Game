@@ -98,7 +98,7 @@ public class ScavengeItemScript : MonoBehaviour
             {
                 //Debug.Log("good score!");
                 int index = UnityEngine.Random.Range(0, goodGameUI.Length);
-                goodGameUI[index].SetActive(true);
+                goodGameUI[2].SetActive(true);
                 GameManagerScript.gamemanager.GoodScore();
             }
 
@@ -106,7 +106,7 @@ public class ScavengeItemScript : MonoBehaviour
             {
                 //Debug.Log("bad score!");
                 int index = UnityEngine.Random.Range(0, badGameUI.Length);
-                badGameUI[index].SetActive(true);
+                badGameUI[1].SetActive(true);
                 GameManagerScript.gamemanager.BadScore();
             }
         }

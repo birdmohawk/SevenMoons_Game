@@ -656,6 +656,108 @@ Transform:
   m_Father: {fileID: 752007439}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &332700265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 332700266}
+  - component: {fileID: 332700267}
+  m_Layer: 0
+  m_Name: Good Narrative 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &332700266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332700265}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30601412, y: 0.12239672, z: 0.035759438}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 752007439}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &332700267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332700265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 586868625}
+  sentences:
+  - You're not the worst fisherman around.
+  - BBut you are really far from the best.
+  typingSpeed: 0.02
+  continueButton: {fileID: 2020743643}
+  nextSceneButton: {fileID: 1924990605}
+  manager: {fileID: 1069272769}
+--- !u!1 &357203125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 357203127}
+  - component: {fileID: 357203126}
+  m_Layer: 0
+  m_Name: Bad Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &357203126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357203125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 586868625}
+  sentences:
+  - Fish really fear you!
+  - Enough to swim really really far away never to be caught by your hook.
+  typingSpeed: 0.02
+  continueButton: {fileID: 2020743643}
+  nextSceneButton: {fileID: 1924990605}
+  manager: {fileID: 1069272769}
+--- !u!4 &357203127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357203125}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30601412, y: 0.12239672, z: 0.035759438}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 752007439}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &586868622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,10 +2019,14 @@ Transform:
   m_Children:
   - {fileID: 285687156}
   - {fileID: 1806717462}
+  - {fileID: 1313952927}
   - {fileID: 1523536691}
   - {fileID: 1427415491}
+  - {fileID: 2070486049}
+  - {fileID: 332700266}
   - {fileID: 894618242}
   - {fileID: 1977385752}
+  - {fileID: 357203127}
   m_Father: {fileID: 1069272770}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2108,7 +2214,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 752007439}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &925426927
 PrefabInstance:
@@ -2881,6 +2987,57 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
+--- !u!1 &1313952926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1313952927}
+  - component: {fileID: 1313952928}
+  m_Layer: 0
+  m_Name: Best Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1313952927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313952926}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30601412, y: 0.12239672, z: 0.035759438}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 752007439}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1313952928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313952926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 586868625}
+  sentences:
+  - You spend the whole day fishing and it really paid off.
+  - YYou'll have plenty of fish to get you and the other campers through today.
+  typingSpeed: 0.02
+  continueButton: {fileID: 2020743643}
+  nextSceneButton: {fileID: 1924990605}
+  manager: {fileID: 1069272769}
 --- !u!1001 &1382535570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2979,7 +3136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 586868625}
   sentences:
-  - Maybe you're bait just isn't tasty enough.
+  - Maybe your bait just isn't tasty enough.
   - YYou should bring better worms next time.
   typingSpeed: 0.02
   continueButton: {fileID: 2020743643}
@@ -2997,7 +3154,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 752007439}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1434303297
 GameObject:
@@ -4401,7 +4558,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 752007439}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1532003246
 GameObject:
@@ -4991,7 +5148,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 752007439}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2012408017
 GameObject:
@@ -5281,6 +5438,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1313952928}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2070486050}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 332700267}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 357203126}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &2020743647
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5301,6 +5506,57 @@ RectTransform:
   m_AnchoredPosition: {x: 0.006485462, y: -0.22724152}
   m_SizeDelta: {x: 0.58, y: 0.14}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2070486048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2070486049}
+  - component: {fileID: 2070486050}
+  m_Layer: 0
+  m_Name: Good Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2070486049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070486048}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30601412, y: 0.12239672, z: 0.035759438}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 752007439}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2070486050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070486048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 586868625}
+  sentences:
+  - That wasn't too bad.
+  - MMaybe with a bit more practice you could get better at this.
+  typingSpeed: 0.02
+  continueButton: {fileID: 2020743643}
+  nextSceneButton: {fileID: 1924990605}
+  manager: {fileID: 1069272769}
 --- !u!1 &2088008321
 GameObject:
   m_ObjectHideFlags: 0
@@ -5496,12 +5752,16 @@ MonoBehaviour:
   bestGameUI:
   - {fileID: 285687154}
   - {fileID: 1806717460}
+  - {fileID: 1313952926}
   goodGameUI:
   - {fileID: 1523536689}
   - {fileID: 1427415489}
+  - {fileID: 2070486048}
+  - {fileID: 332700265}
   badGameUI:
   - {fileID: 894618240}
   - {fileID: 1977385750}
+  - {fileID: 357203125}
   endGameUI: {fileID: 1074669500}
 --- !u!111 &2109926951
 Animation:

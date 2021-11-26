@@ -154,8 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 76721515}
   sentences:
-  - Well, didn't get far before throwing up
-  - Having that fish before doing this was a bad idea
+  - You don't get far before throwing up.
+  - Maybe having that fish before doing this was a bad idea.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
   nextSceneButton: {fileID: 804489146}
@@ -172,7 +172,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1951899022}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &76721512
 GameObject:
@@ -364,8 +364,12 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 5123264811767540453, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
+      propertyPath: tasks
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123264811767540453, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
       propertyPath: nights
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ece3fb4792fd4954392e99c6ee72a84e, type: 3}
@@ -693,6 +697,78 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1689081219}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1545453820}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1963503675}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 727785275}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1051375735}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1743924702}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &254938386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,8 +838,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 76721515}
   sentences:
-  - You think you got some good kinds, certainly helps a little
-  - Legs still ache though
+  - You think you got some good kinds, certainly helps a little.
+  - LLegs still ache though.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
   nextSceneButton: {fileID: 804489146}
@@ -780,7 +856,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1951899022}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &329789932
 GameObject:
@@ -891,7 +967,7 @@ MonoBehaviour:
   speed: 0.8
   distance: 1
   timeLeft: 10
-  startTimeLeft: 3
+  startTimeLeft: 4
   timerBox: {fileID: 373691095}
   startTimerBox: {fileID: 1034791942}
   instructions: {fileID: 1098462413}
@@ -904,12 +980,18 @@ MonoBehaviour:
   bestGameUI:
   - {fileID: 365440858}
   - {fileID: 880006984}
+  - {fileID: 1963503673}
+  - {fileID: 727785273}
   goodGameUI:
   - {fileID: 2096375852}
   - {fileID: 259564027}
+  - {fileID: 1051375733}
+  - {fileID: 1743924700}
   badGameUI:
   - {fileID: 590407290}
   - {fileID: 61300123}
+  - {fileID: 1689081218}
+  - {fileID: 1545453819}
 --- !u!212 &343372878
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1026,7 +1108,7 @@ MonoBehaviour:
   textDisplay: {fileID: 76721515}
   sentences:
   - That was a great workout!
-  - You are feeling energised and like you could take on anything this forest throws
+  - YYou are feeling energised and like you could take on anything this forest throws
     at you.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
@@ -1436,12 +1518,18 @@ MonoBehaviour:
   bestGameUI:
   - {fileID: 365440858}
   - {fileID: 880006984}
+  - {fileID: 1963503673}
+  - {fileID: 727785273}
   goodGameUI:
   - {fileID: 2096375852}
   - {fileID: 259564027}
+  - {fileID: 1051375733}
+  - {fileID: 1743924700}
   badGameUI:
   - {fileID: 590407290}
   - {fileID: 61300123}
+  - {fileID: 1689081218}
+  - {fileID: 1545453819}
 --- !u!212 &455340322
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1544,7 +1632,7 @@ MonoBehaviour:
   textDisplay: {fileID: 76721515}
   sentences:
   - You are really out of shape.
-  - You take your last step and collapse. Maybe you should stick to walking.
+  - YYou take your last step and collapse. Maybe you should stick to walking.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
   nextSceneButton: {fileID: 804489146}
@@ -1561,7 +1649,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1951899022}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &592551693
 GameObject:
@@ -1887,6 +1975,57 @@ Transform:
   m_Father: {fileID: 623576119}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &727785273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 727785274}
+  - component: {fileID: 727785275}
+  m_Layer: 0
+  m_Name: Best Narrative 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &727785274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727785273}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.48374, y: 1.9687852, z: -133.79324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1951899022}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &727785275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727785273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 76721515}
+  sentences:
+  - No one else can keep up with you as you weave between the trees.
+  - CCreatures from the shadows watch you as you breeze past them.
+  typingSpeed: 0.02
+  continueButton: {fileID: 254938383}
+  nextSceneButton: {fileID: 804489146}
+  manager: {fileID: 2146323876}
 --- !u!1 &732107949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,9 +2529,9 @@ MonoBehaviour:
   textDisplay: {fileID: 76721515}
   sentences:
   - The wind whips through your hair as you fly along the grass.
-  - It's always a good idea to practice your running skills when you're stuck in
+  - IIt's always a good idea to practice your running skills when you're stuck in
     an unknown forest.
-  - Just in case.
+  - JJust in case.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
   nextSceneButton: {fileID: 804489146}
@@ -2628,6 +2767,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1051375733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051375734}
+  - component: {fileID: 1051375735}
+  m_Layer: 0
+  m_Name: Good Narrative  3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1051375734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051375733}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.48374, y: 1.9687852, z: -133.79324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1951899022}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1051375735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051375733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 76721515}
+  sentences:
+  - You did better than you thought you would.
+  - MMaybe you'll get the hang of this sooner than you thought.
+  typingSpeed: 0.02
+  continueButton: {fileID: 254938383}
+  nextSceneButton: {fileID: 804489146}
+  manager: {fileID: 2146323876}
 --- !u!1 &1098462413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2928,6 +3118,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249635669}
   m_CullTransparentMesh: 1
+--- !u!1 &1545453819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1545453821}
+  - component: {fileID: 1545453820}
+  m_Layer: 0
+  m_Name: Bad Narrative 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1545453820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545453819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 76721515}
+  sentences:
+  - Your legs give out and you collapse on the ground.
+  - TTo add insult to injury a tortoise breezes past you.
+  typingSpeed: 0.02
+  continueButton: {fileID: 254938383}
+  nextSceneButton: {fileID: 804489146}
+  manager: {fileID: 2146323876}
+--- !u!4 &1545453821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545453819}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.48374, y: 1.9687852, z: -133.79324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1951899022}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1643541857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2989,12 +3230,18 @@ MonoBehaviour:
   bestGameUI:
   - {fileID: 365440858}
   - {fileID: 880006984}
+  - {fileID: 1963503673}
+  - {fileID: 727785273}
   goodGameUI:
   - {fileID: 2096375852}
   - {fileID: 259564027}
+  - {fileID: 1051375733}
+  - {fileID: 1743924700}
   badGameUI:
   - {fileID: 590407290}
   - {fileID: 61300123}
+  - {fileID: 1689081218}
+  - {fileID: 1545453819}
 --- !u!212 &1643541860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3065,6 +3312,109 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1689081218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1689081220}
+  - component: {fileID: 1689081219}
+  m_Layer: 0
+  m_Name: Bad Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1689081219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689081218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 76721515}
+  sentences:
+  - Your legs feel like jelly as you take your final step.
+  - YYou hate running why did you even try this.
+  typingSpeed: 0.02
+  continueButton: {fileID: 254938383}
+  nextSceneButton: {fileID: 804489146}
+  manager: {fileID: 2146323876}
+--- !u!4 &1689081220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689081218}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.48374, y: 1.9687852, z: -133.79324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1951899022}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1743924700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743924701}
+  - component: {fileID: 1743924702}
+  m_Layer: 0
+  m_Name: Good Narrative  4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1743924701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743924700}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.48374, y: 1.9687852, z: -133.79324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1951899022}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1743924702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743924700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 76721515}
+  sentences:
+  - You're out of breath but you did pretty well.
+  - YYou're tired but feel stronger. Maybe with some practice you could get pretty
+    good at this.
+  typingSpeed: 0.02
+  continueButton: {fileID: 254938383}
+  nextSceneButton: {fileID: 804489146}
+  manager: {fileID: 2146323876}
 --- !u!1 &1907947451
 GameObject:
   m_ObjectHideFlags: 0
@@ -3126,12 +3476,18 @@ MonoBehaviour:
   bestGameUI:
   - {fileID: 365440858}
   - {fileID: 880006984}
+  - {fileID: 1963503673}
+  - {fileID: 727785273}
   goodGameUI:
   - {fileID: 2096375852}
   - {fileID: 259564027}
+  - {fileID: 1051375733}
+  - {fileID: 1743924700}
   badGameUI:
   - {fileID: 590407290}
   - {fileID: 61300123}
+  - {fileID: 1689081218}
+  - {fileID: 1545453819}
 --- !u!212 &1907947454
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3231,13 +3587,70 @@ Transform:
   m_Children:
   - {fileID: 365440860}
   - {fileID: 880006986}
+  - {fileID: 1963503674}
+  - {fileID: 727785274}
   - {fileID: 2096375854}
   - {fileID: 259564029}
+  - {fileID: 1051375734}
+  - {fileID: 1743924701}
   - {fileID: 590407292}
   - {fileID: 61300125}
+  - {fileID: 1689081220}
+  - {fileID: 1545453821}
   m_Father: {fileID: 2146323877}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1963503673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963503674}
+  - component: {fileID: 1963503675}
+  m_Layer: 0
+  m_Name: Best Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963503674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963503673}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.48374, y: 1.9687852, z: -133.79324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1951899022}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963503675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963503673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 76721515}
+  sentences:
+  - You zip between the trees, branches catching at your clothes.
+  - YYou'll be able to outrun anything living in this forest.
+  typingSpeed: 0.02
+  continueButton: {fileID: 254938383}
+  nextSceneButton: {fileID: 804489146}
+  manager: {fileID: 2146323876}
 --- !u!1 &2027071653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3418,7 +3831,7 @@ MonoBehaviour:
   textDisplay: {fileID: 76721515}
   sentences:
   - 'That was ok. '
-  - You're not very fast though.
+  - YYou're not very fast though.
   typingSpeed: 0.02
   continueButton: {fileID: 254938383}
   nextSceneButton: {fileID: 804489146}
@@ -3435,7 +3848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1951899022}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2146323876
 GameObject:

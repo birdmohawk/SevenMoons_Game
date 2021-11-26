@@ -382,7 +382,7 @@ MonoBehaviour:
   textDisplay: {fileID: 1529475478}
   sentences:
   - 'It''s a mess here. '
-  - Oh well maybe you can use this book for firewood.
+  - OOh well maybe you can use this book for firewood.
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
@@ -399,7 +399,7 @@ Transform:
   m_LocalScale: {x: 0.25172004, y: 0.25172004, z: 0.25172004}
   m_Children: []
   m_Father: {fileID: 1824023743}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81067714
 GameObject:
@@ -1274,8 +1274,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1529475478}
   sentences:
-  - Wow!
-  - AA book!
+  - You brush away the debris with ease.
+  - 'UUnderneath the clutter you find a book. '
+  - UUpon opening you find pages and pages in a language you don't understand. Cool.
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
@@ -2102,6 +2103,58 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &429963584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 429963585}
+  - component: {fileID: 429963586}
+  m_Layer: 0
+  m_Name: Best End Narrative 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &429963585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429963584}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.21577133, y: 0.08792425, z: -12.516233}
+  m_LocalScale: {x: 0.25172004, y: 0.25172004, z: 0.25172004}
+  m_Children: []
+  m_Father: {fileID: 1824023743}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &429963586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429963584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1529475478}
+  sentences:
+  - You quickly clear the leaves and clutter with your hands to uncover a book.
+  - IInside there are pages upon pages of maps, diagrams, and drawings. The map almost
+    looks similar to the forest.
+  typingSpeed: 0.02
+  continueButton: {fileID: 1547474671}
+  nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!1 &433981154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,7 +2184,7 @@ Transform:
   m_LocalScale: {x: 0.25172004, y: 0.25172004, z: 0.25172004}
   m_Children: []
   m_Father: {fileID: 1824023743}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &433981156
 MonoBehaviour:
@@ -2147,8 +2200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1529475478}
   sentences:
-  - Ok.
-  - AA book.
+  - You uncover a book.
+  - MMost of the pages are ripped out. You wonder why it was covered so well.
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
@@ -2401,12 +2454,18 @@ MonoBehaviour:
   bestGameUI:
   - {fileID: 168077959}
   - {fileID: 643200586}
+  - {fileID: 848842635}
+  - {fileID: 429963584}
   goodGameUI:
   - {fileID: 433981154}
   - {fileID: 2046234805}
+  - {fileID: 1794283468}
+  - {fileID: 781319866}
   badGameUI:
   - {fileID: 37643045}
   - {fileID: 1068942958}
+  - {fileID: 470624884}
+  - {fileID: 2136659727}
 --- !u!61 &456782059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2433,6 +2492,57 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.30138284, y: 0.3590051}
   m_EdgeRadius: 0
+--- !u!1 &470624884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470624885}
+  - component: {fileID: 470624886}
+  m_Layer: 0
+  m_Name: Bad End Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &470624885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470624884}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.21577133, y: 0.08792425, z: -12.516233}
+  m_LocalScale: {x: 0.25172004, y: 0.25172004, z: 0.25172004}
+  m_Children: []
+  m_Father: {fileID: 1824023743}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470624886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470624884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1529475478}
+  sentences:
+  - You spend what feels like hours rummaging through this mess.
+  - AAll for a boring book.
+  typingSpeed: 0.02
+  continueButton: {fileID: 1547474671}
+  nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!1001 &527339756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3119,7 +3229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1529475478}
   sentences:
-  - You unconvered that book at the speed of lightning.
+  - You uncovered that book at the speed of lightning.
   - HHope you can read as fast!
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
@@ -3269,6 +3379,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &781319866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 781319867}
+  - component: {fileID: 781319868}
+  m_Layer: 0
+  m_Name: Good End Narrative 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &781319867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781319866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.21577133, y: 0.08792425, z: -12.516233}
+  m_LocalScale: {x: 0.25172004, y: 0.25172004, z: 0.25172004}
+  m_Children: []
+  m_Father: {fileID: 1824023743}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781319868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781319866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1529475478}
+  sentences:
+  - It's kind of hard to clear all the clutter away but you manage it.
+  - TThe book is heavy and worn, but has a few pages that are still readable.
+  typingSpeed: 0.02
+  continueButton: {fileID: 1547474671}
+  nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!1 &821425335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,6 +3718,58 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &848842635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848842636}
+  - component: {fileID: 848842637}
+  m_Layer: 0
+  m_Name: Best End Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &848842636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848842635}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.21577133, y: 0.08792425, z: -12.516233}
+  m_LocalScale: {x: 0.25172004, y: 0.25172004, z: 0.25172004}
+  m_Children: []
+  m_Father: {fileID: 1824023743}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &848842637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848842635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1529475478}
+  sentences:
+  - You brush the last leaf away to uncover a book.
+  - FFlicking through the pages you see sketches of unusual creatures, with notes
+    accompanying each. Interesting.
+  typingSpeed: 0.02
+  continueButton: {fileID: 1547474671}
+  nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!1 &877592070
 GameObject:
   m_ObjectHideFlags: 0
@@ -4306,7 +4519,7 @@ Transform:
   m_LocalScale: {x: 0.25172004, y: 0.25172004, z: 0.25172004}
   m_Children: []
   m_Father: {fileID: 1824023743}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1068942960
 MonoBehaviour:
@@ -4322,8 +4535,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1529475478}
   sentences:
-  - You spend what feels like hours rummaging through this mess.
-  - All for a book.
+  - 'Finally, you brush the last leaf away. '
+  - IIn front of you is a book. You pick it up but it disintegrates into dust in
+    your hands.
+  - OOh well.
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
@@ -6220,6 +6435,78 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 848842637}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 429963586}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1794283470}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 781319868}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 470624886}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2136659729}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1568799875
 GameObject:
   m_ObjectHideFlags: 0
@@ -7748,6 +8035,57 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1794283468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1794283469}
+  - component: {fileID: 1794283470}
+  m_Layer: 0
+  m_Name: Good End Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1794283469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794283468}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.21577133, y: 0.08792425, z: -12.516233}
+  m_LocalScale: {x: 0.25172004, y: 0.25172004, z: 0.25172004}
+  m_Children: []
+  m_Father: {fileID: 1824023743}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1794283470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794283468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1529475478}
+  sentences:
+  - You wonder why this book was left covered like this.
+  - 'AAs you look through the torn pages you see parts of a map. '
+  typingSpeed: 0.02
+  continueButton: {fileID: 1547474671}
+  nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}
 --- !u!1 &1824023742
 GameObject:
   m_ObjectHideFlags: 0
@@ -7777,10 +8115,16 @@ Transform:
   m_Children:
   - {fileID: 168077960}
   - {fileID: 643200587}
+  - {fileID: 848842636}
+  - {fileID: 429963585}
   - {fileID: 433981155}
   - {fileID: 2046234806}
+  - {fileID: 1794283469}
+  - {fileID: 781319867}
   - {fileID: 37643047}
   - {fileID: 1068942959}
+  - {fileID: 470624885}
+  - {fileID: 2136659728}
   m_Father: {fileID: 1195654486}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8534,7 +8878,7 @@ Transform:
   m_LocalScale: {x: 0.25172004, y: 0.25172004, z: 0.25172004}
   m_Children: []
   m_Father: {fileID: 1824023743}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2046234807
 MonoBehaviour:
@@ -8550,8 +8894,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1529475478}
   sentences:
-  - good 2
-  - sentence 2 test
+  - After a few minutes of clearing the area you find a book.
+  - TThere are a few good pages in here. Maybe the other campers will know more about
+    it.
   typingSpeed: 0.02
   continueButton: {fileID: 1547474671}
   nextSceneButton: {fileID: 2020828577}
@@ -8903,3 +9248,55 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &2136659727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2136659728}
+  - component: {fileID: 2136659729}
+  m_Layer: 0
+  m_Name: Bad End Narrative 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2136659728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136659727}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.21577133, y: 0.08792425, z: -12.516233}
+  m_LocalScale: {x: 0.25172004, y: 0.25172004, z: 0.25172004}
+  m_Children: []
+  m_Father: {fileID: 1824023743}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2136659729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136659727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1529475478}
+  sentences:
+  - You spend ages clearing away the clutter.
+  - 'FFinally you uncover a book and flick through the pages. '
+  - OOnly to find it's complete water damaged. What a shame.
+  typingSpeed: 0.02
+  continueButton: {fileID: 1547474671}
+  nextSceneButton: {fileID: 2020828577}
+  manager: {fileID: 1195654485}

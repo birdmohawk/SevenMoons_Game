@@ -123,6 +123,57 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &77199033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77199034}
+  - component: {fileID: 77199035}
+  m_Layer: 0
+  m_Name: Best End Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &77199034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77199033}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.085365035, y: 0.19537221, z: -1.1668445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 242693838}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &77199035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77199033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1405674196}
+  sentences:
+  - You chopped down an entire tree!
+  - TThis is plenty of wood for all of you.
+  typingSpeed: 0.02
+  continueButton: {fileID: 1808197172}
+  nextSceneButton: {fileID: 182034719}
+  manager: {fileID: 1580533195}
 --- !u!1 &111104417
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,13 +732,68 @@ Transform:
   m_Children:
   - {fileID: 1143690334}
   - {fileID: 1293995606}
+  - {fileID: 77199034}
   - {fileID: 690468256}
   - {fileID: 837063576}
+  - {fileID: 1548231994}
   - {fileID: 1311888070}
   - {fileID: 960243846}
+  - {fileID: 338721953}
+  - {fileID: 875124837}
   m_Father: {fileID: 1580533198}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &338721952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 338721953}
+  - component: {fileID: 338721954}
+  m_Layer: 0
+  m_Name: Bad End Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &338721953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338721952}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.085365035, y: 0.19537221, z: -1.1668445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 242693838}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &338721954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338721952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1405674196}
+  sentences:
+  - Every swing is a miss.
+  - BBetter luck next time.
+  typingSpeed: 0.02
+  continueButton: {fileID: 1808197172}
+  nextSceneButton: {fileID: 182034719}
+  manager: {fileID: 1580533195}
 --- !u!1 &392045707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1110,7 @@ MonoBehaviour:
   textDisplay: {fileID: 1405674196}
   sentences:
   - 'Well. Some wood is better than no wood. '
-  - II guess.
+  - EEven if it's still not very much wood.
   typingSpeed: 0.02
   continueButton: {fileID: 1808197172}
   nextSceneButton: {fileID: 182034719}
@@ -1021,7 +1127,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 242693838}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &808200662
 GameObject:
@@ -1188,8 +1294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1405674196}
   sentences:
-  - 'At least I''ll be warm. '
-  - ((I'm not so sure about the others though)
+  - 'At least you''ll be warm. '
+  - YYou're not so sure about the others though.
   typingSpeed: 0.02
   continueButton: {fileID: 1808197172}
   nextSceneButton: {fileID: 182034719}
@@ -1206,7 +1312,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 242693838}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &865381103
 GameObject:
@@ -1292,6 +1398,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &875124836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 875124837}
+  - component: {fileID: 875124838}
+  m_Layer: 0
+  m_Name: Bad End Narrative 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &875124837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875124836}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.085365035, y: 0.19537221, z: -1.1668445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 242693838}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &875124838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875124836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1405674196}
+  sentences:
+  - It's almost like the logs are deliberately moving out of your way.
+  - It's definitely not because you're terrible at this.
+  typingSpeed: 0.02
+  continueButton: {fileID: 1808197172}
+  nextSceneButton: {fileID: 182034719}
+  manager: {fileID: 1580533195}
 --- !u!1 &916190403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2813,7 +2970,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1405674196}
   sentences:
-  - I guess I'm going to freeze tonight!
+  - You manage to chop absolutely no wood.
+  - LLooks like you might freeze tonight.
   typingSpeed: 0.02
   continueButton: {fileID: 1808197172}
   nextSceneButton: {fileID: 182034719}
@@ -2830,7 +2988,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 242693838}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &964397564
 GameObject:
@@ -3065,12 +3223,16 @@ MonoBehaviour:
   bestGameUI:
   - {fileID: 1143690332}
   - {fileID: 1293995604}
+  - {fileID: 77199033}
   goodGameUI:
   - {fileID: 690468254}
   - {fileID: 837063574}
+  - {fileID: 1548231993}
   badGameUI:
   - {fileID: 1311888068}
   - {fileID: 960243844}
+  - {fileID: 338721952}
+  - {fileID: 875124836}
   endGameUI: {fileID: 865381103}
   manager: {fileID: 1580533195}
   instructions: {fileID: 226188249}
@@ -3371,7 +3533,7 @@ MonoBehaviour:
   textDisplay: {fileID: 1405674196}
   sentences:
   - Ouch!
-  - TThat gave me a splinter!
+  - YYou got a splinter.
   typingSpeed: 0.02
   continueButton: {fileID: 1808197172}
   nextSceneButton: {fileID: 182034719}
@@ -3388,7 +3550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 242693838}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1405674193
 GameObject:
@@ -3524,6 +3686,57 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1548231993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548231994}
+  - component: {fileID: 1548231995}
+  m_Layer: 0
+  m_Name: Good End Narrative 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1548231994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548231993}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.085365035, y: 0.19537221, z: -1.1668445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 242693838}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1548231995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548231993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a7146430ae7d4409c49d960964e0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1405674196}
+  sentences:
+  - You manage to chop a bit of wood.
+  - IIt's not very neat, and there's not very much. But it's there.
+  typingSpeed: 0.02
+  continueButton: {fileID: 1808197172}
+  nextSceneButton: {fileID: 182034719}
+  manager: {fileID: 1580533195}
 --- !u!1 &1561770502
 GameObject:
   m_ObjectHideFlags: 0
@@ -4301,6 +4514,54 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 960243845}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 77199035}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1548231995}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 338721954}
+        m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
+        m_MethodName: NextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 875124838}
         m_TargetAssemblyTypeName: DialogueMinigames, Assembly-CSharp
         m_MethodName: NextSentence
         m_Mode: 1

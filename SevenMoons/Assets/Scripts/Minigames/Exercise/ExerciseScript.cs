@@ -60,6 +60,11 @@ public class ExerciseScript : MonoBehaviour
     void Start()
     {
         GameManagerScript.gamemanager.TaskNumber();
+
+        /* use this section to test dialogue is working
+        endGameUI.gameObject.SetActive(true);
+        bestGameUI[3].SetActive(true);
+        */
     }
 
     void Update()
